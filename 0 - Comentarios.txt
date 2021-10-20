@@ -1,0 +1,19 @@
+Ver1
+ - No geral, o somador ta funcionando e mandando corretamente o resultado para o registrador destino no banco.
+
+Arrumar:
+1 - Pela imagem do TestVer1, dá para ver que os registradores não tão mantendo o valor. Por que? 
+Eu pensei que no regwirte sempre 1 dando pau mas teoricamente nao deveria ser isso.
+
+2 - Lógica do PC não ta funcionando. Tem que ver se a gente vai usar contador mesmo e depois transformar o 
+endereço do jump em um inteiro, ou já mexer com vector e to_integer e quando for dar jump pode mandar o vector
+direto.
+
+3 - Não consegui achar uma sintaxe que funcionasse pra pegar o primeiro ou o segundo valor do vetor comandos.
+
+Pergunta:
+1 - O processador é monociclo?
+2 - Sera que ta certo mesmo mandar o ReadData1 e 2 e o WriteData direto do banco pro somador?
+
+banco: banco_registradores port map (RegWrite, Clock, reset, ReadReg1, ReadReg2, WriteReg, WriteData, ReadData1, ReadData2);
+somador: ripple_carry port map (CinR, ReadData1, ReadData2, WriteData, Cout);

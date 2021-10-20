@@ -12,35 +12,109 @@
 # 
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ripple_carry.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:32:06 on Oct 19,2021
+# Start time: 20:09:33 on Oct 20,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ripple_carry.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ripple_carry
 # -- Compiling architecture Structure of ripple_carry
-# End time: 22:32:06 on Oct 19,2021, Elapsed time: 0:00:00
+# End time: 20:09:33 on Oct 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:33 on Oct 20,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity registrador
+# -- Compiling architecture Behavior of registrador
+# End time: 20:09:33 on Oct 20,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:32:07 on Oct 19,2021
+# Start time: 20:09:33 on Oct 20,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity full_adder
 # -- Compiling architecture LogicFunc of full_adder
-# End time: 22:32:07 on Oct 19,2021, Elapsed time: 0:00:00
+# End time: 20:09:33 on Oct 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:33 on Oct 20,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity banco_registradores
+# -- Compiling architecture Structure of banco_registradores
+# End time: 20:09:33 on Oct 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:33 on Oct 20,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity PC
+# -- Compiling architecture Behavior of PC
+# End time: 20:09:33 on Oct 20,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/projeto2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:32:07 on Oct 19,2021
+# Start time: 20:09:33 on Oct 20,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/projeto2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
 # -- Compiling entity Projeto2
 # -- Compiling architecture Structure of Projeto2
-# End time: 22:32:07 on Oct 19,2021, Elapsed time: 0:00:00
+# End time: 20:09:33 on Oct 20,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+vsim work.projeto2
+# vsim work.projeto2 
+# Start time: 20:09:42 on Oct 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.projeto2(structure)
+# Loading work.banco_registradores(structure)
+# Loading work.registrador(behavior)
+# Loading work.ripple_carry(structure)
+# Loading work.full_adder(logicfunc)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.pc(behavior)
+do C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/simulation/modelsim/wave.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# 1
+add wave -position end  sim:/projeto2/banco/Q0
+add wave -position end  sim:/projeto2/banco/Q1
+add wave -position end  sim:/projeto2/banco/Q2
+add wave -position end  sim:/projeto2/banco/Q3
+add wave -position end  sim:/projeto2/banco/ReadData1
+add wave -position end  sim:/projeto2/banco/ReadData2
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 500 ps  Iteration: 0  Instance: /projeto2
+# ** Fatal: (vsim-3421) Value 2 is out of range 0 to 1.
+#    Time: 4500 ps  Iteration: 0  Process: /projeto2/line__71 File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/projeto2.vhd
+# Fatal error in Process line__71 at C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/projeto2.vhd line 74
+# 
+# HDL call sequence:
+# Stopped at C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/projeto2.vhd 74 Process line__71
+# 
+# End time: 20:13:50 on Oct 20,2021, Elapsed time: 0:04:08
+# Errors: 2, Warnings: 1
+wave editwrite -file C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/simulation/modelsim/wave.do

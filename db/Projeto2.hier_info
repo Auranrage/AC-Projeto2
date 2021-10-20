@@ -1,36 +1,326 @@
-|Projeto2
-Xm[0] => ripple_carry:stage.X[0]
-Xm[1] => ripple_carry:stage.X[1]
-Xm[2] => ripple_carry:stage.X[2]
-Xm[3] => ripple_carry:stage.X[3]
-Ym[0] => ripple_carry:stage.Y[0]
-Ym[1] => ripple_carry:stage.Y[1]
-Ym[2] => ripple_carry:stage.Y[2]
-Ym[3] => ripple_carry:stage.Y[3]
-Sm[0] << ripple_carry:stage.S[0]
-Sm[1] << ripple_carry:stage.S[1]
-Sm[2] << ripple_carry:stage.S[2]
-Sm[3] << ripple_carry:stage.S[3]
+|projeto2
+instrucao[0] << instrucao[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[1] << instrucao[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[2] << instrucao[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[3] << instrucao[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[4] << instrucao[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[5] << instrucao[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[6] << instrucao[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[7] << instrucao[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Clock => banco_registradores:banco.Clock
+Clock => ReadReg2[0].CLK
+Clock => ReadReg2[1].CLK
+Clock => ReadReg1[0].CLK
+Clock => ReadReg1[1].CLK
+Clock => WriteReg[0].CLK
+Clock => WriteReg[1].CLK
+Clock => RegWrite.CLK
+Clock => instrucao[0]~reg0.CLK
+Clock => instrucao[1]~reg0.CLK
+Clock => instrucao[2]~reg0.CLK
+Clock => instrucao[3]~reg0.CLK
+Clock => instrucao[4]~reg0.CLK
+Clock => instrucao[5]~reg0.CLK
+Clock => instrucao[6]~reg0.CLK
+Clock => instrucao[7]~reg0.CLK
+Clock => PC:PC_reg.Clock
+reset => banco_registradores:banco.reset
+reset => PC:PC_reg.reset
 
 
-|Projeto2|ripple_carry:stage
+|projeto2|banco_registradores:banco
+RegWrite => D0.IN1
+RegWrite => D1.IN1
+RegWrite => D2.IN1
+RegWrite => D3.IN1
+RegWrite => registrador:R0.load
+RegWrite => registrador:R1.load
+RegWrite => registrador:R2.load
+RegWrite => registrador:R3.load
+Clock => registrador:R0.Clock
+Clock => registrador:R1.Clock
+Clock => registrador:R2.Clock
+Clock => registrador:R3.Clock
+reset => registrador:R0.reset
+reset => registrador:R1.reset
+reset => registrador:R2.reset
+reset => registrador:R3.reset
+ReadReg1[0] => Equal4.IN1
+ReadReg1[0] => Equal5.IN0
+ReadReg1[0] => Equal6.IN1
+ReadReg1[0] => Equal7.IN1
+ReadReg1[1] => Equal4.IN0
+ReadReg1[1] => Equal5.IN1
+ReadReg1[1] => Equal6.IN0
+ReadReg1[1] => Equal7.IN0
+ReadReg2[0] => Equal8.IN1
+ReadReg2[0] => Equal9.IN0
+ReadReg2[0] => Equal10.IN1
+ReadReg2[0] => Equal11.IN1
+ReadReg2[1] => Equal8.IN0
+ReadReg2[1] => Equal9.IN1
+ReadReg2[1] => Equal10.IN0
+ReadReg2[1] => Equal11.IN0
+WriteReg[0] => Equal0.IN1
+WriteReg[0] => Equal1.IN1
+WriteReg[0] => Equal2.IN0
+WriteReg[0] => Equal3.IN1
+WriteReg[1] => Equal0.IN0
+WriteReg[1] => Equal1.IN0
+WriteReg[1] => Equal2.IN1
+WriteReg[1] => Equal3.IN0
+WriteData[0] => D3[0].DATAIN
+WriteData[0] => D2[0].DATAIN
+WriteData[0] => D1[0].DATAIN
+WriteData[0] => D0[0].DATAIN
+WriteData[1] => D3[1].DATAIN
+WriteData[1] => D2[1].DATAIN
+WriteData[1] => D1[1].DATAIN
+WriteData[1] => D0[1].DATAIN
+WriteData[2] => D3[2].DATAIN
+WriteData[2] => D2[2].DATAIN
+WriteData[2] => D1[2].DATAIN
+WriteData[2] => D0[2].DATAIN
+WriteData[3] => D3[3].DATAIN
+WriteData[3] => D2[3].DATAIN
+WriteData[3] => D1[3].DATAIN
+WriteData[3] => D0[3].DATAIN
+WriteData[4] => D3[4].DATAIN
+WriteData[4] => D2[4].DATAIN
+WriteData[4] => D1[4].DATAIN
+WriteData[4] => D0[4].DATAIN
+WriteData[5] => D3[5].DATAIN
+WriteData[5] => D2[5].DATAIN
+WriteData[5] => D1[5].DATAIN
+WriteData[5] => D0[5].DATAIN
+WriteData[6] => D3[6].DATAIN
+WriteData[6] => D2[6].DATAIN
+WriteData[6] => D1[6].DATAIN
+WriteData[6] => D0[6].DATAIN
+WriteData[7] => D3[7].DATAIN
+WriteData[7] => D2[7].DATAIN
+WriteData[7] => D1[7].DATAIN
+WriteData[7] => D0[7].DATAIN
+ReadData1[0] <= ReadData1.DB_MAX_OUTPUT_PORT_TYPE
+ReadData1[1] <= ReadData1.DB_MAX_OUTPUT_PORT_TYPE
+ReadData1[2] <= ReadData1.DB_MAX_OUTPUT_PORT_TYPE
+ReadData1[3] <= ReadData1.DB_MAX_OUTPUT_PORT_TYPE
+ReadData1[4] <= ReadData1.DB_MAX_OUTPUT_PORT_TYPE
+ReadData1[5] <= ReadData1.DB_MAX_OUTPUT_PORT_TYPE
+ReadData1[6] <= ReadData1.DB_MAX_OUTPUT_PORT_TYPE
+ReadData1[7] <= ReadData1.DB_MAX_OUTPUT_PORT_TYPE
+ReadData2[0] <= ReadData2.DB_MAX_OUTPUT_PORT_TYPE
+ReadData2[1] <= ReadData2.DB_MAX_OUTPUT_PORT_TYPE
+ReadData2[2] <= ReadData2.DB_MAX_OUTPUT_PORT_TYPE
+ReadData2[3] <= ReadData2.DB_MAX_OUTPUT_PORT_TYPE
+ReadData2[4] <= ReadData2.DB_MAX_OUTPUT_PORT_TYPE
+ReadData2[5] <= ReadData2.DB_MAX_OUTPUT_PORT_TYPE
+ReadData2[6] <= ReadData2.DB_MAX_OUTPUT_PORT_TYPE
+ReadData2[7] <= ReadData2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|banco_registradores:banco|registrador:R0
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+D[6] => Q.DATAB
+D[7] => Q.DATAB
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Clock => Q[4]~reg0.CLK
+Clock => Q[5]~reg0.CLK
+Clock => Q[6]~reg0.CLK
+Clock => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|banco_registradores:banco|registrador:R1
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+D[6] => Q.DATAB
+D[7] => Q.DATAB
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Clock => Q[4]~reg0.CLK
+Clock => Q[5]~reg0.CLK
+Clock => Q[6]~reg0.CLK
+Clock => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|banco_registradores:banco|registrador:R2
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+D[6] => Q.DATAB
+D[7] => Q.DATAB
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Clock => Q[4]~reg0.CLK
+Clock => Q[5]~reg0.CLK
+Clock => Q[6]~reg0.CLK
+Clock => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|banco_registradores:banco|registrador:R3
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+D[6] => Q.DATAB
+D[7] => Q.DATAB
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Clock => Q[4]~reg0.CLK
+Clock => Q[5]~reg0.CLK
+Clock => Q[6]~reg0.CLK
+Clock => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|ripple_carry:somador
 CinR => full_adder:Generate_label:0:stage.Cin
-X[0] => full_adder:Generate_label:0:stage.x
-X[1] => full_adder:Generate_label:1:stage.x
-X[2] => full_adder:Generate_label:2:stage.x
-X[3] => full_adder:Generate_label:3:stage.x
-Y[0] => full_adder:Generate_label:0:stage.y
-Y[1] => full_adder:Generate_label:1:stage.y
-Y[2] => full_adder:Generate_label:2:stage.y
-Y[3] => full_adder:Generate_label:3:stage.y
-S[0] <= full_adder:Generate_label:0:stage.s
-S[1] <= full_adder:Generate_label:1:stage.s
-S[2] <= full_adder:Generate_label:2:stage.s
-S[3] <= full_adder:Generate_label:3:stage.s
-Cout <= full_adder:Generate_label:3:stage.Cout
+Rj[0] => full_adder:Generate_label:0:stage.x
+Rj[1] => full_adder:Generate_label:1:stage.x
+Rj[2] => full_adder:Generate_label:2:stage.x
+Rj[3] => full_adder:Generate_label:3:stage.x
+Rj[4] => full_adder:Generate_label:4:stage.x
+Rj[5] => full_adder:Generate_label:5:stage.x
+Rj[6] => full_adder:Generate_label:6:stage.x
+Rj[7] => full_adder:Generate_label:7:stage.x
+Rk[0] => full_adder:Generate_label:0:stage.y
+Rk[1] => full_adder:Generate_label:1:stage.y
+Rk[2] => full_adder:Generate_label:2:stage.y
+Rk[3] => full_adder:Generate_label:3:stage.y
+Rk[4] => full_adder:Generate_label:4:stage.y
+Rk[5] => full_adder:Generate_label:5:stage.y
+Rk[6] => full_adder:Generate_label:6:stage.y
+Rk[7] => full_adder:Generate_label:7:stage.y
+Ri[0] <= full_adder:Generate_label:0:stage.s
+Ri[1] <= full_adder:Generate_label:1:stage.s
+Ri[2] <= full_adder:Generate_label:2:stage.s
+Ri[3] <= full_adder:Generate_label:3:stage.s
+Ri[4] <= full_adder:Generate_label:4:stage.s
+Ri[5] <= full_adder:Generate_label:5:stage.s
+Ri[6] <= full_adder:Generate_label:6:stage.s
+Ri[7] <= full_adder:Generate_label:7:stage.s
+Cout <= full_adder:Generate_label:7:stage.Cout
 
 
-|Projeto2|ripple_carry:stage|full_adder:\Generate_label:0:stage
+|projeto2|ripple_carry:somador|full_adder:\Generate_label:0:stage
 Cin => s.IN1
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -44,7 +334,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto2|ripple_carry:stage|full_adder:\Generate_label:1:stage
+|projeto2|ripple_carry:somador|full_adder:\Generate_label:1:stage
 Cin => s.IN1
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -58,7 +348,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto2|ripple_carry:stage|full_adder:\Generate_label:2:stage
+|projeto2|ripple_carry:somador|full_adder:\Generate_label:2:stage
 Cin => s.IN1
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -72,7 +362,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Projeto2|ripple_carry:stage|full_adder:\Generate_label:3:stage
+|projeto2|ripple_carry:somador|full_adder:\Generate_label:3:stage
 Cin => s.IN1
 Cin => Cout.IN0
 Cin => Cout.IN0
@@ -84,5 +374,128 @@ y => Cout.IN1
 y => Cout.IN1
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|ripple_carry:somador|full_adder:\Generate_label:4:stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|ripple_carry:somador|full_adder:\Generate_label:5:stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|ripple_carry:somador|full_adder:\Generate_label:6:stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|ripple_carry:somador|full_adder:\Generate_label:7:stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|PC:PC_reg
+PCin[0] => PCout.DATAB
+PCin[1] => PCout.DATAB
+PCin[2] => PCout.DATAB
+PCin[3] => PCout.DATAB
+PCin[4] => PCout.DATAB
+PCin[5] => PCout.DATAB
+PCin[6] => PCout.DATAB
+PCin[7] => PCout.DATAB
+reset => PCout.OUTPUTSELECT
+reset => PCout.OUTPUTSELECT
+reset => PCout.OUTPUTSELECT
+reset => PCout.OUTPUTSELECT
+reset => PCout.OUTPUTSELECT
+reset => PCout.OUTPUTSELECT
+reset => PCout.OUTPUTSELECT
+reset => PCout.OUTPUTSELECT
+reset => intermediario[1].ENA
+reset => intermediario[0].ENA
+reset => intermediario[2].ENA
+reset => intermediario[3].ENA
+reset => intermediario[4].ENA
+reset => intermediario[5].ENA
+reset => intermediario[6].ENA
+reset => intermediario[7].ENA
+PCload => PCout.OUTPUTSELECT
+PCload => PCout.OUTPUTSELECT
+PCload => PCout.OUTPUTSELECT
+PCload => PCout.OUTPUTSELECT
+PCload => PCout.OUTPUTSELECT
+PCload => PCout.OUTPUTSELECT
+PCload => PCout.OUTPUTSELECT
+PCload => PCout.OUTPUTSELECT
+PCload => intermediario.OUTPUTSELECT
+PCload => intermediario.OUTPUTSELECT
+PCload => intermediario.OUTPUTSELECT
+PCload => intermediario.OUTPUTSELECT
+PCload => intermediario.OUTPUTSELECT
+PCload => intermediario.OUTPUTSELECT
+PCload => intermediario.OUTPUTSELECT
+PCload => intermediario.OUTPUTSELECT
+Clock => intermediario[0].CLK
+Clock => intermediario[1].CLK
+Clock => intermediario[2].CLK
+Clock => intermediario[3].CLK
+Clock => intermediario[4].CLK
+Clock => intermediario[5].CLK
+Clock => intermediario[6].CLK
+Clock => intermediario[7].CLK
+Clock => PCout[0]~reg0.CLK
+Clock => PCout[1]~reg0.CLK
+Clock => PCout[2]~reg0.CLK
+Clock => PCout[3]~reg0.CLK
+Clock => PCout[4]~reg0.CLK
+Clock => PCout[5]~reg0.CLK
+Clock => PCout[6]~reg0.CLK
+Clock => PCout[7]~reg0.CLK
+PCout[0] <= PCout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PCout[1] <= PCout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PCout[2] <= PCout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PCout[3] <= PCout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PCout[4] <= PCout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PCout[5] <= PCout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PCout[6] <= PCout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PCout[7] <= PCout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

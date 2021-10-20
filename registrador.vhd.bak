@@ -16,8 +16,7 @@ BEGIN
 		IF Clock'EVENT AND Clock = '1' THEN
 			
 			IF reset = '1' THEN
-				--Q <= ( OTHERS => '0' );
-				Q <= "00000001";
+				Q <= ( OTHERS => '0' );
 			
 			ELSIF load = '1' THEN
 				Q <= D ;

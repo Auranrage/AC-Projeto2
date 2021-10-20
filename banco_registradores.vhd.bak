@@ -18,7 +18,7 @@ ARCHITECTURE Structure OF banco_registradores IS
 	SIGNAL D0, D1, D2, D3: STD_LOGIC_VECTOR (n-1 DOWNTO 0);
 	SIGNAL Q0, Q1, Q2, Q3: STD_LOGIC_VECTOR (n-1 DOWNTO 0);
 	
-	 
+	
 	COMPONENT registrador
 		PORT ( D							: IN STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
 				reset, load, Clock		: IN STD_LOGIC ;
