@@ -4,8 +4,7 @@ USE ieee.std_logic_1164.all ;
 ENTITY ripple_carry IS
 	GENERIC ( n : INTEGER := 8 ) ;
 	
-PORT ( CinR : IN STD_LOGIC; 
-		Rj, Rk: IN STD_LOGIC_VECTOR (n-1 DOWNTO 0) ;
+PORT ( Rj, Rk: IN STD_LOGIC_VECTOR (n-1 DOWNTO 0) ;
 		Ri	 	: OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
 		Cout 	: OUT STD_LOGIC ) ;
 END ripple_carry ;
@@ -21,7 +20,7 @@ ARCHITECTURE Structure OF ripple_carry IS
 	END COMPONENT ;
 	
 BEGIN
-	C(0) <= CinR ;
+	C(0) <= '0';
 	
 	
 	Generate_label:

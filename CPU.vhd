@@ -2,17 +2,17 @@ LIBRARY ieee ;
 USE ieee.std_logic_1164.all ;
 USE ieee.numeric_std.all;
 
-ENTITY Projeto2 IS
+ENTITY CPU IS
 	GENERIC ( n : INTEGER := 8 ) ;
 	PORT(
 		instrucao 		: BUFFER STD_LOGIC_VECTOR (7 DOWNTO 0);
 		Clock, reset	: IN STD_LOGIC
 	);
 		
-END Projeto2 ;
+END CPU ;
 
 
-ARCHITECTURE Structure OF Projeto2 IS
+ARCHITECTURE Structure OF CPU IS
 	COMPONENT ripple_carry
 		PORT ( CinR 	: IN STD_LOGIC ;
 				Rj, Rk 	: IN STD_LOGIC_VECTOR (n-1 DOWNTO 0);
@@ -64,6 +64,10 @@ ARCHITECTURE Structure OF Projeto2 IS
 		banco: banco_registradores port map (RegWrite, Clock, reset, ReadReg1, ReadReg2, WriteReg, WriteData, ReadData1, ReadData2);
 		somador: ripple_carry port map (CinR, ReadData1, ReadData2, WriteData, Cout);
 		PC_reg: PC port map (PCin, reset, PCload, Clock, PCout);
+		regInst: registrador portmap ();
+		regA: registrador portmap ();
+		regB: registrador portmap ();
+		AluOut: registrador portmap ();
 		
 		--Toda soma começa com CinR=0
 		CinR <= '0';
