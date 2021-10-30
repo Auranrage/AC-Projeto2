@@ -4,7 +4,6 @@ use ieee.numeric_std.all;
 
 ENTITY UControle IS
 PORT(
-	OPCODE 	: IN std_logic_vector(1 downto 0)
+	OPCODE IN std_logic_vector(1 downto 0);
 	
 );
-END Ucontrole;

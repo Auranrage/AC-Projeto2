@@ -14,7 +14,8 @@ END CPU ;
 
 ARCHITECTURE Structure OF CPU IS
 	COMPONENT ripple_carry
-		PORT (Rj, Rk 	: IN STD_LOGIC_VECTOR (n-1 DOWNTO 0);
+		PORT ( CinR 	: IN STD_LOGIC ;
+				Rj, Rk 	: IN STD_LOGIC_VECTOR (n-1 DOWNTO 0);
 				Ri	 		: OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0);
 				Cout 		: OUT STD_LOGIC
 				) ;
@@ -28,31 +29,16 @@ ARCHITECTURE Structure OF CPU IS
 				) ;
 	END COMPONENT;
 	
-	COMPONENT registrador
-		PORT ( D										: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
-				reset, load, Clock				: IN STD_LOGIC ;
-				Q 										: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
+	COMPONENT PC
+	PORT ( 	PCin 								: IN STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
+				reset, PCload, Clock			: IN STD_LOGIC ;
+				PCout								: OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0)
 			) ;
 	END COMPONENT;
 	
-	COMPONENT Memoria
-		PORT (
-			PC_endereco		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
-			instrucao_out	: OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
-			Clock				: IN STD_LOGIC
-		);
-	END COMPONENT;
-	
-	--COMPONENT PC
-	--PORT ( 	PCin 								: IN STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
-		--		reset, PCload, Clock			: IN STD_LOGIC ;
-		--		PCout								: OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0)
-		--	) ;
-	---END COMPONENT;
-	
 	--Sinais de Somador
 	--SIGNAL Ri, Rj, Rk 							: STD_LOGIC_VECTOR (n-1 DOWNTO 0);
-	SIGNAL Cout								: STD_LOGIC;
+	SIGNAL CinR, Cout								: STD_LOGIC;
 	
 	--Sinais de Banco de Registradores
 	SIGNAL RegWrite						: STD_LOGIC;
@@ -76,15 +62,15 @@ ARCHITECTURE Structure OF CPU IS
 	BEGIN
 		--Instanciação dos componentes
 		banco: banco_registradores port map (RegWrite, Clock, reset, ReadReg1, ReadReg2, WriteReg, WriteData, ReadData1, ReadData2);
-		somador: ripple_carry port map (ReadData1, ReadData2, WriteData, Cout);
-		PC_reg: registrador port map (PCin, reset, PCload, Clock, PCout);
-		--regInst: registrador port map ();
-		--memoria
-		--regA: registrador port map ();
-		--regB: registrador port map ();
-		--AluOut: registrador port map ();
+		somador: ripple_carry port map (CinR, ReadData1, ReadData2, WriteData, Cout);
+		PC_reg: PC port map (PCin, reset, PCload, Clock, PCout);
+		regInst: registrador portmap ();
+		regA: registrador portmap ();
+		regB: registrador portmap ();
+		AluOut: registrador portmap ();
 		
 		--Toda soma começa com CinR=0
+		CinR <= '0';
 		
 		PROCESS (Clock)
 		BEGIN
