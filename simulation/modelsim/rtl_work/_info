@@ -1,49 +1,54 @@
 m255
 K4
 z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/simulation/modelsim
-Ereg_instrucao
-Z1 w1635954304
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z0 dC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/simulation/modelsim
+Euc
+Z1 w1635972440
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
 R0
-Z4 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd
-Z5 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd
+Z5 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
+Z6 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
 l0
-L4
-VnV4obZcLoAFNF65^adjcF2
-!s100 6lI6T@XP84jdIo]RYAGo=3
-Z6 OV;C;10.5b;63
+L5 1
+Vf^BdT];o9eYGMRN_GhTY^1
+!s100 ^d9i1[CG`Ra2kW;_OjaT`2
+Z7 OV;C;2020.1;71
 31
-Z7 !s110 1635954338
+Z8 !s110 1635972460
 !i10b 1
-Z8 !s108 1635954338.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
-Z10 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
+Z9 !s108 1635972460.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
+!s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
 Abehavior
 R2
 R3
-DEx4 work 13 reg_instrucao 0 22 nV4obZcLoAFNF65^adjcF2
-l12
-L11
-Vg8hZla:jz85PN<LangTLR0
-!s100 XfVGa]<c2F0b:KE;6_0M_3
-R6
-31
+R4
+DEx4 work 2 uc 0 22 f^BdT];o9eYGMRN_GhTY^1
+!i122 0
+l18
+L14 37
+VoSaQ5RFG[9IHaHhj9Wn=i0
+!s100 VoH=5fkS5=o=m9CVGhG_M0
 R7
-!i10b 1
+31
 R8
+!i10b 1
 R9
 R10
+Z13 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
 !i113 1
 R11
 R12
