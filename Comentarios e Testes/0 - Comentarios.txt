@@ -23,7 +23,7 @@ Pode ser problema na simulação de sinais do quartus, ou algo que não foi pens
 
 
 Para fazer:
-1 - ULA ta em loop infinito criando full_adders pro ripple_carry. Isso nao acontece no "projeto_arquitetura.qsf", só no "Projeto2.qsf". 
+1 - ULA ta em loop infinito criando full_adders pro ripple_carry. Isso nao acontece no "projeto_arquitetura.qpf", só no "Projeto2.qpf". 
 
 2 - Quando eu consertei o loop da ULA, na imagem ULA estranho, porque o valor do resultado nao muda novamente no terceiro ciclo?
 
