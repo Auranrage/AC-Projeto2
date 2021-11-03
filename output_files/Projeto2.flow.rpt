@@ -1,5 +1,5 @@
 Flow report for Projeto2
-Wed Nov 03 12:59:47 2021
+Wed Nov 03 17:41:19 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 03 12:59:47 2021       ;
+; Flow Status                        ; Successful - Wed Nov 03 17:41:19 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
-; Top-level Entity Name              ; ULA                                         ;
+; Top-level Entity Name              ; UC                                          ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; N/A until Partition Merge                   ;
 ;     Total combinational functions  ; N/A until Partition Merge                   ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/03/2021 12:59:39 ;
+; Start date & time ; 11/03/2021 17:41:12 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Projeto2            ;
 +-------------------+---------------------+
@@ -74,17 +74,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 185122840017633.163595517921384        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 185122840017633.163597207219200        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; ULA         ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; ULA         ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; ULA         ; Top            ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; UC          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; UC          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; UC          ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; ULA                                    ; Projeto2      ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; UC                                     ; Projeto2      ; --          ; --             ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
@@ -93,8 +93,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:08     ; 1.0                     ; 4765 MB             ; 00:00:17                           ;
-; Total                  ; 00:00:08     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4773 MB             ; 00:00:15                           ;
+; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:15                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

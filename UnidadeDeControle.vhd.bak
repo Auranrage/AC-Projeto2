@@ -1,0 +1,30 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+ENTITY UC IS
+	PORT(
+		OPin: IN std_logic_vector(1 downto 0);
+		Clk: IN std_logic;
+		PCWriteCond: OUT std_logic;
+		PCWrite: OUT std_logic;
+		PCSource: OUT std_logic_vector(1 downto 0);
+		Aluop: OUT std_logic;
+		RegWrite: OUT std_logic
+		);
+END ENTITY;
+
+Architecture Behavior OF UC IS
+
+SIGNAL state: integer;
+
+BEGIN
+	PROCESS (Clock)
+	BEGIN
+		IF Clock'EVENT AND Clock = '1' THEN
+			
+			
+		END IF;
+	END PROCESS;
+END Behavior;
+
