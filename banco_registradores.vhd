@@ -1,3 +1,9 @@
+--Funcionamento
+-- Registrador só escreve quando clock = 1.
+-- Bancop escreve em registrador 00 se RegWrite = 1 e WriteReg = 00
+-- ReadData1 le de registrador 00 se ReadReg1 = 00. Mesma coisa pro ReadData2 e ReadReg2.
+
+
 LIBRARY ieee ;
 USE ieee.std_logic_1164.all ;
 

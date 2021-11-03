@@ -1,0 +1,33 @@
+Ver2
+- Registradores OK
+-- Registrador só escreve quando clock = 1.
+
+-Banco de Regs OK
+-- Escreve em registrador 00 se RegWrite = 1 e WriteReg = 00
+-- ReadData1 le de registrador 00 se ReadReg1 = 00. Mesma coisa pro ReadData1 e ReadReg2.
+
+-Memoria OK
+-- Manda a instrução 0, 1, 2 ou N do "vetor_instrucoes" de acordo com o "to_integer" do "PC_endereco".
+-- Entrada PC_endereco / Saida instrucao_out 
+- - Detalhe: Ver que na imagem do teste da memoria, a instrucao volta pra instrucao 00000000 sem pedir no PC_endereco
+Pode ser problema na simulação de sinais do quartus, ou algo que não foi pensado no código.
+
+-PC OK
+-- Nao tem entrada (só o clock). Começa com 00000000 e vai somando 00000001 a cada subida de clock.
+-- Saida PCout
+- - Lembrar: Antes tinha um signal "Um" que recebia 00000001 pra somar com intermediario.
+
+-Reg_Instrucao Ok
+-- Quebra a instrucao em OP, RS, RT e RD. Sinal "load" precisa ser 1 pra receber uma nova instrucao.
+-- Entrada instrucao, load / Saida OP, RS, RT, RD
+
+
+Para fazer:
+1 - ULA ta em loop infinito criando full_adders pro ripple_carry. Isso nao acontece no "projeto_arquitetura.qsf", só no "Projeto2.qsf". 
+
+2 - Quando eu consertei o loop da ULA, na imagem ULA estranho, porque o valor do resultado nao muda novamente no terceiro ciclo?
+
+3 - Fazer a unidade de controle.
+
+4 - Esperando terminar todos o componentes pra instaciar eles na CPU.
+- Lembrar de instanciar Reg A, Reg B e ALUout como registradores normais.

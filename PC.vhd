@@ -1,3 +1,7 @@
+--Funcionamento
+-- Nao tem entrada (só o clock). Começa com 00000000 e vai somando 00000001 a cada subida de clock.
+-- Saida PCout
+
 LIBRARY ieee ;
 USE ieee.std_logic_1164.all ;
 USE ieee.std_logic_signed.all;
@@ -12,11 +16,8 @@ END PC ;
 
 ARCHITECTURE Behavior OF PC IS
 SIGNAL intermediario: STD_LOGIC_VECTOR(N-1 DOWNTO 0) := "00000000";
-SIGNAL Um: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 
 BEGIN
-	Um <= "00000001";
-	
 	
 	PROCESS (Clock)
 	BEGIN
