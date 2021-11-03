@@ -22,17 +22,12 @@ Pode ser problema na simulação de sinais do quartus, ou algo que não foi pens
 -- Entrada instrucao, load / Saida OP, RS, RT, RD
 
 
+Para fazer:
+1 - ULA ta em loop infinito criando full_adders pro ripple_carry. Isso nao acontece no "projeto_arquitetura.qsf", só no "Projeto2.qsf". 
 
-Arrumar:
-1 - Esperando terminar todos o componentes pra instaciar eles na CPU.
+2 - Quando eu consertei o loop da ULA, na imagem ULA estranho, porque o valor do resultado nao muda novamente no terceiro ciclo?
 
-1 - Pela imagem do TestVer1, dá para ver que os registradores não tão mantendo o valor. Por que? 
-Eu pensei que no regwirte sempre 1 dando pau mas teoricamente nao deveria ser isso.
+3 - Fazer a unidade de controle.
 
-2 - Lógica do PC não ta funcionando. Tem que ver se a gente vai usar contador mesmo e depois transformar o 
-endereço do jump em um inteiro, ou já mexer com vector e to_integer e quando for dar jump pode mandar o vector
-direto.
-
-3 - Não consegui achar uma sintaxe que funcionasse pra pegar o primeiro ou o segundo valor do vetor comandos.
-
-Pergunta:
+4 - Esperando terminar todos o componentes pra instaciar eles na CPU.
+- Lembrar de instanciar Reg A, Reg B e ALUout como registradores normais.
