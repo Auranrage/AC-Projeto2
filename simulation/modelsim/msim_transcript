@@ -12,33 +12,35 @@
 # 
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:05:04 on Oct 29,2021
+# Start time: 12:45:38 on Nov 03,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Reg_Instrucao
 # -- Compiling architecture Behavior of Reg_Instrucao
-# End time: 21:05:04 on Oct 29,2021, Elapsed time: 0:00:00
+# End time: 12:45:38 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.reg_instrucao
 # vsim work.reg_instrucao 
-# Start time: 21:05:09 on Oct 29,2021
+# Start time: 12:45:41 on Nov 03,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.reg_instrucao(behavior)
+add wave -position insertpoint sim:/reg_instrucao/*
+add wave -position insertpoint sim:/reg_instrucao/*
+# .main_pane.wave.interior.cs.body.pw.wf
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# 1
+# 1
+restart
 add wave -position end  sim:/reg_instrucao/OP
 add wave -position end  sim:/reg_instrucao/RS
 add wave -position end  sim:/reg_instrucao/RT
 add wave -position end  sim:/reg_instrucao/RD
-wave create -driver freeze -pattern clock -initialvalue 0 -period 1000ps -dutycycle 50 -starttime 0ps -endtime 10000ps sim:/reg_instrucao/Clock
-# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 10000ps sim:/reg_instrucao/load
-wave create -driver freeze -pattern constant -value 00101101 -range 7 0 -starttime 0ps -endtime 1000ps sim:/reg_instrucao/instrucao
-wave modify -driver freeze -pattern constant -value 11000010 -range 7 0 -starttime 0ps -endtime 1000ps Edit:/reg_instrucao/instrucao
-wave modify -driver freeze -pattern constant -value 00000101 -range 7 0 -starttime 1000ps -endtime 2000ps Edit:/reg_instrucao/instrucao
 run
-# End time: 21:07:46 on Oct 29,2021, Elapsed time: 0:02:37
+run
+# End time: 12:47:25 on Nov 03,2021, Elapsed time: 0:01:44
 # Errors: 0, Warnings: 0

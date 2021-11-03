@@ -1,6 +1,11 @@
+--Funcionamento
+-- Manda a instrução 0, 1, 2 ou N do "vetor_instrucoes" de acordo com o "to_integer" do "PC_endereco".
+-- Entrada PC_endereco / Saida instrucao_out 
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
+
 
 ENTITY Memoria IS
 	PORT (
@@ -16,7 +21,7 @@ ARCHITECTURE Behavior OF Memoria IS
 	SIGNAL int_address: INTEGER RANGE 0 TO 2;
 	
 			
-	CONSTANT instrucao : vetor_instrucoes:= ("00000000", "00000000", "00000000");
+	CONSTANT instrucao : vetor_instrucoes:= ("00000000", "00000110", "00110000");
 			
 	
 			

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/simulation/modelsim
 Ereg_instrucao
-Z1 w1635552138
+Z1 w1635954304
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
@@ -17,13 +17,13 @@ Z4 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd
 Z5 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd
 l0
 L4
-VDhhL[3kZXUNj2_o>=?4?T1
-!s100 43lCegX1F;J3P[Y<gdcbW2
+VnV4obZcLoAFNF65^adjcF2
+!s100 6lI6T@XP84jdIo]RYAGo=3
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1635552304
+Z7 !s110 1635954338
 !i10b 1
-Z8 !s108 1635552304.000000
+Z8 !s108 1635954338.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
 Z10 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
 !i113 1
@@ -32,11 +32,11 @@ Z12 tExplicit 1 CvgOpt 0
 Abehavior
 R2
 R3
-DEx4 work 13 reg_instrucao 0 22 DhhL[3kZXUNj2_o>=?4?T1
+DEx4 work 13 reg_instrucao 0 22 nV4obZcLoAFNF65^adjcF2
 l12
 L11
-Vngz5m]_ZS[oUK[F<:K]lk0
-!s100 Q>XT3i^IE_b:PCM3XkX:F3
+Vg8hZla:jz85PN<LangTLR0
+!s100 XfVGa]<c2F0b:KE;6_0M_3
 R6
 31
 R7

@@ -39,5 +39,5 @@ BEGIN
 	END PROCESS;
 	Zero <= (NOT (Sgen(0) OR Sgen(1) OR Sgen(2) OR Sgen(3) OR Sgen(4) OR Sgen(5) OR Sgen(6) OR Sgen(7)));
 	Result <= Sgen;
-	SOMADOR1: ripple_carry PORT MAP(A,Bsig,Sgen,'0');
+	SOMADOR1: ripple_carry PORT MAP(A,Bsig,Sgen, Cout);
 END ARCHITECTURE;

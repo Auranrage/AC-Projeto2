@@ -7,7 +7,6 @@ instrucao[4] => RS[0]~reg0.DATAIN
 instrucao[5] => RS[1]~reg0.DATAIN
 instrucao[6] => OP[0]~reg0.DATAIN
 instrucao[7] => OP[1]~reg0.DATAIN
-reset => ~NO_FANOUT~
 load => RD[0]~reg0.ENA
 load => RD[1]~reg0.ENA
 load => RT[0]~reg0.ENA

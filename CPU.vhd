@@ -79,13 +79,15 @@ ARCHITECTURE Structure OF CPU IS
 		somador: ripple_carry port map (ReadData1, ReadData2, WriteData, Cout);
 		PC_reg: registrador port map (PCin, reset, PCload, Clock, PCout);
 		--regInst: registrador port map ();
+		
 		--memoria
+		
+		--Registradores
 		--regA: registrador port map ();
 		--regB: registrador port map ();
 		--AluOut: registrador port map ();
 		
-		--Toda soma começa com CinR=0
-		
+	
 		PROCESS (Clock)
 		BEGIN
 			IF Clock'EVENT AND Clock = '1' THEN

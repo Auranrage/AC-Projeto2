@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Projeto2
-Fri Oct 29 21:04:51 2021
+Wed Nov 03 12:59:19 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,10 +36,10 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Fri Oct 29 21:04:51 2021       ;
+; Analysis & Elaboration Status      ; Failed - Wed Nov 03 12:59:19 2021           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
-; Top-level Entity Name              ; Reg_Instrucao                               ;
+; Top-level Entity Name              ; ULA                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; N/A until Partition Merge                   ;
 ;     Total combinational functions  ; N/A until Partition Merge                   ;
@@ -74,7 +74,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; Reg_Instrucao      ; Projeto2           ;
+; Top-level entity name                                                      ; ULA                ; Projeto2           ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -160,7 +160,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Oct 29 21:04:37 2021
+    Info: Processing started: Wed Nov 03 12:59:05 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -177,11 +177,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file full_ad
     Info (12022): Found design unit 1: full_adder-LogicFunc File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd Line: 9
     Info (12023): Found entity 1: full_adder File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file banco_registradores.vhd
-    Info (12022): Found design unit 1: banco_registradores-Structure File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd Line: 17
-    Info (12023): Found entity 1: banco_registradores File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd Line: 4
+    Info (12022): Found design unit 1: banco_registradores-Structure File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd Line: 23
+    Info (12023): Found entity 1: banco_registradores File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-Behavior File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd Line: 13
-    Info (12023): Found entity 1: PC File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd Line: 5
+    Info (12022): Found design unit 1: PC-Behavior File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd Line: 17
+    Info (12023): Found entity 1: PC File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
     Info (12022): Found design unit 1: ULA-ULA_arch File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd Line: 16
     Info (12023): Found entity 1: ULA File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd Line: 5
@@ -189,16 +189,17 @@ Warning (12019): Can't analyze file -- file INCREMENT.vhd is missing
 Info (12021): Found 1 design units, including 1 entities, in source file ucontrole.vhd
     Info (12023): Found entity 1: UControle File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/UControle.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoria.vhd
-    Info (12022): Found design unit 1: Memoria-Behavior File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd Line: 13
-    Info (12023): Found entity 1: Memoria File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd Line: 5
+    Info (12022): Found design unit 1: Memoria-Behavior File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd Line: 18
+    Info (12023): Found entity 1: Memoria File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file reg_instrucao.vhd
-    Info (12022): Found design unit 1: Reg_Instrucao-Behavior File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd Line: 11
-    Info (12023): Found entity 1: Reg_Instrucao File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd Line: 4
-Info (12127): Elaborating entity "Reg_Instrucao" for the top level hierarchy
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4774 megabytes
-    Info: Processing ended: Fri Oct 29 21:04:52 2021
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:31
+    Info (12022): Found design unit 1: Reg_Instrucao-Behavior File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd Line: 15
+    Info (12023): Found entity 1: Reg_Instrucao File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd Line: 8
+Error (10482): VHDL error at ULA.vhd(42): object "Cout" is used but not declared File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd Line: 42
+Error (10558): VHDL error at ULA.vhd(42): cannot associate formal port "Cout" of mode "out" with an expression File: C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd Line: 42
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 2 errors, 2 warnings
+    Error: Peak virtual memory: 4772 megabytes
+    Error: Processing ended: Wed Nov 03 12:59:19 2021
+    Error: Elapsed time: 00:00:14
+    Error: Total CPU time (on all processors): 00:00:28
 
 
