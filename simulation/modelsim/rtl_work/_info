@@ -1,49 +1,93 @@
 m255
 K4
 z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/simulation/modelsim
-Ereg_instrucao
-Z1 w1635552138
+Z0 dC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/simulation/modelsim
+Ebanco_registradores
+Z1 w1635272973
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
 R0
-Z4 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd
-Z5 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd
+Z4 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd
+Z5 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd
 l0
-L4
-VDhhL[3kZXUNj2_o>=?4?T1
-!s100 43lCegX1F;J3P[Y<gdcbW2
-Z6 OV;C;10.5b;63
+L4 1
+VQJfFX4QX;OkVQ@GRg3jE<2
+!s100 M^QUhNRjE:Se5S1GMzKWN0
+Z6 OV;C;2020.1;71
 31
-Z7 !s110 1635552304
+Z7 !s110 1635949958
 !i10b 1
-Z8 !s108 1635552304.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
-Z10 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
+Z8 !s108 1635949958.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd|
+!s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd|
 !i113 1
-Z11 o-93 -work work
-Z12 tExplicit 1 CvgOpt 0
-Abehavior
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Astructure
 R2
 R3
-DEx4 work 13 reg_instrucao 0 22 DhhL[3kZXUNj2_o>=?4?T1
-l12
-L11
-Vngz5m]_ZS[oUK[F<:K]lk0
-!s100 Q>XT3i^IE_b:PCM3XkX:F3
+DEx4 work 19 banco_registradores 0 22 QJfFX4QX;OkVQ@GRg3jE<2
+!i122 1
+l29
+L17 38
+VddFkao8T:FEkI<^nFoIbn1
+!s100 lC1?N6iJZ=AUT1A`9LR>d2
 R6
 31
 R7
 !i10b 1
 R8
 R9
-R10
+Z12 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd|
 !i113 1
+R10
 R11
-R12
+Eregistrador
+Z13 w1635272974
+R2
+R3
+!i122 0
+R0
+Z14 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
+Z15 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
+l0
+L4 1
+V89=l^jDDdQeEOID4[4cPY0
+!s100 c5ECIkOJl0aXm1Je@WT@Z1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
+Z17 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
+!i113 1
+R10
+R11
+Abehavior
+R2
+R3
+DEx4 work 11 registrador 0 22 89=l^jDDdQeEOID4[4cPY0
+!i122 0
+l13
+L12 17
+Vd:3`K2BCHBU8OLX=0oKQ^0
+!s100 9T6cFHC0a^ekf310obRXD1
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R10
+R11
