@@ -18,8 +18,7 @@ ARCHITECTURE ULA_arch of ULA IS
 		PORT(
 			Rj: IN std_logic_vector (7 downto 0);
 			Rk: IN std_logic_vector (7 downto 0);
-			Ri: OUT std_logic_vector (7 downto 0);
-			Cout: OUT std_logic
+			Ri: OUT std_logic_vector (7 downto 0)
 		);
 	END COMPONENT;
 		
@@ -39,5 +38,5 @@ BEGIN
 	END PROCESS;
 	Zero <= (NOT (Sgen(0) OR Sgen(1) OR Sgen(2) OR Sgen(3) OR Sgen(4) OR Sgen(5) OR Sgen(6) OR Sgen(7)));
 	Result <= Sgen;
-	SOMADOR1: ripple_carry PORT MAP(A,Bsig,Sgen, Cout);
+	SOMADOR1: ripple_carry PORT MAP(A,Bsig,Sgen);
 END ARCHITECTURE;

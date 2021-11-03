@@ -5,8 +5,8 @@ ENTITY ripple_carry IS
 	GENERIC ( n : INTEGER := 8 ) ;
 	
 PORT ( Rj, Rk: IN STD_LOGIC_VECTOR (n-1 DOWNTO 0) ;
-		Ri	 	: OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
-		Cout 	: OUT STD_LOGIC ) ;
+		Ri	 	: OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0)
+		) ;
 END ripple_carry ;
 
 
@@ -28,5 +28,4 @@ BEGIN
 		stage: full_adder PORT MAP ( C(i), Rj(i), Rk(i), Ri(i), C(i+1) ) ;
 	END GENERATE ;
 	
-	Cout <= C(8) ;
 END Structure ;
