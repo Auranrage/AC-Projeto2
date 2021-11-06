@@ -7,7 +7,7 @@ ENTITY ULA IS
 		A: IN std_logic_vector (7 downto 0);
 		B: IN std_logic_vector (7 downto 0);
 		ALUop: IN std_logic;
-		clk: IN BIT;
+		clk: IN std_logic;
 		Result: OUT std_logic_vector (7 downto 0);
 		Zero: OUT std_logic
 		);

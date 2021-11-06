@@ -5,8 +5,7 @@ USE ieee.numeric_std.all;
 ENTITY CPU IS
 	GENERIC ( n : INTEGER := 8 ) ;
 	PORT(
-		instrucao 		: BUFFER STD_LOGIC_VECTOR (7 DOWNTO 0);
-		Clock, reset	: IN STD_LOGIC
+		clock, reset	: IN STD_LOGIC
 	);
 		
 END CPU ;
@@ -15,32 +14,31 @@ END CPU ;
 ARCHITECTURE Structure OF CPU IS
 	COMPONENT registrador
 		PORT ( D										: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
-				reset, load, Clock				: IN STD_LOGIC ;
+				reset, load, clock				: IN STD_LOGIC ;
 				Q 										: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
 			) ;
 	END COMPONENT;
 	
 	COMPONENT banco_registradores
-		PORT (RegWrite, Clock, reset			: IN STD_LOGIC;
+		PORT (RegWrite, clock, reset			: IN STD_LOGIC;
 				ReadReg1, ReadReg2, WriteReg 	: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
 				WriteData							: IN STD_LOGIC_VECTOR (n-1 DOWNTO 0);
 				ReadData1, ReadData2				: OUT STD_LOGIC_VECTOR (n-1 DOWNTO 0)
 				) ;
 	END COMPONENT;
 	
-	
 	COMPONENT Memoria
 		PORT (
 			PC_endereco		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 			instrucao_out	: OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
-			Clock				: IN STD_LOGIC
+			clock				: IN STD_LOGIC
 		);
 	END COMPONENT;
 	
 	COMPONENT Reg_Instrucao
 		PORT ( 
 			instrucao 				: IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
-			load, Clock				: IN STD_LOGIC ;
+			load, clock				: IN STD_LOGIC ;
 			OP, RS, RT, RD 		: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
 		) ;
 	END COMPONENT;
@@ -53,60 +51,87 @@ ARCHITECTURE Structure OF CPU IS
 		) ;
 	END COMPONENT;
 	
+	COMPONENT ULA
+		PORT(
+			A							: IN std_logic_vector (7 downto 0);
+			B							: IN std_logic_vector (7 downto 0);
+			ALUop						: IN std_logic;
+			clk						: IN std_logic;
+			Result					: OUT std_logic_vector (7 downto 0);
+			Zero						: OUT std_logic
+		);
+	END COMPONENT;
 	
-	--Sinais de Somador
-	--SIGNAL Ri, Rj, Rk 							: STD_LOGIC_VECTOR (n-1 DOWNTO 0);
-	SIGNAL Cout										: STD_LOGIC;
+	COMPONENT UC
+		PORT(
+			OPin						: IN std_logic_vector(1 downto 0);
+			Reset						: IN std_logic;
+			Clock						: IN std_logic;
+			UCSign					: OUT std_logic_vector(5 downto 0)
+		);
+	END COMPONENT;
+
+	--Sinais de PC
+	SIGNAL PCWrite									: STD_LOGIC;
+	SIGNAL PCin, PCout							: STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
+	
+	--Sinais de Memoria
+	--Pega o PCout de PC, usa o valor de indice em Vetor[i], e manda o conteudo para reg_int pelo sinal instrucao.
+
+	--Sinais do Registrador de Instrução
+	SIGNAL RegIntLoad								: STD_LOGIC ;
+	SIGNAL instrucao 								: STD_LOGIC_VECTOR(7 DOWNTO 0) ;
+	SIGNAL OP, RS, RT, RD 						: STD_LOGIC_VECTOR(1 DOWNTO 0) ;
+	
 	
 	--Sinais de Banco de Registradores
 	SIGNAL RegWrite								: STD_LOGIC;
-	SIGNAL ReadReg1, ReadReg2, WriteReg 	: STD_LOGIC_VECTOR (1 DOWNTO 0);
 	SIGNAL WriteData, ReadData1, ReadData2	: STD_LOGIC_VECTOR (n-1 DOWNTO 0);
 	
-	--Sinais de PC
-	SIGNAL PCin, PCout							: STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
-	SIGNAL PCload									: STD_LOGIC;
-
-
+	--Sinais da ULA
+	SIGNAL AluOp 									: STD_LOGIC ;
+	SIGNAL Zero 									: STD_LOGIC ;
+	SIGNAL A, B, result							: STD_LOGIC_VECTOR (7 downto 0);
+	
+	--Registradores
+	SIGNAL loadA, loadB, loadALUout			: STD_LOGIC;
+	
+	
 	
 	BEGIN
 		--Instanciação dos componentes
-		banco: banco_registradores port map (RegWrite, Clock, reset, ReadReg1, ReadReg2, WriteReg, WriteData, ReadData1, ReadData2);
-		--PC_reg: PC port map (PCin, reset, PCload, Clock, PCout);
-		--Reg_Instrucao: Reg_Instrucao port map ();
-		--Memoria: Memoria port map();
+		PC_reg: PC port map (PCin, reset, PCWrite, clock, PCout); 
+			--PCout = PCin se PCload=1, se não PCout = valor anterior + 1
+		
+		Mem: Memoria port map (Pcout, instrucao, clock); 
+			--Pega o valor de PC, transforma num int, e busca a instrucao num vetor pra mandar pro reg_int
+		
+		reg_int: Reg_Instrucao port map (instrucao, RegIntLoad, clock, OP, RS, RT, RD);
+			--Pega a instrucao da memoria e quebra ela em 4 sinais de 2 bits cada
+			--Obs.: Acho que RegIntLoad é sempre 1
+			
+		banco: banco_registradores port map (RegWrite, clock, reset, RS, RT, RD, WriteData, ReadData1, ReadData2);
+			--ReadReg1 = RS / ReadReg2 = RT / WriteReg = RD
+			--Usa os sinais do Reg_Int para saber os valores de quais registradores vão pra ULA ou são editados
+		
+		ULA1: ULA port map (A, B, AluOp, clock, result, zero);
+			--Recebe os valores do RegA e RegB e soma eles ou subtrai, de acordo com AluOp.
+			--Resultado sai pelo sinal result
 				
 		--Registradores
-		--regA: registrador port map ();
-		--regB: registrador port map ();
-		--AluOut: registrador port map ();
+		regA: registrador port map (ReadData1, reset, loadA, clock, A);
+		regB: registrador port map (ReadData2, reset, loadB, clock, B);
+			--Pega os valores de RS e RT.
+			--Obs: Talvez loadA e loadB sejam sempre 0.
+			
+		AluOut: registrador port map (result, reset, loadALUout, clock, WriteData);
+			--Pega o resultado da ULA, grava, e manda pro banco de registradores.
 		
-		--ULA
-		--UNIDADE DE CONTROLE
 	
 		PROCESS (Clock)
 		BEGIN
 			IF Clock'EVENT AND Clock = '1' THEN
-				int_PC <= to_integer(signed(PCout));
 				
-				instrucao <= "00000000";
-				
-								
-				IF instrucao = "00000000" THEN
-					RegWrite <= '1';
-					WriteReg <= "00";
-					ReadReg1 <= "00";
-					ReadReg2 <= "00";
-					
-			
-				ELSIF instrucao = "00100100" THEN
-					RegWrite <= '1';
-					WriteReg <= "00";
-					ReadReg1 <= "01";
-					ReadReg2 <= "00";
-					
-					
-				END IF;
 			END IF ;
 		END PROCESS ;
 		
