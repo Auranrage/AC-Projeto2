@@ -21,13 +21,14 @@ Pode ser problema na simulação de sinais do quartus, ou algo que não foi pens
 -- Quebra a instrucao em OP, RS, RT e RD. Sinal "load" precisa ser 1 pra receber uma nova instrucao.
 -- Entrada instrucao, load / Saida OP, RS, RT, RD
 
+-Unidade de controle Ok
+-- Entrada 2 bits de OP, ele traduz a instrução em 3 ou 4 ciclos, dependendo do tipo dela
+-- Possuí saída única, deve ser quebrada para traduzir os sinais
 
 Para fazer:
 1 - ULA ta em loop infinito criando full_adders pro ripple_carry. Isso nao acontece no "projeto_arquitetura.qpf", só no "Projeto2.qpf". 
 
 2 - Quando eu consertei o loop da ULA, na imagem ULA estranho, porque o valor do resultado nao muda novamente no terceiro ciclo?
-
-3 - Fazer a unidade de controle.
 
 4 - Esperando terminar todos o componentes pra instaciar eles na CPU.
 - Lembrar de instanciar Reg A, Reg B e ALUout como registradores normais.

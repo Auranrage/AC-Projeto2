@@ -16,11 +16,12 @@ Architecture Behavior OF UC IS
 SIGNAL state: integer;
 
 BEGIN
+	IF Reset = '0' THEN
+		state <= 0;
+	END IF;
+	
 	PROCESS (Clock)
 	BEGIN
-			IF Reset = '0' THEN
-				state <= 0;
-			END IF;
 		IF Clock'EVENT AND Clock = '1' THEN
 			CASE state IS
 				WHEN 0 => UCSign <= "010100";
