@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Projeto2
-Tue Nov 09 10:21:18 2021
+Tue Nov 09 15:37:15 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,8 +9,22 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |CPU
+  5. Parameter Settings for User Entity Instance: PC:PC_reg
+  6. Parameter Settings for User Entity Instance: banco_registradores:banco
+  7. Parameter Settings for User Entity Instance: banco_registradores:banco|registrador:R0
+  8. Parameter Settings for User Entity Instance: banco_registradores:banco|registrador:R1
+  9. Parameter Settings for User Entity Instance: banco_registradores:banco|registrador:R2
+ 10. Parameter Settings for User Entity Instance: banco_registradores:banco|registrador:R3
+ 11. Parameter Settings for User Entity Instance: ULA:ULA1|ripple_carry:SOMADOR1
+ 12. Parameter Settings for User Entity Instance: registrador:regA
+ 13. Parameter Settings for User Entity Instance: registrador:regB
+ 14. Parameter Settings for User Entity Instance: registrador:AluOut
+ 15. Analysis & Elaboration Settings
+ 16. Port Connectivity Checks: "registrador:AluOut"
+ 17. Port Connectivity Checks: "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:7:stage"
+ 18. Port Connectivity Checks: "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:0:stage"
+ 19. Analysis & Elaboration Messages
 
 
 
@@ -37,10 +51,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Tue Nov 09 10:21:18 2021       ;
+; Analysis & Elaboration Status      ; Successful - Tue Nov 09 15:37:15 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
-; Top-level Entity Name              ; Reg_Instrucao                               ;
+; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; N/A until Partition Merge                   ;
 ;     Total combinational functions  ; N/A until Partition Merge                   ;
@@ -70,12 +84,122 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |CPU ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 8     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PC:PC_reg ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; N              ; 8     ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: banco_registradores:banco ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; n              ; 8     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: banco_registradores:banco|registrador:R0 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: banco_registradores:banco|registrador:R1 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: banco_registradores:banco|registrador:R2 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: banco_registradores:banco|registrador:R3 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA1|ripple_carry:SOMADOR1 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 8     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:regA ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; N              ; 8     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:regB ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; N              ; 8     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:AluOut ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; N              ; 8     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                            ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; Reg_Instrucao      ; Projeto2           ;
+; Top-level entity name                                            ; CPU                ; Projeto2           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -155,13 +279,40 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------------+
+; Port Connectivity Checks: "registrador:AluOut" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; load ; Input ; Info     ; Stuck at VCC         ;
++------+-------+----------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:7:stage"                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:0:stage" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 09 10:21:11 2021
+    Info: Processing started: Tue Nov 09 15:37:09 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -181,7 +332,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file banco_r
     Info (12022): Found design unit 1: banco_registradores-Structure File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 23
     Info (12023): Found entity 1: banco_registradores File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd Line: 17
+    Info (12022): Found design unit 1: PC-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd Line: 18
     Info (12023): Found entity 1: PC File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
     Info (12022): Found design unit 1: ULA-ULA_arch File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 16
@@ -197,11 +348,55 @@ Info (12021): Found 2 design units, including 1 entities, in source file reg_ins
 Info (12021): Found 2 design units, including 1 entities, in source file unidadedecontrole.vhd
     Info (12022): Found design unit 1: UC-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd Line: 14
     Info (12023): Found entity 1: UC File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd Line: 5
-Info (12127): Elaborating entity "Reg_Instrucao" for the top level hierarchy
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
+Info (12127): Elaborating entity "CPU" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(84): used implicit default value for signal "RegIntLoad" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 84
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(100): used implicit default value for signal "loadA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 100
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(100): used implicit default value for signal "loadB" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 100
+Info (12128): Elaborating entity "PC" for hierarchy "PC:PC_reg" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 110
+Info (12128): Elaborating entity "Memoria" for hierarchy "Memoria:Mem" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 113
+Info (12128): Elaborating entity "Reg_Instrucao" for hierarchy "Reg_Instrucao:reg_int" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 116
+Info (12128): Elaborating entity "banco_registradores" for hierarchy "banco_registradores:banco" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 120
+Info (10041): Inferred latch for "D3[0]" at banco_registradores.vhd(45) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 45
+Info (10041): Inferred latch for "D3[1]" at banco_registradores.vhd(45) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 45
+Info (10041): Inferred latch for "D3[2]" at banco_registradores.vhd(45) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 45
+Info (10041): Inferred latch for "D3[3]" at banco_registradores.vhd(45) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 45
+Info (10041): Inferred latch for "D3[4]" at banco_registradores.vhd(45) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 45
+Info (10041): Inferred latch for "D3[5]" at banco_registradores.vhd(45) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 45
+Info (10041): Inferred latch for "D3[6]" at banco_registradores.vhd(45) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 45
+Info (10041): Inferred latch for "D3[7]" at banco_registradores.vhd(45) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 45
+Info (10041): Inferred latch for "D2[0]" at banco_registradores.vhd(44) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 44
+Info (10041): Inferred latch for "D2[1]" at banco_registradores.vhd(44) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 44
+Info (10041): Inferred latch for "D2[2]" at banco_registradores.vhd(44) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 44
+Info (10041): Inferred latch for "D2[3]" at banco_registradores.vhd(44) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 44
+Info (10041): Inferred latch for "D2[4]" at banco_registradores.vhd(44) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 44
+Info (10041): Inferred latch for "D2[5]" at banco_registradores.vhd(44) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 44
+Info (10041): Inferred latch for "D2[6]" at banco_registradores.vhd(44) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 44
+Info (10041): Inferred latch for "D2[7]" at banco_registradores.vhd(44) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 44
+Info (10041): Inferred latch for "D1[0]" at banco_registradores.vhd(43) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 43
+Info (10041): Inferred latch for "D1[1]" at banco_registradores.vhd(43) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 43
+Info (10041): Inferred latch for "D1[2]" at banco_registradores.vhd(43) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 43
+Info (10041): Inferred latch for "D1[3]" at banco_registradores.vhd(43) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 43
+Info (10041): Inferred latch for "D1[4]" at banco_registradores.vhd(43) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 43
+Info (10041): Inferred latch for "D1[5]" at banco_registradores.vhd(43) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 43
+Info (10041): Inferred latch for "D1[6]" at banco_registradores.vhd(43) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 43
+Info (10041): Inferred latch for "D1[7]" at banco_registradores.vhd(43) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 43
+Info (10041): Inferred latch for "D0[0]" at banco_registradores.vhd(42) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 42
+Info (10041): Inferred latch for "D0[1]" at banco_registradores.vhd(42) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 42
+Info (10041): Inferred latch for "D0[2]" at banco_registradores.vhd(42) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 42
+Info (10041): Inferred latch for "D0[3]" at banco_registradores.vhd(42) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 42
+Info (10041): Inferred latch for "D0[4]" at banco_registradores.vhd(42) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 42
+Info (10041): Inferred latch for "D0[5]" at banco_registradores.vhd(42) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 42
+Info (10041): Inferred latch for "D0[6]" at banco_registradores.vhd(42) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 42
+Info (10041): Inferred latch for "D0[7]" at banco_registradores.vhd(42) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 42
+Info (12128): Elaborating entity "registrador" for hierarchy "banco_registradores:banco|registrador:R0" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 37
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA1" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 124
+Info (12128): Elaborating entity "ripple_carry" for hierarchy "ULA:ULA1|ripple_carry:SOMADOR1" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 41
+Info (12128): Elaborating entity "full_adder" for hierarchy "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:0:stage" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd Line: 28
+Info (12128): Elaborating entity "UC" for hierarchy "UC:Control" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 137
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4766 megabytes
-    Info: Processing ended: Tue Nov 09 10:21:18 2021
-    Info: Elapsed time: 00:00:07
+    Info: Processing ended: Tue Nov 09 15:37:15 2021
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:16
 
 
