@@ -10,6 +10,7 @@ ENTITY PC IS
 	GENERIC ( N : INTEGER := 8 ) ;
 	PORT ( 	PCin 						: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
 				reset, PCload, Clock	: IN STD_LOGIC ;
+				PCSource: IN STD_LOGIC;
 				PCout						: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
 			) ;
 END PC ;
@@ -26,13 +27,12 @@ BEGIN
 			IF reset = '1' THEN
 				PCout <= ( OTHERS => '0' );
 				
-			ELSIF PCload = '1' THEN
-				PCout <= PCin;
-			
-			ELSE
+			ELSIF PCload = '1' AND PCSource = '1' THEN
+				intermediario <= PCin
+				PCout <= intermediario;
+			ELSIF PCload = '1' AND PCSource = '0'
 				intermediario <= intermediario + "00000001";
 				PCout <= intermediario;
-
 			END IF;
 		END IF ;
 	END PROCESS ;

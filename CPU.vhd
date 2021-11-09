@@ -39,7 +39,8 @@ ARCHITECTURE Structure OF CPU IS
 		PORT ( 
 			instrucao 				: IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
 			load, clock				: IN STD_LOGIC ;
-			OP, RS, RT, RD 		: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+			OP, RS, RT, RD 		: OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+			ENDtoPC					: OUT STD_LOGIC_VECTOR(7 downto 0)
 		) ;
 	END COMPONENT;
 	
@@ -67,7 +68,7 @@ ARCHITECTURE Structure OF CPU IS
 			OPin						: IN std_logic_vector(1 downto 0);
 			Reset						: IN std_logic;
 			Clock						: IN std_logic;
-			UCSign					: OUT std_logic_vector(3 downto 0)
+			UCSign					: OUT std_logic_vector(4 downto 0)
 		);
 	END COMPONENT;
 
@@ -82,6 +83,7 @@ ARCHITECTURE Structure OF CPU IS
 	SIGNAL RegIntLoad								: STD_LOGIC ;
 	SIGNAL instrucao 								: STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
 	SIGNAL OP, RS, RT, RD 						: STD_LOGIC_VECTOR(1 DOWNTO 0) ;
+	SIGNAL ENDtoPC									: STD_LOGIC_VECTOR(n-1 downto 0);
 	
 	
 	--Sinais de Banco de Registradores
@@ -99,17 +101,18 @@ ARCHITECTURE Structure OF CPU IS
 	-- UC
 	SIGNAL UCout									: STD_LOGIC_VECTOR(3 downto 0);
 	SIGNAL PCWriteCond							: STD_LOGIC;
+	SIGNAL PCSource								: STD_LOGIC;
 	
 	
 	BEGIN
 		--Instanciação dos componentes
-		PC_reg: PC port map (PCin, reset, PCWrite, clock, PCout); 
+		PC_reg: PC port map (ENDtoPC, reset, PCWrite, clock, PCout); 
 			--PCout = PCin se PCload=1, se não PCout = valor anterior + 1
 		
 		Mem: Memoria port map (Pcout, instrucao, clock); 
 			--Pega o valor de PC, transforma num int, e busca a instrucao num vetor pra mandar pro reg_int
 		
-		reg_int: Reg_Instrucao port map (instrucao, RegIntLoad, clock, OP, RS, RT, RD);
+		reg_int: Reg_Instrucao port map (instrucao, RegIntLoad, clock, OP, RS, RT, RD,ENDtoPC);
 			--Pega a instrucao da memoria e quebra ela em 4 sinais de 2 bits cada
 			--Obs.: Acho que RegIntLoad é sempre 1
 			
@@ -133,8 +136,9 @@ ARCHITECTURE Structure OF CPU IS
 		Control: UC port map(OP,reset,clock,UCOut);
 			-- Recebe o OP code e traduz em sinais de controle.
 			
-		PCWriteCond <= UCout(3);
-		PCWrite <= UCout(2);
+		PCWriteCond <= UCout(4);
+		PCWrite <= UCout(3) OR (PCWriteCond AND Zero);
+		PCSource <= UCount(2)
 		Aluop <= UCout(1);
 		RegWrite <= UCout(0);
 		

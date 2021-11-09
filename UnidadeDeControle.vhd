@@ -7,7 +7,7 @@ ENTITY UC IS
 		OPin: IN std_logic_vector(1 downto 0);
 		Reset: IN std_logic;
 		Clock: IN std_logic;
-		UCSign: OUT std_logic_vector(3 downto 0)
+		UCSign: OUT std_logic_vector(4 downto 0)
 		);
 END ENTITY;
 
@@ -25,25 +25,25 @@ BEGIN
 			END IF;
 	
 			CASE state IS
-				WHEN 0 => UCSign <= "0100";
+				WHEN 0 => UCSign <= "01000";
 							state <= 1;
-				WHEN 1 => UCSign <= "0000";
+				WHEN 1 => UCSign <= "00000";
 							state <= 2;
 				WHEN 2 =>
 					IF OPin = "00" THEN
-						UCSign <= "0000";
+						UCSign <= "00000";
 						state <= 3;
 						ELSIF OPin = "01" THEN
-							UCSign <= "0010";
+							UCSign <= "00010";
 							state <= 3;
 						ELSIF OPin = "10" THEN
-							UCSign <= "1010";
+							UCSign <= "10010";
 							state <= 0;
 						ELSE 
-							UCSign <= "0100";
+							UCSign <= "01100";
 						state <= 0;
 					END IF;
-				WHEN 3 => UCSign <= "0001";
+				WHEN 3 => UCSign <= "00001";
 						state <= 0;
 				WHEN OTHERS => state <= 0;
 			END CASE;

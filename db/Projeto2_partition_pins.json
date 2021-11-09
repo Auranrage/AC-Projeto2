@@ -2,36 +2,7 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : [
-				{
-					"name" : "UCSign[0]",
-					"strict" : false
-				},
-				{
-					"name" : "UCSign[1]",
-					"strict" : false
-				},
-				{
-					"name" : "UCSign[2]",
-					"strict" : false
-				},
-				{
-					"name" : "UCSign[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Clock",
-					"strict" : false
-				},
-				{
-					"name" : "OPin[0]",
-					"strict" : false
-				},
-				{
-					"name" : "OPin[1]",
-					"strict" : false
-				}
-			]
+			"pins" : []
 		}
 	]
 }
