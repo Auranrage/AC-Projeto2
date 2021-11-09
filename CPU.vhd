@@ -67,7 +67,7 @@ ARCHITECTURE Structure OF CPU IS
 			OPin						: IN std_logic_vector(1 downto 0);
 			Reset						: IN std_logic;
 			Clock						: IN std_logic;
-			UCSign					: OUT std_logic_vector(5 downto 0)
+			UCSign					: OUT std_logic_vector(3 downto 0)
 		);
 	END COMPONENT;
 
@@ -80,7 +80,7 @@ ARCHITECTURE Structure OF CPU IS
 
 	--Sinais do Registrador de Instrução
 	SIGNAL RegIntLoad								: STD_LOGIC ;
-	SIGNAL instrucao 								: STD_LOGIC_VECTOR(7 DOWNTO 0) ;
+	SIGNAL instrucao 								: STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
 	SIGNAL OP, RS, RT, RD 						: STD_LOGIC_VECTOR(1 DOWNTO 0) ;
 	
 	
@@ -91,11 +91,14 @@ ARCHITECTURE Structure OF CPU IS
 	--Sinais da ULA
 	SIGNAL AluOp 									: STD_LOGIC ;
 	SIGNAL Zero 									: STD_LOGIC ;
-	SIGNAL A, B, result							: STD_LOGIC_VECTOR (7 downto 0);
+	SIGNAL A, B, result							: STD_LOGIC_VECTOR (n-1 downto 0);
 	
 	--Registradores
 	SIGNAL loadA, loadB, loadALUout			: STD_LOGIC;
 	
+	-- UC
+	SIGNAL UCout									: STD_LOGIC_VECTOR(3 downto 0);
+	SIGNAL PCWriteCond							: STD_LOGIC;
 	
 	
 	BEGIN
@@ -126,14 +129,14 @@ ARCHITECTURE Structure OF CPU IS
 			
 		AluOut: registrador port map (result, reset, loadALUout, clock, WriteData);
 			--Pega o resultado da ULA, grava, e manda pro banco de registradores.
-		
-	
-		PROCESS (Clock)
-		BEGIN
-			IF Clock'EVENT AND Clock = '1' THEN
-				
-			END IF ;
-		END PROCESS ;
+			
+		Control: UC port map(OP,reset,clock,UCOut);
+			-- Recebe o OP code e traduz em sinais de controle.
+			
+		PCWriteCond <= UCout(3);
+		PCWrite <= UCout(2);
+		Aluop <= UCout(1);
+		RegWrite <= UCout(0);
 		
 	
 END Structure ;

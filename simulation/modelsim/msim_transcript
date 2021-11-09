@@ -10,9 +10,113 @@
 # Copying D:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:41:59 on Nov 09,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CPU
+# -- Compiling architecture Structure of CPU
+# End time: 09:41:59 on Nov 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:41:59 on Nov 09,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ripple_carry
+# -- Compiling architecture Structure of ripple_carry
+# End time: 09:41:59 on Nov 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:42:00 on Nov 09,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity registrador
+# -- Compiling architecture Behavior of registrador
+# End time: 09:42:00 on Nov 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:42:00 on Nov 09,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture LogicFunc of full_adder
+# End time: 09:42:00 on Nov 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:42:00 on Nov 09,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity banco_registradores
+# -- Compiling architecture Structure of banco_registradores
+# End time: 09:42:00 on Nov 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:42:00 on Nov 09,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity PC
+# -- Compiling architecture Behavior of PC
+# End time: 09:42:00 on Nov 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:42:00 on Nov 09,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ULA
+# -- Compiling architecture ULA_arch of ULA
+# End time: 09:42:00 on Nov 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:42:00 on Nov 09,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Memoria
+# -- Compiling architecture Behavior of Memoria
+# End time: 09:42:01 on Nov 09,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:42:01 on Nov 09,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg_Instrucao
+# -- Compiling architecture Behavior of Reg_Instrucao
+# End time: 09:42:01 on Nov 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:23:24 on Nov 08,2021
+# Start time: 09:42:01 on Nov 09,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,24 +124,6 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity UC
 # -- Compiling architecture Behavior of UC
-# End time: 10:23:24 on Nov 08,2021, Elapsed time: 0:00:00
+# End time: 09:42:01 on Nov 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.uc
-# vsim work.uc 
-# Start time: 10:23:29 on Nov 08,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.uc(behavior)
-wave create -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 4000ps sim:/uc/OPin
-# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 4000ps sim:/uc/Reset
-wave modify -driver freeze -pattern constant -value 1 -starttime 1000ps -endtime 4000ps Edit:/uc/Reset
-wave create -driver freeze -pattern clock -initialvalue 0 -period 1000ps -dutycycle 50 -starttime 0ps -endtime 4000ps sim:/uc/Clock
-add wave -position end  sim:/uc/UCSign
-run
-run
-run
-run
