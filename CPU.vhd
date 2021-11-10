@@ -48,6 +48,7 @@ ARCHITECTURE Structure OF CPU IS
 		PORT (
 			PCin 						: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
 			reset, PCload, Clock	: IN STD_LOGIC ;
+			PCSource					: IN STD_LOGIC;
 			PCout						: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
 		) ;
 	END COMPONENT;
@@ -99,20 +100,20 @@ ARCHITECTURE Structure OF CPU IS
 	SIGNAL loadA, loadB, loadALUout			: STD_LOGIC;
 	
 	-- UC
-	SIGNAL UCout									: STD_LOGIC_VECTOR(3 downto 0);
+	SIGNAL UCout									: STD_LOGIC_VECTOR(4 downto 0);
 	SIGNAL PCWriteCond							: STD_LOGIC;
 	SIGNAL PCSource								: STD_LOGIC;
 	
 	
 	BEGIN
 		--Instanciação dos componentes
-		PC_reg: PC port map (ENDtoPC, reset, PCWrite, clock, PCout); 
+		PC_reg: PC port map (ENDtoPC, reset, PCWrite, clock, PCSource, PCout); 
 			--PCout = PCin se PCload=1, se não PCout = valor anterior + 1
 		
 		Mem: Memoria port map (Pcout, instrucao, clock); 
 			--Pega o valor de PC, transforma num int, e busca a instrucao num vetor pra mandar pro reg_int
 		
-		reg_int: Reg_Instrucao port map (instrucao, RegIntLoad, clock, OP, RS, RT, RD,ENDtoPC);
+		reg_int: Reg_Instrucao port map (instrucao, '1', clock, OP, RS, RT, RD,ENDtoPC);
 			--Pega a instrucao da memoria e quebra ela em 4 sinais de 2 bits cada
 			--Obs.: Acho que RegIntLoad é sempre 1
 			

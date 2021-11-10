@@ -10,7 +10,7 @@ ENTITY PC IS
 	GENERIC ( N : INTEGER := 8 ) ;
 	PORT ( 	PCin 						: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
 				reset, PCload, Clock	: IN STD_LOGIC ;
-				PCSource: IN STD_LOGIC;
+				PCSource					: IN STD_LOGIC;
 				PCout						: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
 			) ;
 END PC ;
