@@ -1,6 +1,10 @@
 Flow report for Projeto2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Tue Nov 09 15:37:15 2021
+=======
+Wed Nov 10 18:58:22 2021
+>>>>>>> Stashed changes
 =======
 Wed Nov 10 18:58:22 2021
 >>>>>>> Stashed changes
@@ -46,7 +50,11 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Flow Status                        ; Successful - Tue Nov 09 15:37:15 2021       ;
+=======
+; Flow Status                        ; Successful - Wed Nov 10 18:58:22 2021       ;
+>>>>>>> Stashed changes
 =======
 ; Flow Status                        ; Successful - Wed Nov 10 18:58:22 2021       ;
 >>>>>>> Stashed changes
@@ -72,7 +80,11 @@ https://fpgasoftware.intel.com/eula.
 ; Option            ; Setting             ;
 +-------------------+---------------------+
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Start date & time ; 11/09/2021 15:37:09 ;
+=======
+; Start date & time ; 11/10/2021 18:58:16 ;
+>>>>>>> Stashed changes
 =======
 ; Start date & time ; 11/10/2021 18:58:16 ;
 >>>>>>> Stashed changes
@@ -87,7 +99,11 @@ https://fpgasoftware.intel.com/eula.
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; COMPILER_SIGNATURE_ID               ; 185122840017633.163648302907232        ; --            ; --          ; --             ;
+=======
+; COMPILER_SIGNATURE_ID               ; 185122840017633.163658149617272        ; --            ; --          ; --             ;
+>>>>>>> Stashed changes
 =======
 ; COMPILER_SIGNATURE_ID               ; 185122840017633.163658149617272        ; --            ; --          ; --             ;
 >>>>>>> Stashed changes
@@ -110,8 +126,13 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4766 MB             ; 00:00:16                           ;
 ; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:16                           ;
+=======
+; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4767 MB             ; 00:00:15                           ;
+; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:15                           ;
+>>>>>>> Stashed changes
 =======
 ; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4767 MB             ; 00:00:15                           ;
 ; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:15                           ;
