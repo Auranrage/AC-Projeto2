@@ -1,7 +1,11 @@
 Analysis & Elaboration report for Projeto2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Tue Nov 09 15:37:15 2021
+=======
+Wed Nov 10 18:58:22 2021
+>>>>>>> Stashed changes
 =======
 Wed Nov 10 18:58:22 2021
 >>>>>>> Stashed changes
@@ -31,11 +35,14 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  15. Analysis & Elaboration Settings
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
  16. Port Connectivity Checks: "registrador:AluOut"
  17. Port Connectivity Checks: "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:7:stage"
  18. Port Connectivity Checks: "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:0:stage"
  19. Analysis & Elaboration Messages
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
  16. Port Connectivity Checks: "registrador:regB"
@@ -74,7 +81,11 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------------------------------+
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Analysis & Elaboration Status      ; Successful - Tue Nov 09 15:37:15 2021       ;
+=======
+; Analysis & Elaboration Status      ; Successful - Wed Nov 10 18:58:22 2021       ;
+>>>>>>> Stashed changes
 =======
 ; Analysis & Elaboration Status      ; Successful - Wed Nov 10 18:58:22 2021       ;
 >>>>>>> Stashed changes
@@ -225,6 +236,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 +-----------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: registrador:AluOut ;
 +----------------+-------+----------------------------------------+
@@ -235,6 +247,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -324,6 +338,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------------------------------------------------+--------------------+--------------------+
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 
 +------------------------------------------------+
@@ -336,6 +351,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 =======
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
 
 
 +----------------------------------------------+
@@ -377,7 +394,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 +------------------------------------------------+
@@ -407,7 +427,11 @@ Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     Info: Processing started: Tue Nov 09 15:37:09 2021
+=======
+    Info: Processing started: Wed Nov 10 18:58:16 2021
+>>>>>>> Stashed changes
 =======
     Info: Processing started: Wed Nov 10 18:58:16 2021
 >>>>>>> Stashed changes
@@ -438,6 +462,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     Info (12022): Found design unit 1: ULA-ULA_arch File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 16
     Info (12023): Found entity 1: ULA File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 5
 Warning (12019): Can't analyze file -- file INCREMENT.vhd is missing
@@ -447,11 +472,16 @@ Info (12021): Found 2 design units, including 1 entities, in source file memoria
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     Info (12022): Found design unit 1: ULA-ULA_arch File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 15
     Info (12023): Found entity 1: ULA File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoria.vhd
     Info (12022): Found design unit 1: Memoria-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd Line: 17
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -463,6 +493,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file unidade
     Info (12022): Found design unit 1: UC-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd Line: 14
     Info (12023): Found entity 1: UC File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd Line: 5
 Info (12127): Elaborating entity "CPU" for the top level hierarchy
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Warning (10541): VHDL Signal Declaration warning at CPU.vhd(84): used implicit default value for signal "RegIntLoad" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 84
@@ -517,6 +548,8 @@ Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 Info (12128): Elaborating entity "PC" for hierarchy "PC:PC_reg" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 108
 Info (12128): Elaborating entity "Memoria" for hierarchy "Memoria:Mem" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 111
 Info (12128): Elaborating entity "Reg_Instrucao" for hierarchy "Reg_Instrucao:reg_int" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 114
@@ -532,6 +565,9 @@ Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:15
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

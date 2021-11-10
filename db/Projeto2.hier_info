@@ -73,11 +73,18 @@ PCout[7] <= PCout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PC_endereco[0] => Mux0.IN5
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 PC_endereco[0] => instrucao_out[2]~reg0.DATAIN
 PC_endereco[0] => instrucao_out[5]~reg0.DATAIN
 PC_endereco[1] => Mux0.IN4
 PC_endereco[1] => instrucao_out[4]~reg0.DATAIN
 PC_endereco[1] => instrucao_out[1]~reg0.DATAIN
+=======
+PC_endereco[0] => instrucao_out[5].DATAIN
+PC_endereco[0] => instrucao_out[0].DATAIN
+PC_endereco[1] => Mux0.IN4
+PC_endereco[1] => instrucao_out[1].DATAIN
+>>>>>>> Stashed changes
 =======
 PC_endereco[0] => instrucao_out[5].DATAIN
 PC_endereco[0] => instrucao_out[0].DATAIN

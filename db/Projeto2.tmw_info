@@ -1,10 +1,1 @@
-start_analysis_elaboration:s:00:00:08
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-start_eda_rtl_simulation:s:00:03:03
-=======
-start_eda_rtl_simulation:s:00:10:41
->>>>>>> Stashed changes
-=======
-start_eda_rtl_simulation:s:00:10:41
->>>>>>> Stashed changes
+start_eda_rtl_simulation:s
