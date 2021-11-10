@@ -125,12 +125,12 @@ ARCHITECTURE Structure OF CPU IS
 			--Resultado sai pelo sinal result
 				
 		--Registradores
-		regA: registrador port map (ReadData1, reset, loadA, clock, A);
-		regB: registrador port map (ReadData2, reset, loadB, clock, B);
+		regA: registrador port map (ReadData1, reset, '1', clock, A);
+		regB: registrador port map (ReadData2, reset, '1', clock, B);
 			--Pega os valores de RS e RT.
 			--Obs: Talvez loadA e loadB sejam sempre 0.
 			
-		AluOut: registrador port map (result, reset, loadALUout, clock, WriteData);
+		AluOut: registrador port map (result, reset, '1', clock, WriteData);
 			--Pega o resultado da ULA, grava, e manda pro banco de registradores.
 			
 		Control: UC port map(OP,reset,clock,UCOut);
@@ -138,7 +138,7 @@ ARCHITECTURE Structure OF CPU IS
 			
 		PCWriteCond <= UCout(4);
 		PCWrite <= UCout(3) OR (PCWriteCond AND Zero);
-		PCSource <= UCount(2)
+		PCSource <= UCout(2);
 		Aluop <= UCout(1);
 		RegWrite <= UCout(0);
 		

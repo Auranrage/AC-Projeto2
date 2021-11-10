@@ -28,9 +28,9 @@ BEGIN
 				PCout <= ( OTHERS => '0' );
 				
 			ELSIF PCload = '1' AND PCSource = '1' THEN
-				intermediario <= PCin
+				intermediario <= PCin;
 				PCout <= intermediario;
-			ELSIF PCload = '1' AND PCSource = '0'
+			ELSIF PCload = '1' AND PCSource = '0' THEN
 				intermediario <= intermediario + "00000001";
 				PCout <= intermediario;
 			END IF;
