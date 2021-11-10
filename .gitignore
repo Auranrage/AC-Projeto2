@@ -157,3 +157,19 @@ incremental_db/compiled_partitions/Projeto2.root_partition.map.hdb
 incremental_db/compiled_partitions/Projeto2.root_partition.map.kpt
 incremental_db/compiled_partitions/Projeto2.rrp.hdb
 
+db/prev_cmp_Projeto2.qmsg
+db/prev_cmp_Projeto2.qmsg
+db/Projeto2.(0).cnf.cdb
+db/Projeto2.(0).cnf.hdb
+db/Projeto2.(2).cnf.cdb
+db/Projeto2.(2).cnf.hdb
+db/Projeto2.(3).cnf.cdb
+db/Projeto2.(3).cnf.hdb
+db/Projeto2.(4).cnf.cdb
+db/Projeto2.(4).cnf.hdb
+*.hdb
+*.cdb
+*.hdb
+*.rdb
+*.html
+*.qdb
