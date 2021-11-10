@@ -1,18 +1,16 @@
 |CPU
 clock => PC:PC_reg.Clock
-clock => Memoria:Mem.clock
 clock => Reg_Instrucao:reg_int.clock
 clock => banco_registradores:banco.clock
-clock => ULA:ULA1.clk
+clock => registrador:Aluout.clock
 clock => registrador:regA.clock
 clock => registrador:regB.clock
-clock => registrador:AluOut.clock
 clock => UC:Control.Clock
 reset => PC:PC_reg.reset
 reset => banco_registradores:banco.reset
+reset => registrador:Aluout.reset
 reset => registrador:regA.reset
 reset => registrador:regB.reset
-reset => registrador:AluOut.reset
 reset => UC:Control.Reset
 
 
@@ -73,33 +71,32 @@ PCout[7] <= PCout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 |CPU|Memoria:Mem
 PC_endereco[0] => Mux0.IN5
+<<<<<<< Updated upstream
 PC_endereco[0] => instrucao_out[2]~reg0.DATAIN
 PC_endereco[0] => instrucao_out[5]~reg0.DATAIN
 PC_endereco[1] => Mux0.IN4
 PC_endereco[1] => instrucao_out[4]~reg0.DATAIN
 PC_endereco[1] => instrucao_out[1]~reg0.DATAIN
+=======
+PC_endereco[0] => instrucao_out[5].DATAIN
+PC_endereco[0] => instrucao_out[0].DATAIN
+PC_endereco[1] => Mux0.IN4
+PC_endereco[1] => instrucao_out[1].DATAIN
+>>>>>>> Stashed changes
 PC_endereco[2] => ~NO_FANOUT~
 PC_endereco[3] => ~NO_FANOUT~
 PC_endereco[4] => ~NO_FANOUT~
 PC_endereco[5] => ~NO_FANOUT~
 PC_endereco[6] => ~NO_FANOUT~
 PC_endereco[7] => ~NO_FANOUT~
-instrucao_out[0] <= instrucao_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-instrucao_out[1] <= instrucao_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-instrucao_out[2] <= instrucao_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-instrucao_out[3] <= instrucao_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-instrucao_out[4] <= instrucao_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-instrucao_out[5] <= instrucao_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-instrucao_out[6] <= instrucao_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-instrucao_out[7] <= instrucao_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Clock => instrucao_out[0]~reg0.CLK
-Clock => instrucao_out[1]~reg0.CLK
-Clock => instrucao_out[2]~reg0.CLK
-Clock => instrucao_out[3]~reg0.CLK
-Clock => instrucao_out[4]~reg0.CLK
-Clock => instrucao_out[5]~reg0.CLK
-Clock => instrucao_out[6]~reg0.CLK
-Clock => instrucao_out[7]~reg0.CLK
+instrucao_out[0] <= PC_endereco[0].DB_MAX_OUTPUT_PORT_TYPE
+instrucao_out[1] <= PC_endereco[1].DB_MAX_OUTPUT_PORT_TYPE
+instrucao_out[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao_out[3] <= <GND>
+instrucao_out[4] <= <GND>
+instrucao_out[5] <= PC_endereco[0].DB_MAX_OUTPUT_PORT_TYPE
+instrucao_out[6] <= <GND>
+instrucao_out[7] <= <GND>
 
 
 |CPU|Reg_Instrucao:reg_int
@@ -432,6 +429,49 @@ Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|CPU|registrador:Aluout
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+D[6] => Q.DATAB
+D[7] => Q.DATAB
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Clock => Q[4]~reg0.CLK
+Clock => Q[5]~reg0.CLK
+Clock => Q[6]~reg0.CLK
+Clock => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |CPU|ULA:ULA1
 A[0] => ripple_carry:SOMADOR1.Rj[0]
 A[1] => ripple_carry:SOMADOR1.Rj[1]
@@ -441,22 +481,30 @@ A[4] => ripple_carry:SOMADOR1.Rj[4]
 A[5] => ripple_carry:SOMADOR1.Rj[5]
 A[6] => ripple_carry:SOMADOR1.Rj[6]
 A[7] => ripple_carry:SOMADOR1.Rj[7]
-B[0] => Bsig.DATAA
+B[0] => Bsig.DATAB
 B[0] => Add0.IN16
-B[1] => Bsig.DATAA
+B[1] => Bsig.DATAB
 B[1] => Add0.IN15
-B[2] => Bsig.DATAA
+B[2] => Bsig.DATAB
 B[2] => Add0.IN14
-B[3] => Bsig.DATAA
+B[3] => Bsig.DATAB
 B[3] => Add0.IN13
-B[4] => Bsig.DATAA
+B[4] => Bsig.DATAB
 B[4] => Add0.IN12
-B[5] => Bsig.DATAA
+B[5] => Bsig.DATAB
 B[5] => Add0.IN11
-B[6] => Bsig.DATAA
+B[6] => Bsig.DATAB
 B[6] => Add0.IN10
-B[7] => Bsig.DATAA
+B[7] => Bsig.DATAB
 B[7] => Add0.IN9
+ALUop => Bsig[7].OUTPUTSELECT
+ALUop => Bsig[6].OUTPUTSELECT
+ALUop => Bsig[5].OUTPUTSELECT
+ALUop => Bsig[4].OUTPUTSELECT
+ALUop => Bsig[3].OUTPUTSELECT
+ALUop => Bsig[2].OUTPUTSELECT
+ALUop => Bsig[1].OUTPUTSELECT
+ALUop => Bsig[0].OUTPUTSELECT
 ALUop => Bsig.OUTPUTSELECT
 ALUop => Bsig.OUTPUTSELECT
 ALUop => Bsig.OUTPUTSELECT
@@ -465,14 +513,6 @@ ALUop => Bsig.OUTPUTSELECT
 ALUop => Bsig.OUTPUTSELECT
 ALUop => Bsig.OUTPUTSELECT
 ALUop => Bsig.OUTPUTSELECT
-clk => Bsig[0].CLK
-clk => Bsig[1].CLK
-clk => Bsig[2].CLK
-clk => Bsig[3].CLK
-clk => Bsig[4].CLK
-clk => Bsig[5].CLK
-clk => Bsig[6].CLK
-clk => Bsig[7].CLK
 Result[0] <= ripple_carry:SOMADOR1.Ri[0]
 Result[1] <= ripple_carry:SOMADOR1.Ri[1]
 Result[2] <= ripple_carry:SOMADOR1.Ri[2]
@@ -667,49 +707,6 @@ Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|registrador:regB
-D[0] => Q.DATAB
-D[1] => Q.DATAB
-D[2] => Q.DATAB
-D[3] => Q.DATAB
-D[4] => Q.DATAB
-D[5] => Q.DATAB
-D[6] => Q.DATAB
-D[7] => Q.DATAB
-reset => Q.OUTPUTSELECT
-reset => Q.OUTPUTSELECT
-reset => Q.OUTPUTSELECT
-reset => Q.OUTPUTSELECT
-reset => Q.OUTPUTSELECT
-reset => Q.OUTPUTSELECT
-reset => Q.OUTPUTSELECT
-reset => Q.OUTPUTSELECT
-load => Q.OUTPUTSELECT
-load => Q.OUTPUTSELECT
-load => Q.OUTPUTSELECT
-load => Q.OUTPUTSELECT
-load => Q.OUTPUTSELECT
-load => Q.OUTPUTSELECT
-load => Q.OUTPUTSELECT
-load => Q.OUTPUTSELECT
-Clock => Q[0]~reg0.CLK
-Clock => Q[1]~reg0.CLK
-Clock => Q[2]~reg0.CLK
-Clock => Q[3]~reg0.CLK
-Clock => Q[4]~reg0.CLK
-Clock => Q[5]~reg0.CLK
-Clock => Q[6]~reg0.CLK
-Clock => Q[7]~reg0.CLK
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|CPU|registrador:AluOut
 D[0] => Q.DATAB
 D[1] => Q.DATAB
 D[2] => Q.DATAB

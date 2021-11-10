@@ -12,7 +12,11 @@
 # 
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+<<<<<<< Updated upstream
 # Start time: 15:47:28 on Nov 09,2021
+=======
+# Start time: 18:59:50 on Nov 10,2021
+>>>>>>> Stashed changes
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,55 +24,95 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity CPU
 # -- Compiling architecture Structure of CPU
+<<<<<<< Updated upstream
 # End time: 15:47:28 on Nov 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 15:47:28 on Nov 09,2021
+=======
+# End time: 18:59:50 on Nov 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:50 on Nov 10,2021
+>>>>>>> Stashed changes
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ripple_carry
 # -- Compiling architecture Structure of ripple_carry
+<<<<<<< Updated upstream
 # End time: 15:47:28 on Nov 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 15:47:28 on Nov 09,2021
+=======
+# End time: 18:59:50 on Nov 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:50 on Nov 10,2021
+>>>>>>> Stashed changes
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity registrador
 # -- Compiling architecture Behavior of registrador
+<<<<<<< Updated upstream
 # End time: 15:47:28 on Nov 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 15:47:28 on Nov 09,2021
+=======
+# End time: 18:59:50 on Nov 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:50 on Nov 10,2021
+>>>>>>> Stashed changes
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity full_adder
 # -- Compiling architecture LogicFunc of full_adder
+<<<<<<< Updated upstream
 # End time: 15:47:28 on Nov 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 15:47:28 on Nov 09,2021
+=======
+# End time: 18:59:50 on Nov 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:50 on Nov 10,2021
+>>>>>>> Stashed changes
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity banco_registradores
 # -- Compiling architecture Structure of banco_registradores
+<<<<<<< Updated upstream
 # End time: 15:47:29 on Nov 09,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 15:47:29 on Nov 09,2021
+=======
+# End time: 18:59:50 on Nov 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:50 on Nov 10,2021
+>>>>>>> Stashed changes
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -77,11 +121,19 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity PC
 # -- Compiling architecture Behavior of PC
+<<<<<<< Updated upstream
 # End time: 15:47:29 on Nov 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 15:47:29 on Nov 09,2021
+=======
+# End time: 18:59:50 on Nov 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:50 on Nov 10,2021
+>>>>>>> Stashed changes
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,11 +141,19 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ULA
 # -- Compiling architecture ULA_arch of ULA
+<<<<<<< Updated upstream
 # End time: 15:47:29 on Nov 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 15:47:29 on Nov 09,2021
+=======
+# End time: 18:59:50 on Nov 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:50 on Nov 10,2021
+>>>>>>> Stashed changes
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -101,11 +161,19 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Memoria
 # -- Compiling architecture Behavior of Memoria
+<<<<<<< Updated upstream
 # End time: 15:47:29 on Nov 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 15:47:29 on Nov 09,2021
+=======
+# End time: 18:59:50 on Nov 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:50 on Nov 10,2021
+>>>>>>> Stashed changes
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +181,19 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Reg_Instrucao
 # -- Compiling architecture Behavior of Reg_Instrucao
+<<<<<<< Updated upstream
 # End time: 15:47:29 on Nov 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 15:47:29 on Nov 09,2021
+=======
+# End time: 18:59:51 on Nov 10,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:59:51 on Nov 10,2021
+>>>>>>> Stashed changes
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,7 +201,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity UC
 # -- Compiling architecture Behavior of UC
+<<<<<<< Updated upstream
 # End time: 15:47:29 on Nov 09,2021, Elapsed time: 0:00:00
+=======
+# End time: 18:59:51 on Nov 10,2021, Elapsed time: 0:00:00
+>>>>>>> Stashed changes
 # Errors: 0, Warnings: 0
 # 
 vsim work.full_adder
@@ -139,7 +219,11 @@ vsim work.cpu
 # End time: 15:47:37 on Nov 09,2021, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0
 # vsim work.cpu 
+<<<<<<< Updated upstream
 # Start time: 15:47:37 on Nov 09,2021
+=======
+# Start time: 19:01:41 on Nov 10,2021
+>>>>>>> Stashed changes
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -156,6 +240,7 @@ vsim work.cpu
 # Loading work.ripple_carry(structure)
 # Loading work.full_adder(logicfunc)
 # Loading work.uc(behavior)
+<<<<<<< Updated upstream
 do C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/simulation/modelsim/wave.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
@@ -238,3 +323,31 @@ run
 # End time: 15:50:03 on Nov 09,2021, Elapsed time: 0:02:26
 # Errors: 2, Warnings: 1
 wave editwrite -file C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/simulation/modelsim/TestesdeCPU.do
+=======
+do C:/Users/Greed/OneDrive/Documentos/save.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# 0
+add wave -position end  sim:/cpu/instrucao
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Greed  Hostname: DESKTOP-ILCE5UD  ProcessID: 17548
+#           Attempting to use alternate WLF file "./wlftbj5z2z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbj5z2z
+add wave -position end  sim:/cpu/AluOp
+add wave -position end  sim:/cpu/result
+add wave -position end  sim:/cpu/UCout
+add wave -position end  sim:/cpu/banco/R0/Q
+add wave -position end  sim:/cpu/banco/R1/Q
+add wave -position end  sim:/cpu/banco/R2/Q
+add wave -position end  sim:/cpu/banco/R3/Q
+add wave -position end  sim:/cpu/PCout
+add wave -position end  sim:/cpu/WriteData
+add wave -position end  sim:/cpu/AluOp
+add wave -position end  sim:/cpu/result
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
+# End time: 19:10:21 on Nov 10,2021, Elapsed time: 0:08:40
+# Errors: 0, Warnings: 3
+>>>>>>> Stashed changes

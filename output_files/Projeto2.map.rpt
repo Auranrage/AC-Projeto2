@@ -1,5 +1,9 @@
 Analysis & Elaboration report for Projeto2
+<<<<<<< Updated upstream
 Tue Nov 09 15:37:15 2021
+=======
+Wed Nov 10 18:58:22 2021
+>>>>>>> Stashed changes
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -16,15 +20,25 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   8. Parameter Settings for User Entity Instance: banco_registradores:banco|registrador:R1
   9. Parameter Settings for User Entity Instance: banco_registradores:banco|registrador:R2
  10. Parameter Settings for User Entity Instance: banco_registradores:banco|registrador:R3
- 11. Parameter Settings for User Entity Instance: ULA:ULA1|ripple_carry:SOMADOR1
- 12. Parameter Settings for User Entity Instance: registrador:regA
- 13. Parameter Settings for User Entity Instance: registrador:regB
- 14. Parameter Settings for User Entity Instance: registrador:AluOut
+ 11. Parameter Settings for User Entity Instance: registrador:Aluout
+ 12. Parameter Settings for User Entity Instance: ULA:ULA1|ripple_carry:SOMADOR1
+ 13. Parameter Settings for User Entity Instance: registrador:regA
+ 14. Parameter Settings for User Entity Instance: registrador:regB
  15. Analysis & Elaboration Settings
+<<<<<<< Updated upstream
  16. Port Connectivity Checks: "registrador:AluOut"
  17. Port Connectivity Checks: "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:7:stage"
  18. Port Connectivity Checks: "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:0:stage"
  19. Analysis & Elaboration Messages
+=======
+ 16. Port Connectivity Checks: "registrador:regB"
+ 17. Port Connectivity Checks: "registrador:regA"
+ 18. Port Connectivity Checks: "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:7:stage"
+ 19. Port Connectivity Checks: "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:0:stage"
+ 20. Port Connectivity Checks: "registrador:Aluout"
+ 21. Port Connectivity Checks: "Reg_Instrucao:reg_int"
+ 22. Analysis & Elaboration Messages
+>>>>>>> Stashed changes
 
 
 
@@ -51,7 +65,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< Updated upstream
 ; Analysis & Elaboration Status      ; Successful - Tue Nov 09 15:37:15 2021       ;
+=======
+; Analysis & Elaboration Status      ; Successful - Wed Nov 10 18:58:22 2021       ;
+>>>>>>> Stashed changes
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
 ; Top-level Entity Name              ; CPU                                         ;
@@ -154,6 +172,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:Aluout ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; N              ; 8     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: ULA:ULA1|ripple_carry:SOMADOR1 ;
 +----------------+-------+----------------------------------------------------+
@@ -184,6 +212,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
+<<<<<<< Updated upstream
 +-----------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: registrador:AluOut ;
 +----------------+-------+----------------------------------------+
@@ -194,6 +223,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
+=======
+>>>>>>> Stashed changes
 +------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                            ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -277,6 +308,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
 +------------------------------------------------------------------+--------------------+--------------------+
+<<<<<<< Updated upstream
 
 
 +------------------------------------------------+
@@ -286,6 +318,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------+
 ; load ; Input ; Info     ; Stuck at VCC         ;
 +------+-------+----------+----------------------+
+=======
+>>>>>>> Stashed changes
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -306,13 +340,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+---------------------------------------------------------------------+
 
 
+<<<<<<< Updated upstream
+=======
++------------------------------------------------+
+; Port Connectivity Checks: "registrador:Aluout" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; load ; Input ; Info     ; Stuck at VCC         ;
++------+-------+----------+----------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "Reg_Instrucao:reg_int" ;
++------+-------+----------+-------------------------+
+; Port ; Type  ; Severity ; Details                 ;
++------+-------+----------+-------------------------+
+; load ; Input ; Info     ; Stuck at VCC            ;
++------+-------+----------+-------------------------+
+
+
+>>>>>>> Stashed changes
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+<<<<<<< Updated upstream
     Info: Processing started: Tue Nov 09 15:37:09 2021
+=======
+    Info: Processing started: Wed Nov 10 18:58:16 2021
+>>>>>>> Stashed changes
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -335,12 +394,19 @@ Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
     Info (12022): Found design unit 1: PC-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd Line: 18
     Info (12023): Found entity 1: PC File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
+<<<<<<< Updated upstream
     Info (12022): Found design unit 1: ULA-ULA_arch File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 16
     Info (12023): Found entity 1: ULA File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 5
 Warning (12019): Can't analyze file -- file INCREMENT.vhd is missing
 Warning (12019): Can't analyze file -- file UControle.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file memoria.vhd
     Info (12022): Found design unit 1: Memoria-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd Line: 18
+=======
+    Info (12022): Found design unit 1: ULA-ULA_arch File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 15
+    Info (12023): Found entity 1: ULA File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file memoria.vhd
+    Info (12022): Found design unit 1: Memoria-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd Line: 17
+>>>>>>> Stashed changes
     Info (12023): Found entity 1: Memoria File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file reg_instrucao.vhd
     Info (12022): Found design unit 1: Reg_Instrucao-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd Line: 18
@@ -349,6 +415,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file unidade
     Info (12022): Found design unit 1: UC-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd Line: 14
     Info (12023): Found entity 1: UC File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd Line: 5
 Info (12127): Elaborating entity "CPU" for the top level hierarchy
+<<<<<<< Updated upstream
 Warning (10541): VHDL Signal Declaration warning at CPU.vhd(84): used implicit default value for signal "RegIntLoad" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 84
 Warning (10541): VHDL Signal Declaration warning at CPU.vhd(100): used implicit default value for signal "loadA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 100
 Warning (10541): VHDL Signal Declaration warning at CPU.vhd(100): used implicit default value for signal "loadB" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 100
@@ -398,5 +465,21 @@ Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
     Info: Processing ended: Tue Nov 09 15:37:15 2021
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:16
+=======
+Info (12128): Elaborating entity "PC" for hierarchy "PC:PC_reg" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 108
+Info (12128): Elaborating entity "Memoria" for hierarchy "Memoria:Mem" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 111
+Info (12128): Elaborating entity "Reg_Instrucao" for hierarchy "Reg_Instrucao:reg_int" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 114
+Info (12128): Elaborating entity "banco_registradores" for hierarchy "banco_registradores:banco" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 118
+Info (12128): Elaborating entity "registrador" for hierarchy "banco_registradores:banco|registrador:R0" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 37
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA1" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 124
+Info (12128): Elaborating entity "ripple_carry" for hierarchy "ULA:ULA1|ripple_carry:SOMADOR1" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 35
+Info (12128): Elaborating entity "full_adder" for hierarchy "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:0:stage" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd Line: 28
+Info (12128): Elaborating entity "UC" for hierarchy "UC:Control" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 134
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4767 megabytes
+    Info: Processing ended: Wed Nov 10 18:58:22 2021
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:15
+>>>>>>> Stashed changes
 
 
