@@ -7,7 +7,6 @@ ENTITY ULA IS
 		A: IN std_logic_vector (7 downto 0);
 		B: IN std_logic_vector (7 downto 0);
 		ALUop: IN std_logic;
-		clk: IN std_logic;
 		Result: OUT std_logic_vector (7 downto 0);
 		Zero: OUT std_logic
 		);
@@ -27,15 +26,10 @@ ARCHITECTURE ULA_arch of ULA IS
 	
 BEGIN
 
-	PROCESS(clk) IS BEGIN
-		IF clk'EVENT AND clk = '1' THEN
-			IF ALUop = '1' THEN
-				Bsig <= std_logic_vector( unsigned(NOT B) + 1);
-			ELSE
-				Bsig <= B;
-			END IF;
-		END IF;
-	END PROCESS;
+	Bsig <= std_logic_vector( unsigned(NOT B) + 1) WHEN ALUop = '1' ELSE
+			  B WHEN Aluop = '0' ELSE
+			  (OTHERS => '0');
+			  
 	Zero <= (NOT (Sgen(0) OR Sgen(1) OR Sgen(2) OR Sgen(3) OR Sgen(4) OR Sgen(5) OR Sgen(6) OR Sgen(7)));
 	Result <= Sgen;
 	SOMADOR1: ripple_carry PORT MAP(A,Bsig,Sgen);
