@@ -67,6 +67,8 @@ PCout[4] <= PCout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PCout[5] <= PCout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PCout[6] <= PCout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PCout[7] <= PCout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Jumpadd[0] <= intermediario[6].DB_MAX_OUTPUT_PORT_TYPE
+Jumpadd[1] <= intermediario[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|Memoria:Mem
@@ -111,6 +113,8 @@ instrucao[6] => OP[0].DATAIN
 instrucao[6] => Equal0.IN1
 instrucao[7] => OP[1].DATAIN
 instrucao[7] => Equal0.IN0
+Jumpin[0] => ENDtoPC.DATAB
+Jumpin[1] => ENDtoPC.DATAB
 load => ENDtoPC[1]~reg0.ENA
 load => ENDtoPC[0]~reg0.ENA
 load => ENDtoPC[2]~reg0.ENA

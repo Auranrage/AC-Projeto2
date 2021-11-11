@@ -37,9 +37,9 @@ ARCHITECTURE Structure OF CPU IS
 	COMPONENT Reg_Instrucao
 		PORT ( 
 			instrucao 								: IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
+			Jumpin									: IN STD_LOGIC_VECTOR(1 DOWNTO 0);
 			load, clock								: IN STD_LOGIC ;
-			OP, RS, RT, RD 						: OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-			ENDtoPC									: OUT STD_LOGIC_VECTOR(7 downto 0)
+			OP, RS, RT, RD 						: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
 		) ;
 	END COMPONENT;
 	
@@ -48,7 +48,8 @@ ARCHITECTURE Structure OF CPU IS
 			PCin 										: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
 			reset, PCload, Clock					: IN STD_LOGIC ;
 			PCSource									: IN STD_LOGIC;
-			PCout										: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
+			PCout										: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Jumpadd									: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
 		) ;
 	END COMPONENT;
 	
@@ -74,10 +75,11 @@ ARCHITECTURE Structure OF CPU IS
 	--Sinais de PC
 	SIGNAL PCWrite									: STD_LOGIC;
 	SIGNAL PCin, PCout							: STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
+	SIGNAL Jumpadd									: STD_LOGIC_VECTOR(1 DOWNTO 0);
 	
 	--Sinais de Memoria
 	--Pega o PCout de PC, usa o valor de indice em Vetor[i], e manda o conteudo para reg_int pelo sinal instrucao.
-
+	
 	--Sinais do Registrador de Instrução
 	SIGNAL RegIntLoad								: STD_LOGIC ;
 	SIGNAL instrucao 								: STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
@@ -105,13 +107,13 @@ ARCHITECTURE Structure OF CPU IS
 	
 	BEGIN
 		--Instanciação dos componentes
-		PC_reg: PC port map (ENDtoPC, reset, PCWrite, clock, PCSource, PCout); 
+		PC_reg: PC port map (ENDtoPC, reset, PCWrite, clock, PCSource, PCout,Jumpadd); 
 			--PCout = PCin se PCload=1, se não PCout = valor anterior + 1
 		
 		Mem: Memoria port map (Pcout, instrucao); 
 			--Pega o valor de PC, transforma num int, e busca a instrucao num vetor pra mandar pro reg_int
 		
-		reg_int: Reg_Instrucao port map (instrucao, '1', clock, OP, RS, RT, RD,ENDtoPC);
+		reg_int: Reg_Instrucao port map (instrucao, '1', clock, OP, RS, RT, RD);
 			--Pega a instrucao da memoria e quebra ela em 4 sinais de 2 bits cada
 			--Obs.: Acho que RegIntLoad é sempre 1
 			

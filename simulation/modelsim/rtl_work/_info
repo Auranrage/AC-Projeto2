@@ -1,414 +1,435 @@
 m255
 K4
 z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/simulation/modelsim
+Z0 dC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/simulation/modelsim
 Ebanco_registradores
-Z1 w1636569357
+Z1 w1636653442
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
 R0
-Z4 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd
-Z5 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd
+Z4 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd
+Z5 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd
 l0
-L10
+Z6 L10 1
 VChEcGX92f7ko`4TiBo87=3
 !s100 l`ZBJ]^N]>JA?NA04E:[U2
-Z6 OV;C;10.5b;63
+Z7 OV;C;2020.1;71
 31
-Z7 !s110 1636600636
+Z8 !s110 1636657699
 !i10b 1
-Z8 !s108 1636600636.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd|
-Z10 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd|
+Z9 !s108 1636657699.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd|
+Z11 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd|
 !i113 1
-Z11 o-93 -work work
-Z12 tExplicit 1 CvgOpt 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
 Astructure
 R2
 R3
 DEx4 work 19 banco_registradores 0 22 ChEcGX92f7ko`4TiBo87=3
+!i122 4
 l35
-L23
+L23 40
 VO_m7Pl7RS^V0Ihg06O9A02
 !s100 ;:mXVg:2Dcn1MA`A2=;]P2
-R6
-31
 R7
-!i10b 1
+31
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Ecpu
-Z13 w1636598718
-Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z14 w1636657109
+Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R2
 R3
+!i122 0
 R0
-Z15 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd
-Z16 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd
+Z16 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd
+Z17 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd
 l0
-L5
+L5 1
 VeMFnb3eU]lkSa9CEdYF<Y1
 !s100 BTnX05Q7_:]GSa6PmhmL92
-R6
+R7
 31
-Z17 !s110 1636600635
+Z18 !s110 1636657698
 !i10b 1
-Z18 !s108 1636600635.000000
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd|
-Z20 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd|
+Z19 !s108 1636657698.000000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd|
+Z21 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd|
 !i113 1
-R11
 R12
+R13
 Astructure
-R14
+R15
 R2
 R3
 DEx4 work 3 cpu 0 22 eMFnb3eU]lkSa9CEdYF<Y1
-l106
-L14
-VmRMliGMlHNkQgiC70aFhl2
-!s100 N]_eSDD8U^;cXZ=IBEfkj2
-R6
+!i122 0
+l109
+L14 134
+VJURZMknFbm9XPW27fcYXk1
+!s100 [F1]jIhB2OZi^iI;h8Z9g0
+R7
 31
-R17
-!i10b 1
 R18
+!i10b 1
 R19
 R20
+R21
 !i113 1
-R11
 R12
+R13
 Efull_adder
-Z21 w1635958022
+Z22 w1635272974
 R2
 R3
+!i122 3
 R0
-Z22 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd
-Z23 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd
+Z23 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd
+Z24 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd
 l0
-L4
+L4 1
 V_>7aKW7mfKf@Aj75K^F;;2
 !s100 _BfP8Il=SL=_:m8afhQ[k2
-R6
-31
 R7
+31
+R18
 !i10b 1
-R8
-Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd|
-Z25 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd|
+R19
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd|
+Z26 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd|
 !i113 1
-R11
 R12
+R13
 Alogicfunc
 R2
 R3
 DEx4 work 10 full_adder 0 22 _>7aKW7mfKf@Aj75K^F;;2
+!i122 3
 l11
-L9
+L9 6
 VjXOgAY5dd9MmTO=JTaO7j2
 !s100 7:J6;lWhUQNaTZL1dog:P0
-R6
-31
 R7
+31
+R18
 !i10b 1
-R8
-R24
+R19
 R25
+R26
 !i113 1
-R11
 R12
+R13
 Ememoria
-Z26 w1636600609
-R14
+Z27 w1636657691
+R15
 R2
 R3
+!i122 7
 R0
-Z27 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd
-Z28 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd
+Z28 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd
+Z29 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd
 l0
-L10
+R6
 V;noK1OGHPMGMcd2EQHcYU1
 !s100 PiDelK6V72QMK^1`HF7Qf3
-R6
-31
 R7
-!i10b 1
+31
 R8
-Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd|
-Z30 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd|
+!i10b 1
+R9
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd|
+Z31 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd|
 !i113 1
-R11
 R12
+R13
 Abehavior
-R14
+R15
 R2
 R3
 DEx4 work 7 memoria 0 22 ;noK1OGHPMGMcd2EQHcYU1
+!i122 7
 l26
-L17
-VOS:E02F]Z9b1lQDJi?31H3
-!s100 lN>UZloe=SOh^WBS=R0n?2
-R6
-31
+L17 13
+VA_PaHBNnEk7hTkZ3BWzj:1
+!s100 3?UYn8^QmT::9g_`0m:`o3
 R7
-!i10b 1
+31
 R8
-R29
+!i10b 1
+R9
 R30
+R31
 !i113 1
-R11
 R12
+R13
 Epc
-Z31 w1636599159
-Z32 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z33 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z32 w1636656946
+Z33 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z34 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
 R2
 R3
+!i122 5
 R0
-Z34 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd
-Z35 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd
+Z35 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd
+Z36 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd
 l0
-L9
-Vbkf9lRH5[eM7kP_e?6eL]3
-!s100 YnfRCHLml]:]]bZXlGk8X0
-R6
-31
+L9 1
+V[>6[ViLB7e0D`0zHjDA<R3
+!s100 `gYg9Um;T6KY6Z9DDC:6W3
 R7
-!i10b 1
+31
 R8
-Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd|
-Z37 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd|
+!i10b 1
+R9
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd|
+Z38 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd|
 !i113 1
-R11
 R12
+R13
 Abehavior
-R32
 R33
+R34
 R2
 R3
-DEx4 work 2 pc 0 22 bkf9lRH5[eM7kP_e?6eL]3
-l21
-L18
-VR:3;>b2a6OO[jQ=dB?AL03
-!s100 [l;j2D<A:E>cf@mza?o9]0
-R6
-31
+DEx4 work 2 pc 0 22 [>6[ViLB7e0D`0zHjDA<R3
+!i122 5
+l22
+Z39 L19 21
+V1i1`oM>`HYFR7AGADb2FP1
+!s100 ZIC>WbJz[NjPN4KCIb=1X1
 R7
-!i10b 1
+31
 R8
-R36
+!i10b 1
+R9
 R37
+R38
 !i113 1
-R11
 R12
+R13
 Ereg_instrucao
-Z38 w1636600259
-R14
+Z40 w1636656860
+R15
 R2
 R3
+!i122 8
 R0
-Z39 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd
-Z40 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd
+Z41 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd
+Z42 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd
 l0
-L9
-VQ3;H6?P2^W_J3V1ZkIfRa3
-!s100 z5KW;bf@JjRQ0Ti=ZM[581
-R6
-31
+L9 1
+V_h0X=ln6MhGnNBHgSVUda1
+!s100 Nb>b:deNJ7I^:<C3[Q8G03
 R7
-!i10b 1
+31
 R8
-Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
-Z42 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
+!i10b 1
+R9
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
+Z44 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
 !i113 1
-R11
 R12
+R13
 Abehavior
-R14
+R15
 R2
 R3
-DEx4 work 13 reg_instrucao 0 22 Q3;H6?P2^W_J3V1ZkIfRa3
-l19
-L18
-VgFQVEz[58i]?8zfR3afag0
-!s100 2biA:87n7?n?[jJUooZk[3
-R6
-31
+DEx4 work 13 reg_instrucao 0 22 _h0X=ln6MhGnNBHgSVUda1
+!i122 8
+l20
+R39
+VPAnLXLFMTAa?1CRbnb5]<1
+!s100 ;R37GkK4dLAf4D=eZgg3X3
 R7
-!i10b 1
+31
 R8
-R41
-R42
+!i10b 1
+R9
+R43
+R44
 !i113 1
-R11
 R12
+R13
 Eregistrador
-Z43 w1636599288
+R1
 R2
 R3
+!i122 2
 R0
-Z44 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/registrador.vhd
-Z45 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/registrador.vhd
+Z45 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
+Z46 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
 l0
-L4
+L4 1
 V89=l^jDDdQeEOID4[4cPY0
 !s100 c5ECIkOJl0aXm1Je@WT@Z1
-R6
-31
 R7
-!i10b 1
+31
 R18
-Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/registrador.vhd|
-Z47 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/registrador.vhd|
+!i10b 1
+R19
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
+Z48 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
 !i113 1
-R11
 R12
+R13
 Abehavior
 R2
 R3
 DEx4 work 11 registrador 0 22 89=l^jDDdQeEOID4[4cPY0
+!i122 2
 l16
-L12
+L12 18
 VY>3fRV[9jZ^D>H[;oW<HL1
 !s100 i^jfn^X=64ec9gGR8Ylbh3
-R6
-31
 R7
-!i10b 1
+31
 R18
-R46
+!i10b 1
+R19
 R47
+R48
 !i113 1
-R11
 R12
+R13
 Eripple_carry
-Z48 w1635958125
+Z49 w1635955162
 R2
 R3
+!i122 1
 R0
-Z49 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ripple_carry.vhd
-Z50 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ripple_carry.vhd
+Z50 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd
+Z51 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd
 l0
-L4
+L4 1
 VF1A0ESjidlE8S<H3UamdE1
 !s100 E@7jGIH0AB[^oHkDd:cCd2
-R6
+R7
 31
-R17
-!i10b 1
 R18
-Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ripple_carry.vhd|
-Z52 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ripple_carry.vhd|
+!i10b 1
+R19
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd|
+Z53 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd|
 !i113 1
-R11
 R12
+R13
 Astructure
 R2
 R3
 DEx4 work 12 ripple_carry 0 22 F1A0ESjidlE8S<H3UamdE1
+!i122 1
 l22
-L13
+L13 19
 V64gC0>gaM7<7]iSmRY0[a3
 !s100 ]eo9JFn:Pn:=z;1C3P4]Q3
-R6
+R7
 31
-R17
-!i10b 1
 R18
-R51
+!i10b 1
+R19
 R52
+R53
 !i113 1
-R11
 R12
+R13
 Euc
-Z53 w1636574826
-R14
+Z54 w1636653441
+R15
 R2
 R3
+!i122 9
 R0
-Z54 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/UnidadeDeControle.vhd
-Z55 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/UnidadeDeControle.vhd
+Z55 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
+Z56 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
 l0
-L5
+L5 1
 VVEYGh@cI@Y^R_eCTh_7=80
 !s100 Baoh[lzJPa`?FGbnB@i?b2
-R6
-31
 R7
-!i10b 1
+31
 R8
-Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
-Z57 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
+!i10b 1
+R9
+Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
+!s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
 !i113 1
-R11
 R12
+R13
 Abehavior
-R14
+R15
 R2
 R3
 DEx4 work 2 uc 0 22 VEYGh@cI@Y^R_eCTh_7=80
+!i122 9
 l18
-L14
+L14 39
 VBWaW@JW9fH=[L@k=SDlfX1
 !s100 o8Mm`U?0XGfHX0^`NfB;[1
-R6
-31
 R7
-!i10b 1
+31
 R8
-R56
+!i10b 1
+R9
 R57
+Z58 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
 !i113 1
-R11
 R12
+R13
 Eula
-Z58 w1636588986
-R14
+Z59 w1636582831
+R15
 R2
 R3
+!i122 6
 R0
-Z59 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd
-Z60 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd
+Z60 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd
+Z61 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd
 l0
-L5
+L5 1
 VEM6>6WOZoAj3EQdQoC0Ze2
 !s100 zbbbiCggB4h:z]WZBhFK92
-R6
-31
 R7
-!i10b 1
+31
 R8
-Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd|
-Z62 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd|
+!i10b 1
+R9
+Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd|
+Z63 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd|
 !i113 1
-R11
 R12
+R13
 Aula_arch
-R14
+R15
 R2
 R3
 DEx4 work 3 ula 0 22 EM6>6WOZoAj3EQdQoC0Ze2
+!i122 6
 l27
-L15
+L15 22
 VK40Mj>;^YYgo^5Hf1ScXC0
 !s100 M[C68Dec]EL=;zUVWl5o12
-R6
-31
 R7
-!i10b 1
+31
 R8
-R61
+!i10b 1
+R9
 R62
+R63
 !i113 1
-R11
 R12
+R13

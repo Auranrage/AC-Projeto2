@@ -11,8 +11,9 @@ ENTITY PC IS
 	PORT ( 	PCin 						: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
 				reset, PCload, Clock	: IN STD_LOGIC ;
 				PCSource					: IN STD_LOGIC;
-				PCout						: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
-			) ;
+				PCout						: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				Jumpadd					: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+			);
 END PC ;
 
 ARCHITECTURE Behavior OF PC IS
@@ -34,4 +35,5 @@ BEGIN
 			END IF;
 		END IF ;
 	END PROCESS ;
+	Jumpadd <= intermediario(7 downto 6);
 END Behavior ;
