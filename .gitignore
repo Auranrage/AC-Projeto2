@@ -173,3 +173,8 @@ db/Projeto2.(4).cnf.hdb
 *.rdb
 *.html
 *.qdb
+*.qmsg
+*.cdb
+*.hdb
+*.rdb
+*.hier_info

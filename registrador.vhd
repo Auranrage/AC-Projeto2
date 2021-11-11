@@ -10,19 +10,20 @@ ENTITY registrador IS
 END registrador ;
 
 ARCHITECTURE Behavior OF registrador IS
+
+
+
 BEGIN
 	PROCESS (reset, load, Clock )
 	BEGIN
 		IF Clock'EVENT AND Clock = '1' THEN
-			
 			IF reset = '1' THEN
 				--Q <= ( OTHERS => '0' );
 				Q <= "00000001";
-			
 			ELSIF load = '1' THEN
 				Q <= D ;
-			
 			END IF;
+			
 		END IF ;
 	END PROCESS ;
 END Behavior ;

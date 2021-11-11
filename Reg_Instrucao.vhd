@@ -24,14 +24,15 @@ BEGIN
 				IF instrucao(7 downto 6) = "11" THEN
 					OP <= instrucao(7 downto 6);
 					ENDtoPC(7 downto 6) <= "00";
-					ENDtoPC(5 downto 0) <= instrucao(5 downto 0);
-				ELSE
-					OP <=	instrucao ( 7 downto 6 );
-					RS	<=	instrucao ( 5 downto 4 );
-					RT <=	instrucao ( 3 downto 2 );
-					RD <=	instrucao ( 1 downto 0 );
+					ENDtoPC(5 downto 0) <= instrucao(5 downto 0);				
 				END IF;
 			END IF;
 		END IF ;
+		
+		OP <=	instrucao ( 7 downto 6 );
+		RS	<=	instrucao ( 5 downto 4 );
+		RT <=	instrucao ( 3 downto 2 );
+		RD <=	instrucao ( 1 downto 0 );
+		
 	END PROCESS ;
 END Behavior ;
