@@ -5,7 +5,7 @@ USE ieee.numeric_std.all;
 ENTITY CPU IS
 	GENERIC ( n : INTEGER := 8 ) ;
 	PORT(
-		clock, reset	: IN STD_LOGIC
+		clock, reset								: IN STD_LOGIC
 	);
 		
 END CPU ;
@@ -29,45 +29,45 @@ ARCHITECTURE Structure OF CPU IS
 	
 	COMPONENT Memoria
 		PORT (
-			PC_endereco		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
-			instrucao_out	: OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
+			PC_endereco								: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+			instrucao_out							: OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
 		);
 	END COMPONENT;
 	
 	COMPONENT Reg_Instrucao
 		PORT ( 
-			instrucao 				: IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
-			load, clock				: IN STD_LOGIC ;
-			OP, RS, RT, RD 		: OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-			ENDtoPC					: OUT STD_LOGIC_VECTOR(7 downto 0)
+			instrucao 								: IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
+			load, clock								: IN STD_LOGIC ;
+			OP, RS, RT, RD 						: OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+			ENDtoPC									: OUT STD_LOGIC_VECTOR(7 downto 0)
 		) ;
 	END COMPONENT;
 	
 	COMPONENT PC
 		PORT (
-			PCin 						: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
-			reset, PCload, Clock	: IN STD_LOGIC ;
-			PCSource					: IN STD_LOGIC;
-			PCout						: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
+			PCin 										: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
+			reset, PCload, Clock					: IN STD_LOGIC ;
+			PCSource									: IN STD_LOGIC;
+			PCout										: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
 		) ;
 	END COMPONENT;
 	
 	COMPONENT ULA
 		PORT(
-			A							: IN std_logic_vector (7 downto 0);
-			B							: IN std_logic_vector (7 downto 0);
-			ALUop						: IN std_logic;
-			Result					: OUT std_logic_vector (7 downto 0);
-			Zero						: OUT std_logic
+			A											: IN std_logic_vector (7 downto 0);
+			B											: IN std_logic_vector (7 downto 0);
+			ALUop										: IN std_logic;
+			Result									: OUT std_logic_vector (7 downto 0);
+			Zero										: OUT std_logic
 		);
 	END COMPONENT;
 	
 	COMPONENT UC
 		PORT(
-			OPin						: IN std_logic_vector(1 downto 0);
-			Reset						: IN std_logic;
-			Clock						: IN std_logic;
-			UCSign					: OUT std_logic_vector(4 downto 0)
+			OPin										: IN std_logic_vector(1 downto 0);
+			Reset										: IN std_logic;
+			Clock										: IN std_logic;
+			UCSign									: OUT std_logic_vector(4 downto 0)
 		);
 	END COMPONENT;
 

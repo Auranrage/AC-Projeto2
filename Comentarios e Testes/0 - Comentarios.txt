@@ -1,12 +1,7 @@
-Ver3
+Ver4
  FIXED:
- - Registradores estavam registrando UUUU quando regwrite era 1. Arrumado colocando ELSE D0 na regra de recebimendo de valor
-Q0 <= WHEN ...
-
-GERAL:
- - Componentes Ok. Testando Integração.
- - UC muda o estado todo ciclo, circuito soma e grava o valor no registrador certo.
+ - Circuito sincronizado para somas e substrações em sequencia.
 
 ARRUMAR: 
- - Está demorando 5 ciclos ao invés de 4 pra fazer o processo todo.
- - Por causa disso, registrador ta sendo gravado depois do ciclo de writeback, ja quando ta fazendo o fetch da outra instrucao
+ - Testar e arrumar o Jump
+ - Testar e arrumar o BEQ

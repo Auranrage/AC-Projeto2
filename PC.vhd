@@ -21,12 +21,10 @@ SIGNAL intermediario: STD_LOGIC_VECTOR(N-1 DOWNTO 0) := "00000000";
 BEGIN
 	
 	PROCESS (Clock)
-	BEGIN
+	BEGIN		
 		IF Clock'EVENT AND Clock = '1' THEN
-			
 			IF reset = '1' THEN
 				PCout <= ( OTHERS => '0' );
-				
 			ELSIF PCload = '1' AND PCSource = '1' THEN
 				intermediario <= PCin;
 				PCout <= intermediario;
