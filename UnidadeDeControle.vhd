@@ -31,10 +31,10 @@ BEGIN
 							state <= 2;
 				WHEN 2 =>
 					IF OPin = "00" THEN
-						UCSign <= "00010";
+						UCSign <= "00000";
 						state <= 3;
 						ELSIF OPin = "01" THEN
-							UCSign <= "00000";
+							UCSign <= "00010";
 							state <= 3;
 						ELSIF OPin = "10" THEN
 							UCSign <= "10010";

@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:36:25 on Nov 10,2021
+# Start time: 16:21:49 on Nov 10,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,55 +20,55 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity CPU
 # -- Compiling architecture Structure of CPU
-# End time: 15:36:25 on Nov 10,2021, Elapsed time: 0:00:00
+# End time: 16:21:49 on Nov 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ripple_carry.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:36:25 on Nov 10,2021
+# Start time: 16:21:49 on Nov 10,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ripple_carry.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ripple_carry
 # -- Compiling architecture Structure of ripple_carry
-# End time: 15:36:25 on Nov 10,2021, Elapsed time: 0:00:00
+# End time: 16:21:49 on Nov 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/registrador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:36:25 on Nov 10,2021
+# Start time: 16:21:49 on Nov 10,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/registrador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity registrador
 # -- Compiling architecture Behavior of registrador
-# End time: 15:36:25 on Nov 10,2021, Elapsed time: 0:00:00
+# End time: 16:21:49 on Nov 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:36:25 on Nov 10,2021
+# Start time: 16:21:49 on Nov 10,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity full_adder
 # -- Compiling architecture LogicFunc of full_adder
-# End time: 15:36:25 on Nov 10,2021, Elapsed time: 0:00:00
+# End time: 16:21:49 on Nov 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:36:25 on Nov 10,2021
+# Start time: 16:21:49 on Nov 10,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity banco_registradores
 # -- Compiling architecture Structure of banco_registradores
-# End time: 15:36:25 on Nov 10,2021, Elapsed time: 0:00:00
+# End time: 16:21:49 on Nov 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:36:25 on Nov 10,2021
+# Start time: 16:21:49 on Nov 10,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -77,11 +77,11 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity PC
 # -- Compiling architecture Behavior of PC
-# End time: 15:36:25 on Nov 10,2021, Elapsed time: 0:00:00
+# End time: 16:21:49 on Nov 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:36:25 on Nov 10,2021
+# Start time: 16:21:49 on Nov 10,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,11 +89,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ULA
 # -- Compiling architecture ULA_arch of ULA
-# End time: 15:36:26 on Nov 10,2021, Elapsed time: 0:00:01
+# End time: 16:21:50 on Nov 10,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:36:26 on Nov 10,2021
+# Start time: 16:21:50 on Nov 10,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -101,11 +101,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Memoria
 # -- Compiling architecture Behavior of Memoria
-# End time: 15:36:26 on Nov 10,2021, Elapsed time: 0:00:00
+# End time: 16:21:50 on Nov 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:36:26 on Nov 10,2021
+# Start time: 16:21:50 on Nov 10,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +113,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Reg_Instrucao
 # -- Compiling architecture Behavior of Reg_Instrucao
-# End time: 15:36:26 on Nov 10,2021, Elapsed time: 0:00:00
+# End time: 16:21:50 on Nov 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/UnidadeDeControle.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:36:26 on Nov 10,2021
+# Start time: 16:21:50 on Nov 10,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/UnidadeDeControle.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,12 +125,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity UC
 # -- Compiling architecture Behavior of UC
-# End time: 15:36:26 on Nov 10,2021, Elapsed time: 0:00:00
+# End time: 16:21:50 on Nov 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.cpu
 # vsim work.cpu 
-# Start time: 15:36:33 on Nov 10,2021
+# Start time: 16:23:30 on Nov 10,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -147,28 +147,72 @@ vsim work.cpu
 # Loading work.ripple_carry(structure)
 # Loading work.full_adder(logicfunc)
 # Loading work.uc(behavior)
-do C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/simulation/modelsim/wave.do
-# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/cpu/clock
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1200ps sim:/cpu/clock
 # Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-# 0
-wave modify -driver freeze -pattern constant -value (no value) -starttime 0ps -endtime 1000ps Edit:/cpu/banco/Clock
-# ** Error: (vish-4026) Value "(no" does not represent a literal of the enumeration type.
-#Invalid value to -value switch: (no
-# Usage: wave modify -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
-add wave -position end  sim:/cpu/UCout
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100ps sim:/cpu/reset
+wave modify -driver freeze -pattern constant -value 0 -starttime 100ps -endtime 1000ps Edit:/cpu/reset
 add wave -position end  sim:/cpu/banco/Q0
 add wave -position end  sim:/cpu/banco/Q1
 add wave -position end  sim:/cpu/banco/Q2
 add wave -position end  sim:/cpu/banco/Q3
+add wave -position end  sim:/cpu/PCout
+add wave -position end  sim:/cpu/instrucao
+add wave -position end  sim:/cpu/UCout
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
-add wave -position end  sim:/cpu/instrucao
+restart
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
+add wave -position end  sim:/cpu/A
+add wave -position end  sim:/cpu/B
 restart
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
+add wave -position end  sim:/cpu/RS
+add wave -position end  sim:/cpu/RT
+add wave -position end  sim:/cpu/result
+restart
 run
-# End time: 16:12:57 on Nov 10,2021, Elapsed time: 0:36:24
-# Errors: 1, Warnings: 2
-wave editwrite -file C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/simulation/modelsim/wave.do
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
+add wave -position end  sim:/cpu/WriteData
+restart
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
+# WARNING: No extended dataflow license exists
+add wave -position end  sim:/cpu/ReadData1
+add wave -position end  sim:/cpu/ReadData2
+restart
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
+add wave -position end  sim:/cpu/ULA1/Result
+restart
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
+add wave -position end  sim:/cpu/ULA1/A
+add wave -position end  sim:/cpu/ULA1/B
+restart
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
+add wave -position end  sim:/cpu/ULA1/ALUop
+restart
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 300ps sim:/cpu/ULA1/ALUop
+restart
+run
+# ** Warning: (vsim-8780) Forcing /cpu/AluOp as root of /cpu/ULA1/ALUop specified in the force.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
+# End time: 20:34:27 on Nov 10,2021, Elapsed time: 4:10:57
+# Errors: 0, Warnings: 12
