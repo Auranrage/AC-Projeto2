@@ -39,10 +39,12 @@ BEGIN
 	R2: registrador PORT MAP (D2, reset, RegWrite, Clock, Q2);
 	R3: registrador PORT MAP (D3, reset, RegWrite, Clock, Q3);
 	
-	D0	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "00";
-	D1	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "01";
-	D2	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "10";
-	D3	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "11";
+
+	
+	D0	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "00" ELSE Q0;
+	D1	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "01" ELSE Q1;
+	D2	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "10" ELSE Q2;
+	D3	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "11" ELSE Q3;
 		
 		
 	ReadData1 <=	Q0	when ReadReg1 = "00"	else 

@@ -126,8 +126,8 @@ ARCHITECTURE Structure OF CPU IS
 			--Resultado sai pelo sinal result
 				
 		--Registradores
-		regA: registrador port map (ReadData1, reset, loadA, clock, A);
-		regB: registrador port map (ReadData2, reset, loadB, clock, B);
+		regA: registrador port map (ReadData1, reset, '1', clock, A);
+		regB: registrador port map (ReadData2, reset, '1', clock, B);
 			--Pega os valores de RS e RT.
 			--Obs: Talvez loadA e loadB sejam sempre 0.
 			

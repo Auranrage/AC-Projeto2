@@ -19,7 +19,7 @@ ARCHITECTURE Behavior OF Memoria IS
 	
 	SIGNAL int_address: INTEGER RANGE 0 TO 2;
 	
-	CONSTANT instrucao : vetor_instrucoes:= ("00100011", "00000110", "00110000");
+	CONSTANT instrucao : vetor_instrucoes:= ("00000110", "00100011", "00000000");
 			
 	
 			
