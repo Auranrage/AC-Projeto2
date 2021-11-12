@@ -30,26 +30,27 @@ ARCHITECTURE Structure OF CPU IS
 	COMPONENT Memoria
 		PORT (
 			PC_endereco								: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
-			instrucao_out							: OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
+			instrucao_out							: OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
+			BEQout									: OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
 		);
 	END COMPONENT;
 	
 	COMPONENT Reg_Instrucao
 		PORT ( 
 			instrucao 								: IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
-			Jumpin									: IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-			load, clock								: IN STD_LOGIC ;
-			OP, RS, RT, RD 						: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+			clock										: IN STD_LOGIC;
+			OP, RS, RT, RD 						: OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+			Jumpaddres								: OUT STD_LOGIC_VECTOR(5 DOWNTO 0)
 		) ;
 	END COMPONENT;
 	
 	COMPONENT PC
 		PORT (
-			PCin 										: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
+			PCin,BEQin 								: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
 			reset, PCload, Clock					: IN STD_LOGIC ;
-			PCSource									: IN STD_LOGIC;
+			PCSource									: IN STD_LOGIC_VECTOR(1 DOWNTO 0);
 			PCout										: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-			Jumpadd									: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+			PCmsb										: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
 		) ;
 	END COMPONENT;
 	
@@ -68,14 +69,24 @@ ARCHITECTURE Structure OF CPU IS
 			OPin										: IN std_logic_vector(1 downto 0);
 			Reset										: IN std_logic;
 			Clock										: IN std_logic;
-			UCSign									: OUT std_logic_vector(4 downto 0)
+			UCSign									: OUT std_logic_vector(5 downto 0)
 		);
+	END COMPONENT;
+	
+	COMPONENT Jumper
+		PORT(
+				PCmsb									: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
+				instadd								: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+				newpc									: OUT STD_LOGIC_VECTOR (7 downto 0)
+			);
 	END COMPONENT;
 
 	--Sinais de PC
 	SIGNAL PCWrite									: STD_LOGIC;
-	SIGNAL PCin, PCout							: STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
-	SIGNAL Jumpadd									: STD_LOGIC_VECTOR(1 DOWNTO 0);
+	SIGNAL PCout									: STD_LOGIC_VECTOR(n-1 DOWNTO 0) ;
+	SIGNAL PCmsb									: STD_LOGIC_VECTOR(1 DOWNTO 0);
+	SIGNAL Jumpadd									: STD_LOGIC_VECTOR(5 DOWNTO 0);
+	SIGNAL BEQ  									: STD_LOGIC_VECTOR(n-1 downto 0);
 	
 	--Sinais de Memoria
 	--Pega o PCout de PC, usa o valor de indice em Vetor[i], e manda o conteudo para reg_int pelo sinal instrucao.
@@ -100,20 +111,20 @@ ARCHITECTURE Structure OF CPU IS
 	SIGNAL loadA, loadB, loadALUout			: STD_LOGIC;
 	
 	-- UC
-	SIGNAL UCout									: STD_LOGIC_VECTOR(4 downto 0);
+	SIGNAL UCout									: STD_LOGIC_VECTOR(5 downto 0);
 	SIGNAL PCWriteCond							: STD_LOGIC;
-	SIGNAL PCSource								: STD_LOGIC;
+	SIGNAL PCSource								: STD_LOGIC_VECTOR(1 downto 0);
 	
 	
 	BEGIN
 		--Instanciação dos componentes
-		PC_reg: PC port map (ENDtoPC, reset, PCWrite, clock, PCSource, PCout,Jumpadd); 
+		PC_reg: PC port map (ENDtoPC, BEQ, reset, PCWrite, clock, PCSource, PCout,PCmsb); 
 			--PCout = PCin se PCload=1, se não PCout = valor anterior + 1
 		
-		Mem: Memoria port map (Pcout, instrucao); 
+		Mem: Memoria port map (Pcout, instrucao,BEQ); 
 			--Pega o valor de PC, transforma num int, e busca a instrucao num vetor pra mandar pro reg_int
 		
-		reg_int: Reg_Instrucao port map (instrucao, '1', clock, OP, RS, RT, RD);
+		reg_int: Reg_Instrucao port map (instrucao, clock, OP, RS, RT, RD, Jumpadd);
 			--Pega a instrucao da memoria e quebra ela em 4 sinais de 2 bits cada
 			--Obs.: Acho que RegIntLoad é sempre 1
 			
@@ -133,12 +144,15 @@ ARCHITECTURE Structure OF CPU IS
 			--Pega os valores de RS e RT.
 			--Obs: Talvez loadA e loadB sejam sempre 0.
 			
+		Jump: Jumper port map (PCmsb,Jumpadd,ENDtoPC);
+			
+			
 		Control: UC port map(OP,reset,clock,UCOut);
 			-- Recebe o OP code e traduz em sinais de controle.
 			
-		PCWriteCond <= UCout(4);
-		PCWrite <= UCout(3) OR (PCWriteCond AND zero);
-		PCSource <= UCout(2);
+		PCWriteCond <= UCout(5);
+		PCWrite <= UCout(4) OR (PCWriteCond AND zero);
+		PCSource <= UCout(3 downto 2);
 		Aluop <= UCout(1);
 		RegWrite <= UCout(0);
 		

@@ -23,9 +23,9 @@ VChEcGX92f7ko`4TiBo87=3
 !s100 l`ZBJ]^N]>JA?NA04E:[U2
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1636657699
+Z8 !s110 1636727785
 !i10b 1
-Z9 !s108 1636657699.000000
+Z9 !s108 1636727785.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd|
 Z11 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd|
 !i113 1
@@ -51,7 +51,7 @@ R11
 R12
 R13
 Ecpu
-Z14 w1636657109
+Z14 w1636727378
 Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R2
 R3
@@ -65,11 +65,11 @@ VeMFnb3eU]lkSa9CEdYF<Y1
 !s100 BTnX05Q7_:]GSa6PmhmL92
 R7
 31
-Z18 !s110 1636657698
+R8
 !i10b 1
-Z19 !s108 1636657698.000000
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd|
-Z21 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd|
+R9
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd|
+Z19 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd|
 !i113 1
 R12
 R13
@@ -79,39 +79,39 @@ R2
 R3
 DEx4 work 3 cpu 0 22 eMFnb3eU]lkSa9CEdYF<Y1
 !i122 0
-l109
-L14 134
-VJURZMknFbm9XPW27fcYXk1
-!s100 [F1]jIhB2OZi^iI;h8Z9g0
+l119
+L14 147
+VP_7fOS24>VC@<;DBcDM0c3
+!s100 dIR^fL]1Zf_QTL>VC3mSa0
 R7
 31
-R18
+R8
 !i10b 1
+R9
+R18
 R19
-R20
-R21
 !i113 1
 R12
 R13
 Efull_adder
-Z22 w1635272974
+Z20 w1635272974
 R2
 R3
 !i122 3
 R0
-Z23 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd
-Z24 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd
+Z21 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd
+Z22 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd
 l0
 L4 1
 V_>7aKW7mfKf@Aj75K^F;;2
 !s100 _BfP8Il=SL=_:m8afhQ[k2
 R7
 31
-R18
+R8
 !i10b 1
-R19
-Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd|
-Z26 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd|
+R9
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd|
+Z24 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd|
 !i113 1
 R12
 R13
@@ -126,34 +126,77 @@ VjXOgAY5dd9MmTO=JTaO7j2
 !s100 7:J6;lWhUQNaTZL1dog:P0
 R7
 31
-R18
+R8
 !i10b 1
-R19
-R25
-R26
+R9
+R23
+R24
+!i113 1
+R12
+R13
+Ejumper
+Z25 w1636721185
+R15
+R2
+R3
+!i122 10
+R0
+Z26 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd
+Z27 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd
+l0
+L5 1
+V=]=FZL^XjKjN8AW`AD@Z83
+!s100 d>QzUn7D9]l4Do0RZMnF_3
+R7
+31
+Z28 !s110 1636727786
+!i10b 1
+Z29 !s108 1636727786.000000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd|
+!s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R15
+R2
+R3
+DEx4 work 6 jumper 0 22 =]=FZL^XjKjN8AW`AD@Z83
+!i122 10
+l14
+L13 7
+V7KOl?SdGe:=[nf@YR0m>n3
+!s100 GhYYVH5>S67beZ6C37IjE1
+R7
+31
+R28
+!i10b 1
+R29
+R30
+Z31 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd|
 !i113 1
 R12
 R13
 Ememoria
-Z27 w1636657691
+Z32 w1636727763
 R15
 R2
 R3
 !i122 7
 R0
-Z28 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd
-Z29 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd
+Z33 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd
+Z34 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd
 l0
 R6
-V;noK1OGHPMGMcd2EQHcYU1
-!s100 PiDelK6V72QMK^1`HF7Qf3
+VmVzzS2Nkb=c9GFIlQzNic0
+!s100 <nga1QT_XXZJ2MEI]_>dz1
 R7
 31
 R8
 !i10b 1
 R9
-Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd|
-Z31 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd|
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd|
+Z36 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd|
 !i113 1
 R12
 R13
@@ -161,87 +204,87 @@ Abehavior
 R15
 R2
 R3
-DEx4 work 7 memoria 0 22 ;noK1OGHPMGMcd2EQHcYU1
+DEx4 work 7 memoria 0 22 mVzzS2Nkb=c9GFIlQzNic0
 !i122 7
-l26
-L17 13
-VA_PaHBNnEk7hTkZ3BWzj:1
-!s100 3?UYn8^QmT::9g_`0m:`o3
+l27
+L18 14
+VzMbH=7Z`75RHNek4aG`>Y2
+!s100 6H3:bPg85fdzc1II[;CYj0
 R7
 31
 R8
 !i10b 1
 R9
-R30
-R31
+R35
+R36
 !i113 1
 R12
 R13
 Epc
-Z32 w1636656946
-Z33 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z34 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z37 w1636727065
+Z38 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z39 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
 R2
 R3
 !i122 5
 R0
-Z35 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd
-Z36 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd
+Z40 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd
+Z41 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd
 l0
 L9 1
-V[>6[ViLB7e0D`0zHjDA<R3
-!s100 `gYg9Um;T6KY6Z9DDC:6W3
+V8`^6_f1g3ToIi7LAgVO9N3
+!s100 c@Nc1GO]D6icJfIT^CoYl1
 R7
 31
 R8
 !i10b 1
 R9
-Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd|
-Z38 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd|
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd|
+Z43 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R33
-R34
+R38
+R39
 R2
 R3
-DEx4 work 2 pc 0 22 [>6[ViLB7e0D`0zHjDA<R3
+DEx4 work 2 pc 0 22 8`^6_f1g3ToIi7LAgVO9N3
 !i122 5
 l22
-Z39 L19 21
-V1i1`oM>`HYFR7AGADb2FP1
-!s100 ZIC>WbJz[NjPN4KCIb=1X1
+L19 24
+V@c5CgbLRh=nZkU<8^4P0_2
+!s100 DBaSm^kU[VY4<_EYeTY[h3
 R7
 31
 R8
 !i10b 1
 R9
-R37
-R38
+R42
+R43
 !i113 1
 R12
 R13
 Ereg_instrucao
-Z40 w1636656860
+Z44 w1636726196
 R15
 R2
 R3
 !i122 8
 R0
-Z41 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd
-Z42 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd
+Z45 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd
+Z46 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd
 l0
 L9 1
-V_h0X=ln6MhGnNBHgSVUda1
-!s100 Nb>b:deNJ7I^:<C3[Q8G03
+V>[e6VV6O=CO3NFOGUei>o3
+!s100 c:goJ?@2=QdPl1gSUmA9@3
 R7
 31
 R8
 !i10b 1
 R9
-Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
-Z44 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
+Z48 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
 !i113 1
 R12
 R13
@@ -249,19 +292,19 @@ Abehavior
 R15
 R2
 R3
-DEx4 work 13 reg_instrucao 0 22 _h0X=ln6MhGnNBHgSVUda1
+DEx4 work 13 reg_instrucao 0 22 >[e6VV6O=CO3NFOGUei>o3
 !i122 8
-l20
-R39
-VPAnLXLFMTAa?1CRbnb5]<1
-!s100 ;R37GkK4dLAf4D=eZgg3X3
+l19
+L18 10
+VgX^ES:EUjP0=cUkdZ<Wi01
+!s100 FFJZAZzK3Z3MZRKIH@_DJ1
 R7
 31
 R8
 !i10b 1
 R9
-R43
-R44
+R47
+R48
 !i113 1
 R12
 R13
@@ -271,19 +314,19 @@ R2
 R3
 !i122 2
 R0
-Z45 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
-Z46 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
+Z49 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
+Z50 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
 l0
 L4 1
 V89=l^jDDdQeEOID4[4cPY0
 !s100 c5ECIkOJl0aXm1Je@WT@Z1
 R7
 31
-R18
+R8
 !i10b 1
-R19
-Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
-Z48 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
+R9
+Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
+Z52 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
 !i113 1
 R12
 R13
@@ -298,33 +341,33 @@ VY>3fRV[9jZ^D>H[;oW<HL1
 !s100 i^jfn^X=64ec9gGR8Ylbh3
 R7
 31
-R18
+R8
 !i10b 1
-R19
-R47
-R48
+R9
+R51
+R52
 !i113 1
 R12
 R13
 Eripple_carry
-Z49 w1635955162
+Z53 w1635955162
 R2
 R3
 !i122 1
 R0
-Z50 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd
-Z51 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd
+Z54 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd
+Z55 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd
 l0
 L4 1
 VF1A0ESjidlE8S<H3UamdE1
 !s100 E@7jGIH0AB[^oHkDd:cCd2
 R7
 31
-R18
+R8
 !i10b 1
-R19
-Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd|
-Z53 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd|
+R9
+Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd|
+Z57 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd|
 !i113 1
 R12
 R13
@@ -339,34 +382,34 @@ V64gC0>gaM7<7]iSmRY0[a3
 !s100 ]eo9JFn:Pn:=z;1C3P4]Q3
 R7
 31
-R18
+R8
 !i10b 1
-R19
-R52
-R53
+R9
+R56
+R57
 !i113 1
 R12
 R13
 Euc
-Z54 w1636653441
+Z58 w1636726917
 R15
 R2
 R3
 !i122 9
 R0
-Z55 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
-Z56 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
+Z59 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
+Z60 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
 l0
 L5 1
-VVEYGh@cI@Y^R_eCTh_7=80
-!s100 Baoh[lzJPa`?FGbnB@i?b2
+Vf^BdT];o9eYGMRN_GhTY^1
+!s100 ^d9i1[CG`Ra2kW;_OjaT`2
 R7
 31
-R8
+R28
 !i10b 1
 R9
-Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
-!s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
+Z62 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
 !i113 1
 R12
 R13
@@ -374,31 +417,31 @@ Abehavior
 R15
 R2
 R3
-DEx4 work 2 uc 0 22 VEYGh@cI@Y^R_eCTh_7=80
+DEx4 work 2 uc 0 22 f^BdT];o9eYGMRN_GhTY^1
 !i122 9
 l18
 L14 39
-VBWaW@JW9fH=[L@k=SDlfX1
-!s100 o8Mm`U?0XGfHX0^`NfB;[1
+VfO=XY8Hm0`VI5ZCc87Tl@1
+!s100 ]j>`0fG4F^Di_<fYeof2H0
 R7
 31
-R8
+R28
 !i10b 1
 R9
-R57
-Z58 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
+R61
+R62
 !i113 1
 R12
 R13
 Eula
-Z59 w1636582831
+Z63 w1636582831
 R15
 R2
 R3
 !i122 6
 R0
-Z60 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd
-Z61 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd
+Z64 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd
+Z65 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd
 l0
 L5 1
 VEM6>6WOZoAj3EQdQoC0Ze2
@@ -408,8 +451,8 @@ R7
 R8
 !i10b 1
 R9
-Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd|
-Z63 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd|
+Z66 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd|
+Z67 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd|
 !i113 1
 R12
 R13
@@ -428,8 +471,8 @@ R7
 R8
 !i10b 1
 R9
-R62
-R63
+R66
+R67
 !i113 1
 R12
 R13

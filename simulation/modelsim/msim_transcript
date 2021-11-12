@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:18 on Nov 11,2021
+# Start time: 11:36:25 on Nov 12,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,55 +20,55 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity CPU
 # -- Compiling architecture Structure of CPU
-# End time: 16:08:18 on Nov 11,2021, Elapsed time: 0:00:00
+# End time: 11:36:25 on Nov 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:18 on Nov 11,2021
+# Start time: 11:36:25 on Nov 12,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ripple_carry
 # -- Compiling architecture Structure of ripple_carry
-# End time: 16:08:18 on Nov 11,2021, Elapsed time: 0:00:00
+# End time: 11:36:25 on Nov 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:18 on Nov 11,2021
+# Start time: 11:36:25 on Nov 12,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity registrador
 # -- Compiling architecture Behavior of registrador
-# End time: 16:08:18 on Nov 11,2021, Elapsed time: 0:00:00
+# End time: 11:36:25 on Nov 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:18 on Nov 11,2021
+# Start time: 11:36:25 on Nov 12,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity full_adder
 # -- Compiling architecture LogicFunc of full_adder
-# End time: 16:08:18 on Nov 11,2021, Elapsed time: 0:00:00
+# End time: 11:36:25 on Nov 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:19 on Nov 11,2021
+# Start time: 11:36:25 on Nov 12,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity banco_registradores
 # -- Compiling architecture Structure of banco_registradores
-# End time: 16:08:19 on Nov 11,2021, Elapsed time: 0:00:00
+# End time: 11:36:25 on Nov 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:19 on Nov 11,2021
+# Start time: 11:36:25 on Nov 12,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -77,11 +77,11 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity PC
 # -- Compiling architecture Behavior of PC
-# End time: 16:08:19 on Nov 11,2021, Elapsed time: 0:00:00
+# End time: 11:36:25 on Nov 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:19 on Nov 11,2021
+# Start time: 11:36:25 on Nov 12,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,11 +89,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ULA
 # -- Compiling architecture ULA_arch of ULA
-# End time: 16:08:19 on Nov 11,2021, Elapsed time: 0:00:00
+# End time: 11:36:25 on Nov 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:19 on Nov 11,2021
+# Start time: 11:36:25 on Nov 12,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -101,11 +101,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Memoria
 # -- Compiling architecture Behavior of Memoria
-# End time: 16:08:19 on Nov 11,2021, Elapsed time: 0:00:00
+# End time: 11:36:25 on Nov 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:19 on Nov 11,2021
+# Start time: 11:36:25 on Nov 12,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +113,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Reg_Instrucao
 # -- Compiling architecture Behavior of Reg_Instrucao
-# End time: 16:08:19 on Nov 11,2021, Elapsed time: 0:00:00
+# End time: 11:36:25 on Nov 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:08:19 on Nov 11,2021
+# Start time: 11:36:25 on Nov 12,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,12 +125,24 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity UC
 # -- Compiling architecture Behavior of UC
-# End time: 16:08:19 on Nov 11,2021, Elapsed time: 0:00:00
+# End time: 11:36:26 on Nov 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:36:26 on Nov 12,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Jumper
+# -- Compiling architecture Behavior of Jumper
+# End time: 11:36:26 on Nov 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.cpu
 # vsim work.cpu 
-# Start time: 16:09:01 on Nov 11,2021
+# Start time: 11:36:40 on Nov 12,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -146,113 +158,30 @@ vsim work.cpu
 # Loading work.ula(ula_arch)
 # Loading work.ripple_carry(structure)
 # Loading work.full_adder(logicfunc)
+# Loading work.jumper(behavior)
 # Loading work.uc(behavior)
 do C:/Users/Greed/OneDrive/Documentos/save.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
 # 0
-add wave -position end  sim:/cpu/instrucao
-add wave -position end  sim:/cpu/PCin
-add wave -position end  sim:/cpu/OP
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
-# ** Fatal: (vsim-3421) Value 3 is out of range 0 to 2.
-#    Time: 950 ps  Iteration: 1  Process: /cpu/Mem/line__27 File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd Line: 27
-# Fatal error in Architecture Behavior at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd line 27
-# 
-# HDL call sequence:
-# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 27 Architecture Behavior
-# 
+add wave -position end  sim:/cpu/banco/Q0
+add wave -position end  sim:/cpu/banco/Q1
+add wave -position end  sim:/cpu/banco/Q2
+add wave -position end  sim:/cpu/banco/Q3
 add wave -position end  sim:/cpu/UCout
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
-# ** Fatal: (vsim-3421) Value 3 is out of range 0 to 2.
-#    Time: 950 ps  Iteration: 1  Process: /cpu/Mem/line__27 File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd Line: 27
-# Fatal error in Architecture Behavior at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd line 27
-# 
-# HDL call sequence:
-# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 27 Architecture Behavior
-# 
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+add wave -position end  sim:/cpu/instrucao
+add wave -position end  sim:/cpu/result
+add wave -position end  sim:/cpu/WriteData
+add wave -position end  sim:/cpu/BEQ
 run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
-# ** Fatal: (vsim-3421) Value 3 is out of range 0 to 2.
-#    Time: 950 ps  Iteration: 1  Process: /cpu/Mem/line__27 File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd Line: 27
-# Fatal error in Architecture Behavior at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd line 27
+# ** Fatal: (vsim-3734) Index value 7 is out of range 0 to 6.
+#    Time: 1750 ps  Iteration: 2  Process: /cpu/Mem/line__30 File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd
+# Fatal error in Architecture Behavior at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd line 30
 # 
 # HDL call sequence:
-# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 27 Architecture Behavior
+# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 30 Architecture Behavior
 # 
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 27 Architecture Behavior
-# 
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 27 Architecture Behavior
-# 
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 27 Architecture Behavior
-# 
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 27 Architecture Behavior
-# 
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 27 Architecture Behavior
-# 
-# WARNING: No extended dataflow license exists
-add wave -position end  sim:/cpu/Jumpadd
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
-# ** Fatal: (vsim-3421) Value 3 is out of range 0 to 2.
-#    Time: 950 ps  Iteration: 1  Process: /cpu/Mem/line__27 File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd Line: 27
-# Fatal error in Architecture Behavior at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd line 27
-# 
-# HDL call sequence:
-# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 27 Architecture Behavior
-# 
-add wave -position end  sim:/cpu/PC_reg/intermediario
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
-# ** Fatal: (vsim-3421) Value 3 is out of range 0 to 2.
-#    Time: 950 ps  Iteration: 1  Process: /cpu/Mem/line__27 File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd Line: 27
-# Fatal error in Architecture Behavior at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd line 27
-# 
-# HDL call sequence:
-# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 27 Architecture Behavior
-# 
-add wave -position end  sim:/cpu/PCWrite
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
-# ** Fatal: (vsim-3421) Value 3 is out of range 0 to 2.
-#    Time: 950 ps  Iteration: 1  Process: /cpu/Mem/line__27 File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd Line: 27
-# Fatal error in Architecture Behavior at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd line 27
-# 
-# HDL call sequence:
-# Stopped at C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd 27 Architecture Behavior
-# 
-# End time: 16:47:37 on Nov 11,2021, Elapsed time: 0:38:36
+# End time: 11:41:51 on Nov 12,2021, Elapsed time: 0:05:11
 # Errors: 1, Warnings: 1
