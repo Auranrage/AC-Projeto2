@@ -10,8 +10,8 @@ ENTITY CPU IS
 		
 END CPU ;
 
-
 ARCHITECTURE Structure OF CPU IS
+--- Instanciamento de componentes
 	COMPONENT registrador
 		PORT ( D										: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
 				reset, load, clock				: IN STD_LOGIC ;
@@ -47,7 +47,7 @@ ARCHITECTURE Structure OF CPU IS
 	COMPONENT PC
 		PORT (
 			PCin,BEQin 								: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
-			reset, PCload, Clock					: IN STD_LOGIC ;
+			reset, PCload, Clock, NotTaken   : IN STD_LOGIC ;
 			PCSource									: IN STD_LOGIC_VECTOR(1 DOWNTO 0);
 			PCout										: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 			PCmsb										: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
@@ -109,7 +109,7 @@ ARCHITECTURE Structure OF CPU IS
 	
 	--Registradores
 	SIGNAL loadA, loadB, loadALUout			: STD_LOGIC;
-	
+	SIGNAL NotTaken								: STD_LOGIC;
 	-- UC
 	SIGNAL UCout									: STD_LOGIC_VECTOR(5 downto 0);
 	SIGNAL PCWriteCond							: STD_LOGIC;
@@ -118,7 +118,7 @@ ARCHITECTURE Structure OF CPU IS
 	
 	BEGIN
 		--Instanciação dos componentes
-		PC_reg: PC port map (ENDtoPC, BEQ, reset, PCWrite, clock, PCSource, PCout,PCmsb); 
+		PC_reg: PC port map (ENDtoPC, BEQ, reset, PCWrite, clock, NotTaken, PCSource, PCout,PCmsb); 
 			--PCout = PCin se PCload=1, se não PCout = valor anterior + 1
 		
 		Mem: Memoria port map (Pcout, instrucao,BEQ); 
@@ -149,12 +149,13 @@ ARCHITECTURE Structure OF CPU IS
 			
 		Control: UC port map(OP,reset,clock,UCOut);
 			-- Recebe o OP code e traduz em sinais de controle.
-			
+		
+		--- Separa os sinais que saem da unidade de controle.
 		PCWriteCond <= UCout(5);
 		PCWrite <= UCout(4) OR (PCWriteCond AND zero);
 		PCSource <= UCout(3 downto 2);
 		Aluop <= UCout(1);
 		RegWrite <= UCout(0);
-		
+		NotTaken <= '1' WHEN PCWriteCond = '1' AND zero = '0';
 	
 END Structure ;

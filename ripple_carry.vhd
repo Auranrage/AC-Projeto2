@@ -1,6 +1,6 @@
+--- Unidade básica de soma
 LIBRARY ieee ;
 USE ieee.std_logic_1164.all ;
-
 ENTITY ripple_carry IS
 	GENERIC ( n : INTEGER := 8 ) ;
 	

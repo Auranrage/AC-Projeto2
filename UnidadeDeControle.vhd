@@ -1,3 +1,4 @@
+--- Recebe o sinal de OP e traduz esse sinal para todos os sinais de controle usados na CPU
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

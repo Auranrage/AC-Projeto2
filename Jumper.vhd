@@ -1,7 +1,7 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-
+--- Unidade que realiza Jump
 ENTITY Jumper IS
 PORT(
 	PCmsb			: IN STD_LOGIC_VECTOR (1 DOWNTO 0);

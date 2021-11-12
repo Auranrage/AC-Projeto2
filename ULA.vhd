@@ -1,3 +1,4 @@
+--- Unidade lógica e aritmética com 1 bit de Aluop, realiza funções simples de '+' e '-' por meio de um ripple-carry.
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

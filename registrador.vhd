@@ -1,3 +1,4 @@
+--- Unidade básica de registrador, inicializado com 1 para testes de soma e sub
 LIBRARY ieee ;
 USE ieee.std_logic_1164.all ;
 

@@ -1,13 +1,10 @@
---Funcionamento
--- Registrador só escreve quando clock = 1.
--- Bancop escreve em registrador 00 se RegWrite = 1 e WriteReg = 00
--- ReadData1 le de registrador 00 se ReadReg1 = 00. Mesma coisa pro ReadData2 e ReadReg2.
-
+--- O banco de registradores consegue escrever e ler, manipulando qualquer um de seus 4 registradores internos.
+--- R0, R1, R2, R3.
 
 LIBRARY ieee ;
 USE ieee.std_logic_1164.all ;
 
-ENTITY banco_registradores IS
+ENTITY banco_registradores IS 
 	GENERIC ( n : INTEGER := 8 ) ;
 	
 	PORT (RegWrite, Clock, reset		: IN STD_LOGIC;
@@ -33,20 +30,20 @@ ARCHITECTURE Structure OF banco_registradores IS
 	END COMPONENT ;
 	
 BEGIN
-	
+	--- Instanciamento de registradores.
 	R0: registrador PORT MAP (D0, reset, RegWrite, Clock, Q0);
 	R1: registrador PORT MAP (D1, reset, RegWrite, Clock, Q1);
 	R2: registrador PORT MAP (D2, reset, RegWrite, Clock, Q2);
 	R3: registrador PORT MAP (D3, reset, RegWrite, Clock, Q3);
 	
 
-	
+	--- Escrita dos registradores.
 	D0	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "00" ELSE Q0;
 	D1	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "01" ELSE Q1;
 	D2	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "10" ELSE Q2;
 	D3	<=	WriteData WHEN RegWrite = '1' AND WriteReg = "11" ELSE Q3;
 		
-		
+	--- Leitura dos registradores.
 	ReadData1 <=	Q0	when ReadReg1 = "00"	else 
 						Q1	when ReadReg1 = "01"	else 
 						Q2	when ReadReg1 = "10"	else 

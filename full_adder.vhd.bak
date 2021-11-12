@@ -1,6 +1,6 @@
 LIBRARY ieee ;
 USE ieee.std_logic_1164.all ;
---- Unidade básica de soma
+
 ENTITY full_adder IS
 PORT ( Cin, x, y : IN STD_LOGIC ;
 		s, Cout : OUT STD_LOGIC ) ;

@@ -1,6 +1,6 @@
 --Funcionamento
 -- Nao tem entrada (só o clock). Começa com 00000000 e vai somando 00000001 a cada subida de clock.
--- Saida PCout
+-- Saida PCout conforme o sinal PCload (PCWrite) e o sinal PCSource.
 
 LIBRARY ieee ;
 USE ieee.std_logic_1164.all ;
@@ -8,11 +8,11 @@ USE ieee.std_logic_signed.all;
 
 ENTITY PC IS
 	GENERIC ( N : INTEGER := 8 ) ;
-	PORT ( 	PCin,BEQin 				: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
-				reset, PCload, Clock	: IN STD_LOGIC ;
-				PCSource					: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
-				PCout						: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-				PCmsb						: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+	PORT ( 	PCin,BEQin 								: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
+				reset, PCload, Clock, NotTaken	: IN STD_LOGIC ;
+				PCSource									: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
+				PCout										: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				PCmsb										: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
 			);
 END PC ;
 
@@ -33,8 +33,12 @@ BEGIN
 				intermediario <= intermediario + "00000001";
 				PCout <= intermediario;
 			ELSIF PCload = '1' AND PCSource = "10" THEN
-				intermediario <= BEQin;
-				PCout <= intermediario;
+				IF NotTaken = '0' THEN
+					intermediario <= BEQin;
+					PCout <= intermediario;
+				ELSE
+					intermediario <= intermediario + "00000010";
+					PCout <= intermediario;
 			END IF;
 		END IF ;
 	END PROCESS ;
