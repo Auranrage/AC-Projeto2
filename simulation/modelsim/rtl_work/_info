@@ -23,11 +23,19 @@ VChEcGX92f7ko`4TiBo87=3
 !s100 l`ZBJ]^N]>JA?NA04E:[U2
 Z7 OV;C;2020.1;71
 31
+<<<<<<< Updated upstream
 Z8 !s110 1636727785
 !i10b 1
 Z9 !s108 1636727785.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd|
 Z11 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd|
+=======
+Z7 !s110 1637071991
+!i10b 1
+Z8 !s108 1637071991.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd|
+Z10 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd|
+>>>>>>> Stashed changes
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
@@ -51,8 +59,13 @@ R11
 R12
 R13
 Ecpu
+<<<<<<< Updated upstream
 Z14 w1636727378
 Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+=======
+Z13 w1637069327
+Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+>>>>>>> Stashed changes
 R2
 R3
 !i122 0
@@ -64,10 +77,15 @@ L5 1
 VeMFnb3eU]lkSa9CEdYF<Y1
 !s100 BTnX05Q7_:]GSa6PmhmL92
 R7
+<<<<<<< Updated upstream
 31
 R8
 !i10b 1
 R9
+=======
+!i10b 1
+Z17 !s108 1637071990.000000
+>>>>>>> Stashed changes
 Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd|
 Z19 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd|
 !i113 1
@@ -79,6 +97,7 @@ R2
 R3
 DEx4 work 3 cpu 0 22 eMFnb3eU]lkSa9CEdYF<Y1
 !i122 0
+<<<<<<< Updated upstream
 l119
 L14 147
 VP_7fOS24>VC@<;DBcDM0c3
@@ -88,13 +107,28 @@ R7
 R8
 !i10b 1
 R9
+=======
+l118
+L13 147
+V@7M[`UeO7UOMaP[nkz?Zm1
+!s100 D>CjLW;zcVaV=d9fmIeD03
+R6
+31
+R7
+!i10b 1
+R17
+>>>>>>> Stashed changes
 R18
 R19
 !i113 1
 R12
 R13
 Efull_adder
+<<<<<<< Updated upstream
 Z20 w1635272974
+=======
+Z20 w1636751206
+>>>>>>> Stashed changes
 R2
 R3
 !i122 3
@@ -108,8 +142,11 @@ V_>7aKW7mfKf@Aj75K^F;;2
 R7
 31
 R8
+<<<<<<< Updated upstream
 !i10b 1
 R9
+=======
+>>>>>>> Stashed changes
 Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd|
 Z24 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/full_adder.vhd|
 !i113 1
@@ -127,33 +164,54 @@ VjXOgAY5dd9MmTO=JTaO7j2
 R7
 31
 R8
+<<<<<<< Updated upstream
 !i10b 1
 R9
+=======
+>>>>>>> Stashed changes
 R23
 R24
 !i113 1
 R12
 R13
 Ejumper
+<<<<<<< Updated upstream
 Z25 w1636721185
 R15
+=======
+Z25 w1636751225
+R14
+>>>>>>> Stashed changes
 R2
 R3
 !i122 10
 R0
+<<<<<<< Updated upstream
 Z26 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd
 Z27 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd
+=======
+Z26 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/jumper.vhd
+Z27 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/jumper.vhd
+>>>>>>> Stashed changes
 l0
 L5 1
 V=]=FZL^XjKjN8AW`AD@Z83
 !s100 d>QzUn7D9]l4Do0RZMnF_3
 R7
 31
+<<<<<<< Updated upstream
 Z28 !s110 1636727786
 !i10b 1
 Z29 !s108 1636727786.000000
 Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd|
 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd|
+=======
+Z28 !s110 1637071992
+!i10b 1
+Z29 !s108 1637071992.000000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/jumper.vhd|
+!s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/jumper.vhd|
+>>>>>>> Stashed changes
 !i113 1
 R12
 R13
@@ -173,13 +231,22 @@ R28
 !i10b 1
 R29
 R30
+<<<<<<< Updated upstream
 Z31 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd|
+=======
+Z31 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/jumper.vhd|
+>>>>>>> Stashed changes
 !i113 1
 R12
 R13
 Ememoria
+<<<<<<< Updated upstream
 Z32 w1636727763
 R15
+=======
+Z32 w1637070662
+R14
+>>>>>>> Stashed changes
 R2
 R3
 !i122 7
@@ -192,9 +259,15 @@ VmVzzS2Nkb=c9GFIlQzNic0
 !s100 <nga1QT_XXZJ2MEI]_>dz1
 R7
 31
+<<<<<<< Updated upstream
 R8
 !i10b 1
 R9
+=======
+R7
+!i10b 1
+R8
+>>>>>>> Stashed changes
 Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd|
 Z36 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd|
 !i113 1
@@ -206,6 +279,7 @@ R2
 R3
 DEx4 work 7 memoria 0 22 mVzzS2Nkb=c9GFIlQzNic0
 !i122 7
+<<<<<<< Updated upstream
 l27
 L18 14
 VzMbH=7Z`75RHNek4aG`>Y2
@@ -215,13 +289,28 @@ R7
 R8
 !i10b 1
 R9
+=======
+l26
+L18 13
+Vm7_WldQfX[U`QzZZ=3?TV1
+!s100 ?Oom54LTOg<ml]h_1;:M=0
+R6
+31
+R7
+!i10b 1
+R8
+>>>>>>> Stashed changes
 R35
 R36
 !i113 1
 R12
 R13
 Epc
+<<<<<<< Updated upstream
 Z37 w1636727065
+=======
+Z37 w1637070000
+>>>>>>> Stashed changes
 Z38 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z39 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
 R2
@@ -232,13 +321,23 @@ Z40 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd
 Z41 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd
 l0
 L9 1
+<<<<<<< Updated upstream
 V8`^6_f1g3ToIi7LAgVO9N3
 !s100 c@Nc1GO]D6icJfIT^CoYl1
+=======
+V_0FD@<Ro>EBDmN1VaG<Fe2
+!s100 ELZ7S3D]O4:a?XMWaIUPK0
+R6
+31
+>>>>>>> Stashed changes
 R7
 31
 R8
+<<<<<<< Updated upstream
 !i10b 1
 R9
+=======
+>>>>>>> Stashed changes
 Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd|
 Z43 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/PC.vhd|
 !i113 1
@@ -249,25 +348,44 @@ R38
 R39
 R2
 R3
+<<<<<<< Updated upstream
 DEx4 work 2 pc 0 22 8`^6_f1g3ToIi7LAgVO9N3
 !i122 5
 l22
 L19 24
 V@c5CgbLRh=nZkU<8^4P0_2
 !s100 DBaSm^kU[VY4<_EYeTY[h3
+=======
+DEx4 work 2 pc 0 22 _0FD@<Ro>EBDmN1VaG<Fe2
+!i122 5
+l22
+L19 28
+V8RU^g=TYNJhEzk5mU?]N]2
+!s100 1Z6P:VO:N2GCUKjo>O00_2
+R6
+31
+>>>>>>> Stashed changes
 R7
 31
 R8
+<<<<<<< Updated upstream
 !i10b 1
 R9
+=======
+>>>>>>> Stashed changes
 R42
 R43
 !i113 1
 R12
 R13
 Ereg_instrucao
+<<<<<<< Updated upstream
 Z44 w1636726196
 R15
+=======
+Z44 w1637068420
+R14
+>>>>>>> Stashed changes
 R2
 R3
 !i122 8
@@ -276,6 +394,7 @@ Z45 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd
 Z46 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd
 l0
 L9 1
+<<<<<<< Updated upstream
 V>[e6VV6O=CO3NFOGUei>o3
 !s100 c:goJ?@2=QdPl1gSUmA9@3
 R7
@@ -283,6 +402,15 @@ R7
 R8
 !i10b 1
 R9
+=======
+V873i4KJ1d95ML`@j>VP8c0
+!s100 F3h_oHBlM=ehIX^PHWQMH0
+R6
+31
+R7
+!i10b 1
+R8
+>>>>>>> Stashed changes
 Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
 Z48 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
 !i113 1
@@ -292,9 +420,10 @@ Abehavior
 R15
 R2
 R3
-DEx4 work 13 reg_instrucao 0 22 >[e6VV6O=CO3NFOGUei>o3
+DEx4 work 13 reg_instrucao 0 22 873i4KJ1d95ML`@j>VP8c0
 !i122 8
 l19
+<<<<<<< Updated upstream
 L18 10
 VgX^ES:EUjP0=cUkdZ<Wi01
 !s100 FFJZAZzK3Z3MZRKIH@_DJ1
@@ -303,19 +432,33 @@ R7
 R8
 !i10b 1
 R9
+=======
+L18 9
+V1CVdWgZ8aLP>>dk83PbfU2
+!s100 6Na]IVTglWOS>=68E3fKe3
+R6
+31
+R7
+!i10b 1
+R8
+>>>>>>> Stashed changes
 R47
 R48
 !i113 1
 R12
 R13
 Eregistrador
+<<<<<<< Updated upstream
 R1
+=======
+Z49 w1637016703
+>>>>>>> Stashed changes
 R2
 R3
 !i122 2
 R0
-Z49 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
-Z50 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
+Z50 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
+Z51 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd
 l0
 L4 1
 V89=l^jDDdQeEOID4[4cPY0
@@ -323,10 +466,15 @@ V89=l^jDDdQeEOID4[4cPY0
 R7
 31
 R8
+<<<<<<< Updated upstream
 !i10b 1
 R9
 Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
 Z52 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
+=======
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
+Z53 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd|
+>>>>>>> Stashed changes
 !i113 1
 R12
 R13
@@ -342,21 +490,29 @@ VY>3fRV[9jZ^D>H[;oW<HL1
 R7
 31
 R8
+<<<<<<< Updated upstream
 !i10b 1
 R9
 R51
+=======
+>>>>>>> Stashed changes
 R52
+R53
 !i113 1
 R12
 R13
 Eripple_carry
+<<<<<<< Updated upstream
 Z53 w1635955162
+=======
+Z54 w1636751797
+>>>>>>> Stashed changes
 R2
 R3
 !i122 1
 R0
-Z54 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd
-Z55 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd
+Z55 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd
+Z56 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd
 l0
 L4 1
 VF1A0ESjidlE8S<H3UamdE1
@@ -364,10 +520,15 @@ VF1A0ESjidlE8S<H3UamdE1
 R7
 31
 R8
+<<<<<<< Updated upstream
 !i10b 1
 R9
 Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd|
 Z57 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd|
+=======
+Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd|
+Z58 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd|
+>>>>>>> Stashed changes
 !i113 1
 R12
 R13
@@ -383,22 +544,31 @@ V64gC0>gaM7<7]iSmRY0[a3
 R7
 31
 R8
+<<<<<<< Updated upstream
 !i10b 1
 R9
 R56
+=======
+>>>>>>> Stashed changes
 R57
+R58
 !i113 1
 R12
 R13
 Euc
+<<<<<<< Updated upstream
 Z58 w1636726917
 R15
+=======
+Z59 w1637067045
+R14
+>>>>>>> Stashed changes
 R2
 R3
 !i122 9
 R0
-Z59 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
-Z60 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
+Z60 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
+Z61 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd
 l0
 L5 1
 Vf^BdT];o9eYGMRN_GhTY^1
@@ -407,9 +577,15 @@ R7
 31
 R28
 !i10b 1
+<<<<<<< Updated upstream
 R9
 Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
 Z62 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
+=======
+R8
+Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
+Z63 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
+>>>>>>> Stashed changes
 !i113 1
 R12
 R13
@@ -427,32 +603,50 @@ R7
 31
 R28
 !i10b 1
+<<<<<<< Updated upstream
 R9
 R61
+=======
+R8
+>>>>>>> Stashed changes
 R62
+R63
 !i113 1
 R12
 R13
 Eula
+<<<<<<< Updated upstream
 Z63 w1636582831
 R15
+=======
+Z64 w1636751852
+R14
+>>>>>>> Stashed changes
 R2
 R3
 !i122 6
 R0
-Z64 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd
-Z65 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd
+Z65 8C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd
+Z66 FC:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd
 l0
 L5 1
 VEM6>6WOZoAj3EQdQoC0Ze2
 !s100 zbbbiCggB4h:z]WZBhFK92
 R7
 31
+<<<<<<< Updated upstream
 R8
 !i10b 1
 R9
 Z66 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd|
 Z67 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd|
+=======
+R7
+!i10b 1
+R8
+Z67 !s90 -reportprogress|300|-93|-work|work|C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd|
+Z68 !s107 C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd|
+>>>>>>> Stashed changes
 !i113 1
 R12
 R13
@@ -468,11 +662,18 @@ VK40Mj>;^YYgo^5Hf1ScXC0
 !s100 M[C68Dec]EL=;zUVWl5o12
 R7
 31
+<<<<<<< Updated upstream
 R8
 !i10b 1
 R9
 R66
+=======
+R7
+!i10b 1
+R8
+>>>>>>> Stashed changes
 R67
+R68
 !i113 1
 R12
 R13

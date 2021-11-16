@@ -15,5 +15,5 @@ vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.v
 vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Memoria.vhd}
 vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd}
 vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd}
-vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Jumper.vhd}
+vcom -93 -work work {C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/jumper.vhd}
 

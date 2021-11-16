@@ -1,5 +1,9 @@
 Analysis & Elaboration report for Projeto2
+<<<<<<< Updated upstream
 Fri Nov 12 11:36:16 2021
+=======
+Tue Nov 16 11:13:02 2021
+>>>>>>> Stashed changes
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -53,7 +57,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< Updated upstream
 ; Analysis & Elaboration Status      ; Successful - Fri Nov 12 11:36:16 2021       ;
+=======
+; Analysis & Elaboration Status      ; Successful - Tue Nov 16 11:13:02 2021       ;
+>>>>>>> Stashed changes
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
 ; Top-level Entity Name              ; CPU                                         ;
@@ -332,7 +340,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+<<<<<<< Updated upstream
     Info: Processing started: Fri Nov 12 11:36:09 2021
+=======
+    Info: Processing started: Tue Nov 16 11:12:55 2021
+>>>>>>> Stashed changes
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -364,6 +376,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file reg_ins
     Info (12022): Found design unit 1: Reg_Instrucao-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd Line: 18
     Info (12023): Found entity 1: Reg_Instrucao File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/Reg_Instrucao.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file unidadedecontrole.vhd
+<<<<<<< Updated upstream
     Info (12022): Found design unit 1: UC-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd Line: 14
     Info (12023): Found entity 1: UC File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file jumper.vhd
@@ -385,5 +398,39 @@ Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
     Info: Processing ended: Fri Nov 12 11:36:16 2021
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:16
+=======
+    Info (12022): Found design unit 1: UC-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd Line: 15
+    Info (12023): Found entity 1: UC File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/UnidadeDeControle.vhd Line: 6
+Info (12127): Elaborating entity "CPU" for the top level hierarchy
+Info (12128): Elaborating entity "PC" for hierarchy "PC:PC_reg" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 128
+Info (12128): Elaborating entity "Memoria" for hierarchy "Memoria:Mem" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 132
+Info (12128): Elaborating entity "Reg_Instrucao" for hierarchy "Reg_Instrucao:reg_int" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 135
+Info (12128): Elaborating entity "banco_registradores" for hierarchy "banco_registradores:banco" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 139
+Info (12128): Elaborating entity "registrador" for hierarchy "banco_registradores:banco|registrador:R0" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/banco_registradores.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at registrador.vhd(22): signal "load" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd Line: 22
+Warning (10492): VHDL Process Statement warning at registrador.vhd(23): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd Line: 23
+Warning (10631): VHDL Process Statement warning at registrador.vhd(18): inferring latch(es) for signal or variable "Q", which holds its previous value in one or more paths through the process File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd Line: 18
+Info (10041): Inferred latch for "Q[0]" at registrador.vhd(18) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd Line: 18
+Info (10041): Inferred latch for "Q[1]" at registrador.vhd(18) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd Line: 18
+Info (10041): Inferred latch for "Q[2]" at registrador.vhd(18) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd Line: 18
+Info (10041): Inferred latch for "Q[3]" at registrador.vhd(18) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd Line: 18
+Info (10041): Inferred latch for "Q[4]" at registrador.vhd(18) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd Line: 18
+Info (10041): Inferred latch for "Q[5]" at registrador.vhd(18) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd Line: 18
+Info (10041): Inferred latch for "Q[6]" at registrador.vhd(18) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd Line: 18
+Info (10041): Inferred latch for "Q[7]" at registrador.vhd(18) File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/registrador.vhd Line: 18
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA1" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 145
+Info (12128): Elaborating entity "ripple_carry" for hierarchy "ULA:ULA1|ripple_carry:SOMADOR1" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ULA.vhd Line: 36
+Info (12128): Elaborating entity "full_adder" for hierarchy "ULA:ULA1|ripple_carry:SOMADOR1|full_adder:\Generate_label:0:stage" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/ripple_carry.vhd Line: 28
+Warning (12125): Using design file jumper.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Jumper-Behavior File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/jumper.vhd Line: 13
+    Info (12023): Found entity 1: Jumper File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/jumper.vhd Line: 5
+Info (12128): Elaborating entity "Jumper" for hierarchy "Jumper:Jump" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 149
+Info (12128): Elaborating entity "UC" for hierarchy "UC:Control" File: C:/Users/Greed/OneDrive/Documentos/GitHub/AC-Projeto2/CPU.vhd Line: 156
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4775 megabytes
+    Info: Processing ended: Tue Nov 16 11:13:02 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:18
+>>>>>>> Stashed changes
 
 

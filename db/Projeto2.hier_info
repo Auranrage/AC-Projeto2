@@ -47,6 +47,10 @@ reset => intermediario[4].ENA
 reset => intermediario[5].ENA
 reset => intermediario[6].ENA
 reset => intermediario[7].ENA
+<<<<<<< Updated upstream
+=======
+PCload => process_0.IN1
+>>>>>>> Stashed changes
 PCload => process_0.IN1
 PCload => process_0.IN1
 PCload => process_0.IN1
@@ -130,20 +134,26 @@ BEQout[7] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
 
 |CPU|Reg_Instrucao:reg_int
 instrucao[0] => RD[0].DATAIN
-instrucao[0] => Jumpaddres[0].DATAIN
+instrucao[0] => Jumpin[0].DATAIN
 instrucao[1] => RD[1].DATAIN
-instrucao[1] => Jumpaddres[1].DATAIN
+instrucao[1] => Jumpin[1].DATAIN
 instrucao[2] => RT[0].DATAIN
-instrucao[2] => Jumpaddres[2].DATAIN
+instrucao[2] => Jumpin[2].DATAIN
 instrucao[3] => RT[1].DATAIN
-instrucao[3] => Jumpaddres[3].DATAIN
+instrucao[3] => Jumpin[3].DATAIN
 instrucao[4] => RS[0].DATAIN
-instrucao[4] => Jumpaddres[4].DATAIN
+instrucao[4] => Jumpin[4].DATAIN
 instrucao[5] => RS[1].DATAIN
-instrucao[5] => Jumpaddres[5].DATAIN
+instrucao[5] => Jumpin[5].DATAIN
 instrucao[6] => OP[0].DATAIN
 instrucao[7] => OP[1].DATAIN
 Clock => ~NO_FANOUT~
+Jumpin[0] <= instrucao[0].DB_MAX_OUTPUT_PORT_TYPE
+Jumpin[1] <= instrucao[1].DB_MAX_OUTPUT_PORT_TYPE
+Jumpin[2] <= instrucao[2].DB_MAX_OUTPUT_PORT_TYPE
+Jumpin[3] <= instrucao[3].DB_MAX_OUTPUT_PORT_TYPE
+Jumpin[4] <= instrucao[4].DB_MAX_OUTPUT_PORT_TYPE
+Jumpin[5] <= instrucao[5].DB_MAX_OUTPUT_PORT_TYPE
 OP[0] <= instrucao[6].DB_MAX_OUTPUT_PORT_TYPE
 OP[1] <= instrucao[7].DB_MAX_OUTPUT_PORT_TYPE
 RS[0] <= instrucao[4].DB_MAX_OUTPUT_PORT_TYPE
@@ -152,12 +162,6 @@ RT[0] <= instrucao[2].DB_MAX_OUTPUT_PORT_TYPE
 RT[1] <= instrucao[3].DB_MAX_OUTPUT_PORT_TYPE
 RD[0] <= instrucao[0].DB_MAX_OUTPUT_PORT_TYPE
 RD[1] <= instrucao[1].DB_MAX_OUTPUT_PORT_TYPE
-Jumpaddres[0] <= instrucao[0].DB_MAX_OUTPUT_PORT_TYPE
-Jumpaddres[1] <= instrucao[1].DB_MAX_OUTPUT_PORT_TYPE
-Jumpaddres[2] <= instrucao[2].DB_MAX_OUTPUT_PORT_TYPE
-Jumpaddres[3] <= instrucao[3].DB_MAX_OUTPUT_PORT_TYPE
-Jumpaddres[4] <= instrucao[4].DB_MAX_OUTPUT_PORT_TYPE
-Jumpaddres[5] <= instrucao[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|banco_registradores:banco
@@ -657,6 +661,25 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|CPU|Jumper:Jump
+PCmsb[0] => newpc[6].DATAIN
+PCmsb[1] => newpc[7].DATAIN
+instadd[0] => newpc[0].DATAIN
+instadd[1] => newpc[1].DATAIN
+instadd[2] => newpc[2].DATAIN
+instadd[3] => newpc[3].DATAIN
+instadd[4] => newpc[4].DATAIN
+instadd[5] => newpc[5].DATAIN
+newpc[0] <= instadd[0].DB_MAX_OUTPUT_PORT_TYPE
+newpc[1] <= instadd[1].DB_MAX_OUTPUT_PORT_TYPE
+newpc[2] <= instadd[2].DB_MAX_OUTPUT_PORT_TYPE
+newpc[3] <= instadd[3].DB_MAX_OUTPUT_PORT_TYPE
+newpc[4] <= instadd[4].DB_MAX_OUTPUT_PORT_TYPE
+newpc[5] <= instadd[5].DB_MAX_OUTPUT_PORT_TYPE
+newpc[6] <= PCmsb[0].DB_MAX_OUTPUT_PORT_TYPE
+newpc[7] <= PCmsb[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
 |CPU|registrador:regA
 D[0] => Q.DATAB
 D[1] => Q.DATAB
@@ -741,25 +764,6 @@ Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|CPU|Jumper:Jump
-PCmsb[0] => newpc[6].DATAIN
-PCmsb[1] => newpc[7].DATAIN
-instadd[0] => newpc[0].DATAIN
-instadd[1] => newpc[1].DATAIN
-instadd[2] => newpc[2].DATAIN
-instadd[3] => newpc[3].DATAIN
-instadd[4] => newpc[4].DATAIN
-instadd[5] => newpc[5].DATAIN
-newpc[0] <= instadd[0].DB_MAX_OUTPUT_PORT_TYPE
-newpc[1] <= instadd[1].DB_MAX_OUTPUT_PORT_TYPE
-newpc[2] <= instadd[2].DB_MAX_OUTPUT_PORT_TYPE
-newpc[3] <= instadd[3].DB_MAX_OUTPUT_PORT_TYPE
-newpc[4] <= instadd[4].DB_MAX_OUTPUT_PORT_TYPE
-newpc[5] <= instadd[5].DB_MAX_OUTPUT_PORT_TYPE
-newpc[6] <= PCmsb[0].DB_MAX_OUTPUT_PORT_TYPE
-newpc[7] <= PCmsb[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|UC:Control
