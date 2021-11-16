@@ -47,10 +47,7 @@ reset => intermediario[4].ENA
 reset => intermediario[5].ENA
 reset => intermediario[6].ENA
 reset => intermediario[7].ENA
-<<<<<<< Updated upstream
-=======
 PCload => process_0.IN1
->>>>>>> Stashed changes
 PCload => process_0.IN1
 PCload => process_0.IN1
 PCload => process_0.IN1
@@ -90,23 +87,28 @@ PCmsb[1] <= intermediario[7].DB_MAX_OUTPUT_PORT_TYPE
 
 |CPU|Memoria:Mem
 PC_endereco[0] => Mux0.IN10
-PC_endereco[0] => Mux1.IN5
-PC_endereco[0] => Mux2.IN5
-PC_endereco[0] => Mux3.IN5
-PC_endereco[0] => Mux4.IN5
-PC_endereco[0] => Mux5.IN10
+PC_endereco[0] => Mux1.IN10
+PC_endereco[0] => Mux2.IN10
+PC_endereco[0] => Mux3.IN10
+PC_endereco[0] => Mux4.IN10
 PC_endereco[0] => Mux6.IN10
+PC_endereco[0] => Mux7.IN5
 PC_endereco[0] => Add0.IN6
 PC_endereco[1] => Mux0.IN9
-PC_endereco[1] => Mux1.IN4
-PC_endereco[1] => Mux4.IN4
-PC_endereco[1] => Mux5.IN9
+PC_endereco[1] => Mux1.IN9
+PC_endereco[1] => Mux2.IN9
+PC_endereco[1] => Mux3.IN9
+PC_endereco[1] => Mux4.IN9
+PC_endereco[1] => Mux5.IN5
 PC_endereco[1] => Mux6.IN9
+PC_endereco[1] => Mux7.IN4
 PC_endereco[1] => Add0.IN5
 PC_endereco[2] => Mux0.IN8
-PC_endereco[2] => Mux2.IN4
-PC_endereco[2] => Mux3.IN4
-PC_endereco[2] => Mux5.IN8
+PC_endereco[2] => Mux1.IN8
+PC_endereco[2] => Mux2.IN8
+PC_endereco[2] => Mux3.IN8
+PC_endereco[2] => Mux4.IN8
+PC_endereco[2] => Mux5.IN4
 PC_endereco[2] => Mux6.IN8
 PC_endereco[2] => Add0.IN4
 PC_endereco[3] => ~NO_FANOUT~
@@ -114,22 +116,22 @@ PC_endereco[4] => ~NO_FANOUT~
 PC_endereco[5] => ~NO_FANOUT~
 PC_endereco[6] => ~NO_FANOUT~
 PC_endereco[7] => ~NO_FANOUT~
-instrucao_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-instrucao_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-instrucao_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-instrucao_out[3] <= <GND>
+instrucao_out[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+instrucao_out[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+instrucao_out[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+instrucao_out[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
 instrucao_out[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 instrucao_out[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 instrucao_out[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 instrucao_out[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-BEQout[0] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
-BEQout[1] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
-BEQout[2] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
-BEQout[3] <= <GND>
-BEQout[4] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
-BEQout[5] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
-BEQout[6] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
-BEQout[7] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+BEQout[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+BEQout[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+BEQout[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+BEQout[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+BEQout[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+BEQout[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+BEQout[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+BEQout[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|Reg_Instrucao:reg_int

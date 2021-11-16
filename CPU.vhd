@@ -47,11 +47,7 @@ ARCHITECTURE Structure OF CPU IS
 	COMPONENT PC
 		PORT (
 			PCin,BEQin 								: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
-<<<<<<< Updated upstream
-			reset, PCload, Clock, NotTaken   : IN STD_LOGIC ;
-=======
 			reset, PCload, Clock					: IN STD_LOGIC ;
->>>>>>> Stashed changes
 			PCSource									: IN STD_LOGIC_VECTOR(1 DOWNTO 0);
 			PCout										: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 			PCmsb										: OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
@@ -121,10 +117,6 @@ ARCHITECTURE Structure OF CPU IS
 	
 	
 	BEGIN
-<<<<<<< Updated upstream
-		--Instanciação dos componentes
-		PC_reg: PC port map (ENDtoPC, BEQ, reset, PCWrite, clock, NotTaken, PCSource, PCout,PCmsb); 
-=======
 		--- Separa os sinais que saem da unidade de controle.
 		PCWriteCond <= UCout(5);
 		PCWrite <= UCout(4) OR (PCWriteCond AND zero);
@@ -135,8 +127,6 @@ ARCHITECTURE Structure OF CPU IS
 		--Instanciação dos componentes
 
 		PC_reg: PC port map (ENDtoPC, BEQ, reset, PCWrite, clock, PCSource, PCout,PCmsb); 
-
->>>>>>> Stashed changes
 			--PCout = PCin se PCload=1, se não PCout = valor anterior + 1
 		
 		Mem: Memoria port map (Pcout, instrucao,BEQ); 
@@ -163,23 +153,6 @@ ARCHITECTURE Structure OF CPU IS
 			--Pega os valores de RS e RT.
 			--Obs: Talvez loadA e loadB sejam sempre 0.
 			
-<<<<<<< Updated upstream
-		Jump: Jumper port map (PCmsb,Jumpadd,ENDtoPC);
-			
-			
-		Control: UC port map(OP,reset,clock,UCOut);
-			-- Recebe o OP code e traduz em sinais de controle.
-		
-		--- Separa os sinais que saem da unidade de controle.
-		PCWriteCond <= UCout(5);
-		PCWrite <= UCout(4) OR (PCWriteCond AND zero);
-		PCSource <= UCout(3 downto 2);
-		Aluop <= UCout(1);
-		RegWrite <= UCout(0);
-		NotTaken <= '1' WHEN PCWriteCond = '1' AND zero = '0';
-=======
 		Control: UC port map(OP,reset,clock,UCOut);	
-
->>>>>>> Stashed changes
 	
 END Structure ;

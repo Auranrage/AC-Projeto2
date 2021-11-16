@@ -1,9 +1,5 @@
 Flow report for Projeto2
-<<<<<<< Updated upstream
-Fri Nov 12 11:36:16 2021
-=======
-Tue Nov 16 11:13:02 2021
->>>>>>> Stashed changes
+Tue Nov 16 11:40:21 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -45,11 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-<<<<<<< Updated upstream
-; Flow Status                        ; Successful - Fri Nov 12 11:36:16 2021       ;
-=======
-; Flow Status                        ; Successful - Tue Nov 16 11:13:02 2021       ;
->>>>>>> Stashed changes
+; Flow Status                        ; Successful - Tue Nov 16 11:40:21 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
 ; Top-level Entity Name              ; CPU                                         ;
@@ -71,11 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-<<<<<<< Updated upstream
-; Start date & time ; 11/12/2021 11:36:09 ;
-=======
-; Start date & time ; 11/16/2021 11:12:55 ;
->>>>>>> Stashed changes
+; Start date & time ; 11/16/2021 11:40:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Projeto2            ;
 +-------------------+---------------------+
@@ -86,11 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-<<<<<<< Updated upstream
-; COMPILER_SIGNATURE_ID               ; 185122840017633.163672776915832        ; --            ; --          ; --             ;
-=======
-; COMPILER_SIGNATURE_ID               ; 185122840017633.163707197543388        ; --            ; --          ; --             ;
->>>>>>> Stashed changes
+; COMPILER_SIGNATURE_ID               ; 185122840017633.163707361429668        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -109,13 +93,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-<<<<<<< Updated upstream
-; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4774 MB             ; 00:00:16                           ;
-; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:16                           ;
-=======
-; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4775 MB             ; 00:00:18                           ;
-; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:18                           ;
->>>>>>> Stashed changes
+; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4767 MB             ; 00:00:15                           ;
+; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:15                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
