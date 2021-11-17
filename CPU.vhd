@@ -112,7 +112,7 @@ ARCHITECTURE Structure OF CPU IS
 	SIGNAL A, B, result							: STD_LOGIC_VECTOR (n-1 downto 0);
 	
 	--Registradores
-	SIGNAL loadA, loadB, loadALUout			: STD_LOGIC;
+	--SIGNAL loadA, loadB, loadALUout			: STD_LOGIC;
 	
 	-- UC
 	SIGNAL UCout									: STD_LOGIC_VECTOR(5 downto 0);

@@ -16,12 +16,12 @@ ENTITY Memoria IS
 END Memoria;
 	
 ARCHITECTURE Behavior OF Memoria IS
-	TYPE vetor_instrucoes IS ARRAY (0 TO 6) of STD_LOGIC_VECTOR (7 DOWNTO 0);
+	TYPE vetor_instrucoes IS ARRAY (0 TO 12) of STD_LOGIC_VECTOR (7 DOWNTO 0);
 	
 
-	SIGNAL int_address: INTEGER RANGE 0 TO 6;
+	SIGNAL int_address: INTEGER RANGE 0 TO 31;
 	
-	CONSTANT instrucao : vetor_instrucoes:= ("00011011","01001001","10011100","00000101","11000001","00011011","00000000");
+	CONSTANT instrucao : vetor_instrucoes:= ("00011011","01100110","10001100","00000000","10001000","00001000","00000001","00000010","11000000","00000011","00000000","00000000","00000000");
 	
 	BEGIN
 		int_address <= to_integer(signed(PC_endereco));
