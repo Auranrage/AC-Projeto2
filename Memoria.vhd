@@ -21,10 +21,11 @@ ARCHITECTURE Behavior OF Memoria IS
 
 	SIGNAL int_address: INTEGER RANGE 0 TO 6;
 	
-	CONSTANT instrucao : vetor_instrucoes:= ("00011011","01111001","10011100","00000101","11000001","00011011","00000000");
+	CONSTANT instrucao : vetor_instrucoes:= ("00011011","01001001","10011100","00000101","11000001","00011011","00000000");
 	
 	BEGIN
-	int_address <= to_integer(signed(PC_endereco));
-	instrucao_out <= instrucao(int_address);
-	BEQout <= instrucao(int_address + 1);
+		int_address <= to_integer(signed(PC_endereco));
+		instrucao_out <= instrucao(int_address);
+		BEQout <= instrucao(int_address + 1);
+		
 END Behavior;

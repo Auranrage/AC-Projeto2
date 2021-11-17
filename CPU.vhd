@@ -5,12 +5,15 @@ USE ieee.numeric_std.all;
 ENTITY CPU IS
 	GENERIC ( n : INTEGER := 8 ) ;
 	PORT(
-		clock, reset								: IN STD_LOGIC
+		-- Usar wave.do para instaciar o clock.
+		clock											: IN STD_LOGIC;	-- Lembrar: Clock precisa começar com 1. Unico sinal que precisa por pra CPU rodar.
+		setTeste										: IN STD_LOGIC
 	);
 		
 END CPU ;
 
 ARCHITECTURE Structure OF CPU IS
+
 --- Instanciamento de componentes
 	COMPONENT registrador
 		PORT ( D										: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
@@ -23,7 +26,8 @@ ARCHITECTURE Structure OF CPU IS
 		PORT (RegWrite, clock, reset			: IN STD_LOGIC;
 				ReadReg1, ReadReg2, WriteReg 	: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
 				WriteData							: IN STD_LOGIC_VECTOR (n-1 DOWNTO 0);
-				ReadData1, ReadData2				: OUT STD_LOGIC_VECTOR (n-1 DOWNTO 0)
+				ReadData1, ReadData2				: OUT STD_LOGIC_VECTOR (n-1 DOWNTO 0);
+				SetTest								: IN STD_LOGIC --Para iniciar valores dos regs
 				) ;
 	END COMPONENT;
 	
@@ -67,17 +71,17 @@ ARCHITECTURE Structure OF CPU IS
 	COMPONENT UC
 		PORT(
 			OPin										: IN std_logic_vector(1 downto 0);
-			Reset										: IN std_logic;
 			Clock										: IN std_logic;
+			reset, SetTest							: OUT std_logic;
 			UCSign									: OUT std_logic_vector(5 downto 0)
 		);
 	END COMPONENT;
 	
 	COMPONENT Jumper
 		PORT(
-		PCmsb			: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
-		instadd		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
-		newpc			: OUT STD_LOGIC_VECTOR (7 downto 0)
+		PCmsb											: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
+		instadd										: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+		newpc											: OUT STD_LOGIC_VECTOR (7 downto 0)
 	);
 	END COMPONENT;
 
@@ -109,11 +113,12 @@ ARCHITECTURE Structure OF CPU IS
 	
 	--Registradores
 	SIGNAL loadA, loadB, loadALUout			: STD_LOGIC;
-	SIGNAL NotTaken								: STD_LOGIC;
+	
 	-- UC
 	SIGNAL UCout									: STD_LOGIC_VECTOR(5 downto 0);
-	SIGNAL PCWriteCond							: STD_LOGIC;
+	SIGNAL PCWriteCond, reset					: STD_LOGIC;
 	SIGNAL PCSource								: STD_LOGIC_VECTOR(1 downto 0);
+	SIGNAL SetTest									: STD_LOGIC;
 	
 	
 	BEGIN
@@ -126,7 +131,7 @@ ARCHITECTURE Structure OF CPU IS
 		
 		--Instanciação dos componentes
 
-		PC_reg: PC port map (ENDtoPC, BEQ, reset, PCWrite, clock, PCSource, PCout,PCmsb); 
+		PC_reg: PC port map (ENDtoPC, BEQ, reset, PCWrite, clock, PCSource, PCout, PCmsb); 
 			--PCout = PCin se PCload=1, se não PCout = valor anterior + 1
 		
 		Mem: Memoria port map (Pcout, instrucao,BEQ); 
@@ -134,13 +139,11 @@ ARCHITECTURE Structure OF CPU IS
 		
 		reg_int: Reg_Instrucao port map (instrucao, clock, Jumpin, OP, RS, RT, RD);
 			--Pega a instrucao da memoria e quebra ela em 4 sinais de 2 bits cada
-			--Obs.: Acho que RegIntLoad é sempre 1
+
 			
-		banco: banco_registradores port map (RegWrite, clock, reset, RS, RT, RD, WriteData, ReadData1, ReadData2);
+		banco: banco_registradores port map (RegWrite, clock, reset, RS, RT, RD, WriteData, ReadData1, ReadData2, SetTest);
 			--ReadReg1 = RS / ReadReg2 = RT / WriteReg = RD
 			--Usa os sinais do Reg_Int para saber os valores de quais registradores vão pra ULA ou são editados
-		
-		Aluout: registrador port map (result, reset, '1', clock, WriteData);
 		
 		ULA1: ULA port map (A, B, AluOp, result, zero);
 			--Recebe os valores do RegA e RegB e soma eles ou subtrai, de acordo com AluOp.
@@ -148,11 +151,17 @@ ARCHITECTURE Structure OF CPU IS
 				
 		Jump: Jumper port map (PCmsb, Jumpin, ENDTOPC);
 		--Registradores
+		
+		Aluout: registrador port map (result, reset, '1', clock, WriteData);
 		regA: registrador port map (ReadData1, reset, '1', clock, A);
 		regB: registrador port map (ReadData2, reset, '1', clock, B);
 			--Pega os valores de RS e RT.
-			--Obs: Talvez loadA e loadB sejam sempre 0.
+			--Obs: load no reg A, B e no Aluout são sempre 1.
 			
-		Control: UC port map(OP,reset,clock,UCOut);	
+		Control: UC port map (OP, clock, reset, SetTest, UCOut);
+			-- Manda os sinais de controle pros outros componentes pelo UCout
+			-- Decide que sinais vai mandar pelo OP que recebe
+			-- Manda o sinal de reset para os outros componentes
+			-- SetTest é só pra iniciar valores nos registradores
 	
 END Structure ;

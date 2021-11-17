@@ -5,48 +5,63 @@ use ieee.numeric_std.all;
 
 ENTITY UC IS
 	PORT(
-		OPin: IN std_logic_vector(1 downto 0);
-		Reset: IN std_logic;
-		Clock: IN std_logic;
-		UCSign: OUT std_logic_vector(5 downto 0)
+		OPin				: IN std_logic_vector(1 downto 0);
+		Clock				: IN std_logic;
+		Reset, SetTest	: OUT std_logic;
+		UCSign			: OUT std_logic_vector(5 downto 0)
 		);
 END ENTITY;
 
 Architecture Behavior OF UC IS
 
-SIGNAL state: integer;
+SIGNAL state: integer := 0;
 
 BEGIN
 	PROCESS (Clock)
 	BEGIN
-		IF Clock'EVENT AND Clock = '1' THEN
-		
-			IF Reset = '1' THEN
-				state <= 0;
-			END IF;
+		IF Clock'EVENT AND Clock = '0' THEN
 	
 			CASE state IS
-				WHEN 0 => UCSign <= "010000";
+				-- Reset nos registradores.
+				WHEN 0 => UCSign <= "000000";
+							Reset <= '1';
+							SetTest <= '0';
 							state <= 1;
-				WHEN 1 => UCSign <= "000000";
+				
+				-- Set dos valores iniciais do registradores.
+				WHEN 1 => UCSign <= "000001";
+							Reset <= '0';
+							SetTest <= '1';
 							state <= 2;
-				WHEN 2 =>
+				
+				-- Fetch
+				WHEN 2 => UCSign <= "010000";
+							SetTest <= '0';
+							state <= 3;
+				-- Decode		
+				WHEN 3 => UCSign <= "000000";
+							state <= 4;
+				-- Execute
+				WHEN 4 =>
 					IF OPin = "00" THEN
 						UCSign <= "000000";
-						state <= 3;
+						state <= 5;
 						ELSIF OPin = "01" THEN
 							UCSign <= "000010";
-							state <= 3;
+							state <= 5;
 						ELSIF OPin = "10" THEN
 							UCSign <= "101010";
-							state <= 0;
+							state <= 2;
 						ELSE 
 							UCSign <= "010100";
-							state <= 0;
+							state <= 2;
 					END IF;
-				WHEN 3 => UCSign <= "000001";
-						state <= 0;
-				WHEN OTHERS => state <= 0;
+				
+				-- Write Back
+				WHEN 5 => UCSign <= "000001";
+						state <= 2;
+						
+				WHEN OTHERS => state <= 2;
 			END CASE;
 		END IF;
 	END PROCESS;

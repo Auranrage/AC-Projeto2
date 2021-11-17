@@ -178,3 +178,7 @@ db/Projeto2.(4).cnf.hdb
 *.hdb
 *.rdb
 *.hier_info
+*.cdb
+*.rdb
+*.rdb
+*.bak
