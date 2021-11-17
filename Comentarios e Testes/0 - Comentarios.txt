@@ -1,7 +1,0 @@
-Ver4
- FIXED:
- - Circuito sincronizado para somas e substrações em sequencia.
-
-ARRUMAR: 
- - Testar e arrumar o Jump
- - Testar e arrumar o BEQ
