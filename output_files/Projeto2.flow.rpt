@@ -1,5 +1,5 @@
 Flow report for Projeto2
-Wed Nov 17 10:07:27 2021
+Mon Nov 29 11:41:18 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 17 10:07:27 2021       ;
+; Flow Status                        ; Successful - Mon Nov 29 11:41:18 2021       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
 ; Top-level Entity Name              ; CPU                                         ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/17/2021 10:07:12 ;
+; Start date & time ; 11/29/2021 11:41:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Projeto2            ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589194.163715443215576         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 10995770589194.163819686316360         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -92,8 +92,8 @@ refer to the applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:16     ; 1.0                     ; 4775 MB             ; 00:00:35                           ;
-; Total                  ; 00:00:16     ; --                      ; --                  ; 00:00:35                           ;
+; Analysis & Elaboration ; 00:00:16     ; 1.0                     ; 4775 MB             ; 00:00:34                           ;
+; Total                  ; 00:00:16     ; --                      ; --                  ; 00:00:34                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

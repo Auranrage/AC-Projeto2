@@ -21,7 +21,21 @@ ARCHITECTURE Behavior OF Memoria IS
 
 	SIGNAL int_address: INTEGER RANGE 0 TO 31;
 	
-	CONSTANT instrucao : vetor_instrucoes:= ("00011011","01100110","10001100","00000000","10001000","00001000","00000001","00000010","11000000","00000011","00000000","00000000","00000000");
+	CONSTANT instrucao : vetor_instrucoes:= (
+		"00011011", --00000000	Add R3=R1+R2	
+		"01100110", --00000001	Sub R2=R1+R2		
+		"10001100", --00000010	Branch se R0=R3
+		"00000000", --00000011	Endereço do Branch
+		"10001000", --00000100
+		"00001000",	--00000101	Endereço do Branch = 8
+		"00000001",	--00000110											
+		"00000010", --00000111
+		"11000000", --00001000	Jump para instrucao 0
+		"00000011",	--00001001
+		"00000000",	--00001010
+		"00000000",	--00001011
+		"00000000"	--00001100
+		);
 	
 	BEGIN
 		int_address <= to_integer(signed(PC_endereco));
