@@ -1,6 +1,7 @@
 db/
 incremental_db/
 output_files/
+simulation/modelsim/rtl_work
 
 *.hdb
 *.cdb
@@ -17,12 +18,14 @@ output_files/
 *.rdb
 *.rdb
 *.bak
+*.bak*
+
 Projeto2_nativelink_simulation.rpt
 simulation/modelsim/msim_transcript
-simulation/modelsim/rtl_work/_info
-simulation/modelsim/rtl_work/_lib.qdb
-simulation/modelsim/rtl_work/_lib1_0.qdb
-simulation/modelsim/rtl_work/_lib1_0.qtl
 simulation/modelsim/vsim.wlf
 Projeto2_nativelink_simulation.rpt
 Projeto2_nativelink_simulation.rpt
+simulation/modelsim/modelsim.ini
+simulation/modelsim/Projeto2_run_msim_rtl_vhdl.do
+simulation/modelsim/rtl_work/_lib1_0.qpg
+simulation/modelsim/rtl_work/_vmake

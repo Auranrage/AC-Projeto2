@@ -1,0 +1,2 @@
+Esse *.bak* pode dar problema no futuro.
+Mas foi necessário para não pegar arquivos do tipo .bak1, .bak2, etc, dentro da pasta simulation/modelsim
