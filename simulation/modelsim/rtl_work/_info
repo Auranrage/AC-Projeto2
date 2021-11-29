@@ -21,9 +21,9 @@ V2TRnVSWiEHWE=1Sb9SDC52
 !s100 Slab^JHgRlL:N;zAo<zfb3
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1637154459
+Z7 !s110 1638207357
 !i10b 1
-Z8 !s108 1637154458.000000
+Z8 !s108 1638207357.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd|
 Z10 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd|
 !i113 1
@@ -61,11 +61,11 @@ Vee0cfc=jn]f8=XZ>R8e<h3
 !s100 i^=Z@inkzOUdD`XDCVko@1
 R6
 31
-Z17 !s110 1637154458
+R7
 !i10b 1
 R8
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd|
-Z19 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd|
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd|
+Z18 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd|
 !i113 1
 R11
 R12
@@ -80,11 +80,11 @@ VHk<?aCz<XYIDkPUY4j1K_1
 !s100 ?JdLnj_17k@FjheT;SecS1
 R6
 31
-R17
+R7
 !i10b 1
 R8
+R17
 R18
-R19
 !i113 1
 R11
 R12
@@ -93,19 +93,19 @@ R1
 R2
 R3
 R0
-Z20 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd
-Z21 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd
+Z19 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd
+Z20 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd
 l0
 L4
 V_>7aKW7mfKf@Aj75K^F;;2
 !s100 _BfP8Il=SL=_:m8afhQ[k2
 R6
 31
-R17
+R7
 !i10b 1
 R8
-Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd|
-Z23 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd|
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd|
+Z22 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd|
 !i113 1
 R11
 R12
@@ -119,11 +119,11 @@ VjXOgAY5dd9MmTO=JTaO7j2
 !s100 7:J6;lWhUQNaTZL1dog:P0
 R6
 31
-R17
+R7
 !i10b 1
 R8
+R21
 R22
-R23
 !i113 1
 R11
 R12
@@ -133,17 +133,17 @@ R14
 R2
 R3
 R0
-Z24 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/jumper.vhd
-Z25 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/jumper.vhd
+Z23 8C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/jumper.vhd
+Z24 FC:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/jumper.vhd
 l0
 L5
 V=]=FZL^XjKjN8AW`AD@Z83
 !s100 d>QzUn7D9]l4Do0RZMnF_3
 R6
 31
-R7
+Z25 !s110 1638207359
 !i10b 1
-Z26 !s108 1637154459.000000
+Z26 !s108 1638207359.000000
 Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/jumper.vhd|
 Z28 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/jumper.vhd|
 !i113 1
@@ -160,7 +160,7 @@ V7KOl?SdGe:=[nf@YR0m>n3
 !s100 GhYYVH5>S67beZ6C37IjE1
 R6
 31
-R7
+R25
 !i10b 1
 R26
 R27
@@ -169,7 +169,7 @@ R28
 R11
 R12
 Ememoria
-Z29 w1637154426
+Z29 w1638196859
 R14
 R2
 R3
@@ -182,7 +182,7 @@ VmVzzS2Nkb=c9GFIlQzNic0
 !s100 <nga1QT_XXZJ2MEI]_>dz1
 R6
 31
-R7
+R25
 !i10b 1
 R26
 Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd|
@@ -195,13 +195,13 @@ R14
 R2
 R3
 DEx4 work 7 memoria 0 22 mVzzS2Nkb=c9GFIlQzNic0
-l26
+l40
 L18
-V0WOYmoezaQ0CF8CQO;_MA0
-!s100 L=b9_0i6c]8f0oa;Bz1Se2
+VTnI?d3;jY6Cz^h`lN<Xo_2
+!s100 J9b14Q`7fMD2Acz7bc<NM3
 R6
 31
-R7
+R25
 !i10b 1
 R26
 R32
@@ -226,7 +226,7 @@ R6
 31
 R7
 !i10b 1
-R26
+R8
 Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd|
 Z39 !s107 C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd|
 !i113 1
@@ -246,7 +246,7 @@ R6
 31
 R7
 !i10b 1
-R26
+R8
 R38
 R39
 !i113 1
@@ -266,7 +266,7 @@ V873i4KJ1d95ML`@j>VP8c0
 !s100 F3h_oHBlM=ehIX^PHWQMH0
 R6
 31
-R7
+R25
 !i10b 1
 R26
 Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd|
@@ -285,7 +285,7 @@ V1CVdWgZ8aLP>>dk83PbfU2
 !s100 6Na]IVTglWOS>=68E3fKe3
 R6
 31
-R7
+R25
 !i10b 1
 R26
 R42
@@ -306,7 +306,7 @@ V?g4JO[=:<32C6`X2Zo>X41
 !s100 WFd[dVM9`EkWdBfeXS6?31
 R6
 31
-R17
+R7
 !i10b 1
 R8
 Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/registrador.vhd|
@@ -324,7 +324,7 @@ VZ3g;Gb[84AeLm4f<j<8650
 !s100 fF[adX8CiB80@c91Eb`2c0
 R6
 31
-R17
+R7
 !i10b 1
 R8
 R46
@@ -345,7 +345,7 @@ VK=<25VJQMQKk?hWh3oUe63
 !s100 4O2al9Og7]=T[=_kI<U6]1
 R6
 31
-R17
+R7
 !i10b 1
 R8
 Z50 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ripple_carry.vhd|
@@ -363,7 +363,7 @@ V64gC0>gaM7<7]iSmRY0[a3
 !s100 ]eo9JFn:Pn:=z;1C3P4]Q3
 R6
 31
-R17
+R7
 !i10b 1
 R8
 R50
@@ -385,7 +385,7 @@ Vz>GS^i4DJR12[UdLU0WJB0
 !s100 :Dj;P7ZIJ^;e5fX5aEJdT2
 R6
 31
-R7
+R25
 !i10b 1
 R26
 Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/UnidadeDeControle.vhd|
@@ -404,7 +404,7 @@ VK2ffXbh;e01>o`E9@Wlo73
 !s100 F>5RZ42;R@Pia2ffzSkCP0
 R6
 31
-R7
+R25
 !i10b 1
 R26
 R54
@@ -426,7 +426,7 @@ V@0k_LE_dgC3JzbFKIc>T20
 !s100 DzFXR1Y`BkLdhd>O8M;5E0
 R6
 31
-R7
+R25
 !i10b 1
 R26
 Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd|
@@ -445,7 +445,7 @@ VnXo:R_79F??]OG9G8P3[72
 !s100 IS?h0TWKLS9[g9;G]CVBP2
 R6
 31
-R7
+R25
 !i10b 1
 R26
 R58

@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:38 on Nov 17,2021
+# Start time: 14:35:57 on Nov 29,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/CPU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,55 +20,55 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity CPU
 # -- Compiling architecture Structure of CPU
-# End time: 10:07:38 on Nov 17,2021, Elapsed time: 0:00:00
+# End time: 14:35:57 on Nov 29,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ripple_carry.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:38 on Nov 17,2021
+# Start time: 14:35:57 on Nov 29,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ripple_carry.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ripple_carry
 # -- Compiling architecture Structure of ripple_carry
-# End time: 10:07:38 on Nov 17,2021, Elapsed time: 0:00:00
+# End time: 14:35:57 on Nov 29,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/registrador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:38 on Nov 17,2021
+# Start time: 14:35:57 on Nov 29,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/registrador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity registrador
 # -- Compiling architecture Behavior of registrador
-# End time: 10:07:38 on Nov 17,2021, Elapsed time: 0:00:00
+# End time: 14:35:57 on Nov 29,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:38 on Nov 17,2021
+# Start time: 14:35:57 on Nov 29,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/full_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity full_adder
 # -- Compiling architecture LogicFunc of full_adder
-# End time: 10:07:38 on Nov 17,2021, Elapsed time: 0:00:00
+# End time: 14:35:57 on Nov 29,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:38 on Nov 17,2021
+# Start time: 14:35:57 on Nov 29,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/banco_registradores.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity banco_registradores
 # -- Compiling architecture Structure of banco_registradores
-# End time: 10:07:39 on Nov 17,2021, Elapsed time: 0:00:01
+# End time: 14:35:57 on Nov 29,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:39 on Nov 17,2021
+# Start time: 14:35:57 on Nov 29,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/PC.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -77,11 +77,11 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity PC
 # -- Compiling architecture Behavior of PC
-# End time: 10:07:39 on Nov 17,2021, Elapsed time: 0:00:00
+# End time: 14:35:57 on Nov 29,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:39 on Nov 17,2021
+# Start time: 14:35:59 on Nov 29,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/ULA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,11 +89,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ULA
 # -- Compiling architecture ULA_arch of ULA
-# End time: 10:07:39 on Nov 17,2021, Elapsed time: 0:00:00
+# End time: 14:35:59 on Nov 29,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:39 on Nov 17,2021
+# Start time: 14:35:59 on Nov 29,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Memoria.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -101,11 +101,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Memoria
 # -- Compiling architecture Behavior of Memoria
-# End time: 10:07:39 on Nov 17,2021, Elapsed time: 0:00:00
+# End time: 14:35:59 on Nov 29,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:39 on Nov 17,2021
+# Start time: 14:35:59 on Nov 29,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/Reg_Instrucao.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +113,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Reg_Instrucao
 # -- Compiling architecture Behavior of Reg_Instrucao
-# End time: 10:07:39 on Nov 17,2021, Elapsed time: 0:00:00
+# End time: 14:35:59 on Nov 29,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/UnidadeDeControle.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:39 on Nov 17,2021
+# Start time: 14:35:59 on Nov 29,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/UnidadeDeControle.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,11 +125,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity UC
 # -- Compiling architecture Behavior of UC
-# End time: 10:07:39 on Nov 17,2021, Elapsed time: 0:00:00
+# End time: 14:35:59 on Nov 29,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/jumper.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:39 on Nov 17,2021
+# Start time: 14:35:59 on Nov 29,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/jumper.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -137,12 +137,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Jumper
 # -- Compiling architecture Behavior of Jumper
-# End time: 10:07:39 on Nov 17,2021, Elapsed time: 0:00:00
+# End time: 14:35:59 on Nov 29,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.cpu
 # vsim work.cpu 
-# Start time: 10:07:43 on Nov 17,2021
+# Start time: 14:36:03 on Nov 29,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -163,31 +163,10 @@ vsim work.cpu
 do C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/simulation/modelsim/wave.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-# 0
-add wave -position end  sim:/cpu/instrucao
-add wave -position end  sim:/cpu/UCout
-add wave -position end  sim:/cpu/result
-add wave -position end  sim:/cpu/banco/Q0
-add wave -position end  sim:/cpu/banco/Q1
-add wave -position end  sim:/cpu/banco/Q2
-add wave -position end  sim:/cpu/banco/Q3
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
-wave modify -driver freeze -pattern clock -initialvalue 1 -period 100ps -dutycycle 50 -starttime 0ps -endtime 2500ps Edit:/cpu/clock
-restart
-restart
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
-add wave -position end  sim:/cpu/Control/state
-add wave -position 1  sim:/cpu/PCout
-restart
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /cpu/Mem
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# End time: 14:27:22 on Nov 17,2021, Elapsed time: 4:19:39
-# Errors: 1, Warnings: 4
-wave editwrite -file C:/Users/RodrigoCardoso/Documents/GitHub/AC-Projeto2/simulation/modelsim/wave.do
+# ** Error: /cpu/clock already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+# Executing ONERROR command at macro C:\Users\RodrigoCardoso\Documents\GitHub\AC-Projeto2\simulation\modelsim\wave.do line 34
+# 1
+# End time: 14:36:22 on Nov 29,2021, Elapsed time: 0:00:19
+# Errors: 3, Warnings: 0
